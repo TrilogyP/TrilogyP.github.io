@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Öffentliche Präsentation der Nutzerbewertung des Circular Economy Analytics Hub mit SUS-DE-Pos und 14 projektspezifischen Detailfragen."
+    />
+    <title>Nutzerbewertung | Circular Economy Analytics Hub</title>
+    <script>
+      document.documentElement.classList.add("js");
+    </script>
+    <link rel="stylesheet" href="./assets/site.css" />
+    <link rel="stylesheet" href="./assets/evaluation.css" />
+  </head>
+  <body class="evaluation-body">
+    <div class="scroll-progress" aria-hidden="true"></div>
+
+    <header class="site-nav" aria-label="Navigation der Evaluation">
+      <a class="brand" href="./index.html" aria-label="Zur Projektübersicht">
+        <span class="brand-mark" aria-hidden="true">CEAH</span>
+        <span>Circular Economy Analytics Hub</span>
+      </a>
+      <nav class="nav-links" aria-label="Abschnitte">
+        <a href="#protocol">Ablauf</a>
+        <a href="#sus">SUS-DE-Pos</a>
+        <a href="#project">Detailfragen</a>
+        <a href="./index.html">Projektseite</a>
+      </nav>
+    </header>
+
+    <main id="top" class="evaluation-page">
+      <section class="evaluation-hero">
+        <div class="evaluation-hero-copy">
+          <p class="eyebrow">Nutzerbewertung</p>
+          <h1>Nutzerbewertung des Circular Economy Analytics Hub.</h1>
+          <p>
+            Der SUS-DE-Pos bewertet die allgemeine Benutzerfreundlichkeit. Vierzehn ergänzende Detailfragen folgen
+            dem vollständigen Ablauf von Daten und ETL über Benchmark und Veröffentlichung bis zur Anwendung neuer
+            Batches und den getrennten Exporten.
+          </p>
+        </div>
+        <dl class="evaluation-facts" aria-label="Rahmen der Evaluation">
+          <div>
+            <dt>10 + 14</dt>
+            <dd>Standardisierte und projektspezifische Aussagen</dd>
+          </div>
+          <div>
+            <dt>1 bis 5</dt>
+            <dd>Einheitliche Zustimmungsskala</dd>
+          </div>
+          <div>
+            <dt>2 Instrumente</dt>
+            <dd>Gesamtbewertung und Detailfragen</dd>
+          </div>
+        </dl>
+      </section>
+
+      <div class="questionnaire-showcase">
+        <section class="evaluation-section" id="protocol">
+          <div class="evaluation-section-head">
+            <div>
+              <p class="section-label">01 · Durchführung</p>
+              <h2>Erst Aufgaben bearbeiten, dann beide Fragebögen ausfüllen.</h2>
+            </div>
+            <p>
+              Die Bewertung wird unmittelbar nach der Nutzung und vor einer gemeinsamen Nachbesprechung erhoben.
+              Dadurch beziehen sich die Antworten auf denselben Aufgabenpfad und einen vergleichbaren Nutzungskontext.
+              Diese öffentliche Seite dient ausschließlich der Präsentation: Sie speichert, übermittelt oder aggregiert
+              keine Eingaben.
+            </p>
+          </div>
+
+          <ol class="task-lane" aria-label="Aufgabenpfad für Testpersonen">
+            <li><span>01</span><strong>Datensatz und Szenario</strong><small>Datenstatus und Szenariopassung prüfen</small></li>
+            <li><span>02</span><strong>ETL und Split</strong><small>Vorschau, Warnungen und 70/15/15 verstehen</small></li>
+            <li><span>03</span><strong>Training und Monitoring</strong><small>Experiment und Benchmark bis zum Abschluss beobachten</small></li>
+            <li><span>04</span><strong>Results</strong><small>Validation-Auswahl und getrennte Test-Evaluation erklären</small></li>
+            <li><span>05</span><strong>Benchmark veröffentlichen</strong><small>Leitmodell oder Tier-Sieger veröffentlichen und Standardversion prüfen</small></li>
+            <li><span>06</span><strong>Preflight</strong><small>Neuen Batch auswählen oder hochladen und Kompatibilität prüfen</small></li>
+            <li><span>07</span><strong>Anwendung und Exporte</strong><small>Neue Daten, Handlungsfenster und beide Exportarten erklären</small></li>
+          </ol>
+
+          <fieldset class="metadata-fields">
+            <legend>Evaluationskontext</legend>
+            <label>
+              Name
+              <input name="participant_name" type="text" maxlength="80" placeholder="Vor- und Nachname" />
+            </label>
+            <label>
+              Rolle
+              <select name="participant_role">
+                <option value="">Bitte auswählen</option>
+                <option>Domänenexpertin oder Domänenexperte</option>
+                <option>ML- oder Datenexpertin bzw. -experte</option>
+                <option>Wissenschaftliche Prüfung</option>
+                <option>Studierende Testperson</option>
+                <option>Sonstige Testperson</option>
+              </select>
+            </label>
+            <label>
+              Erfahrung mit ML-Analyseplattformen
+              <select name="participant_experience">
+                <option value="">Bitte auswählen</option>
+                <option value="1">1 · Keine Erfahrung</option>
+                <option value="2">2 · Geringe Erfahrung</option>
+                <option value="3">3 · Mittlere Erfahrung</option>
+                <option value="4">4 · Hohe Erfahrung</option>
+                <option value="5">5 · Sehr hohe Erfahrung</option>
+              </select>
+            </label>
+          </fieldset>
+        </section>
+
+        <section class="evaluation-section survey-section" id="sus">
+          <div class="evaluation-section-head">
+            <div>
+              <p class="section-label">02 · Standardisierte Skala</p>
+              <h2>SUS-DE-Pos</h2>
+            </div>
+            <p>
+              Die zehn Aussagen stammen aus der positiv formulierten, psychometrisch validierten deutschen SUS-Version.
+              Bitte spontan antworten und jede Aussage bewerten. Die Projektdetails werden bewusst erst im zweiten
+              Instrument abgefragt.
+            </p>
+          </div>
+
+          <div class="scale-legend" aria-hidden="true">
+            <span>1 · Stimme überhaupt nicht zu</span>
+            <span>5 · Stimme vollständig zu</span>
+          </div>
+          <div id="sus-questions" class="question-list"></div>
+          <p class="method-note">
+            Auswertung: Alle zehn Items, einschließlich Aussage 8, fließen in den SUS-DE-Pos-Gesamtwert ein. Für jedes
+            Item wird 1 vom Antwortwert abgezogen; die Summe wird mit 2,5 multipliziert. Der resultierende Wert von 0
+            bis 100 ist keine Prozentangabe.
+          </p>
+        </section>
+
+        <section class="evaluation-section survey-section" id="project">
+          <div class="evaluation-section-head">
+            <div>
+              <p class="section-label">03 · Projektspezifische Diagnose</p>
+              <h2>Detailfragen zum Analyseworkflow</h2>
+            </div>
+            <p>
+              Dieses Instrument ergänzt den SUS um konkrete Rückmeldungen zum vollständigen Plattformablauf. Sein
+              Mittelwert bleibt eine interne Orientierung und darf nicht als SUS-Score oder als extern validierter
+              Benchmark berichtet werden. Alle vierzehn Aussagen sind positiv formuliert und werden in derselben
+              Richtung ausgewertet.
+            </p>
+          </div>
+
+          <div class="scale-legend" aria-hidden="true">
+            <span>1 · Stimme überhaupt nicht zu</span>
+            <span>5 · Stimme vollständig zu</span>
+          </div>
+          <div id="project-questions" class="question-list"></div>
+
+          <p class="method-note">
+            Auswertung: Die Antwortwerte aller vierzehn Aussagen können direkt zu einem projektspezifischen Mittelwert von
+            1 bis 5 zusammengeführt werden. Dieser Diagnosewert ergänzt den SUS-DE-Pos, ist selbst aber kein SUS-Score.
+          </p>
+
+          <div class="free-text-grid">
+            <label>
+              Welche Ansicht war am hilfreichsten?
+              <textarea name="most_helpful" rows="3"></textarea>
+            </label>
+            <label>
+              Welche Begriffe oder Ergebnisse waren unklar?
+              <textarea name="unclear_elements" rows="3"></textarea>
+            </label>
+            <label>
+              Welche Information fehlte für eine sichere Interpretation?
+              <textarea name="missing_information" rows="3"></textarea>
+            </label>
+            <label>
+              Wo entstand der größte Bedienungsaufwand?
+              <textarea name="greatest_effort" rows="3"></textarea>
+            </label>
+          </div>
+        </section>
+
+      </div>
+
+      <section class="source-section" aria-labelledby="sources-title">
+        <div>
+          <p class="section-label">Methodische Quellen</p>
+          <h2 id="sources-title">Verwendete Skala und Abgrenzung</h2>
+        </div>
+        <ul>
+          <li>
+            Perrig, S. A. C., von Felten, N., Vollenwyder, B. &amp; Opwis, K. (2025). Development and Psychometric
+            Validation of a Positively Worded German Version of the System Usability Scale (SUS).
+            <a href="https://doi.org/10.1080/10447318.2024.2434720">DOI 10.1080/10447318.2024.2434720</a>
+          </li>
+          <li>
+            Brooke, J. (1996). SUS: A quick and dirty usability scale. Die Quelle begründet Durchführung und
+            Transformation auf den Gesamtwert von 0 bis 100.
+          </li>
+          <li>
+            Gao, M., Kortum, P. &amp; Oswald, F. L. (2020). Multi-Language Toolkit for the System Usability Scale.
+            <a href="https://doi.org/10.1080/10447318.2020.1801173">DOI 10.1080/10447318.2020.1801173</a>
+          </li>
+          <li>
+            Rummel, B. (2016). System Usability Scale - jetzt auch auf Deutsch. Die ursprünglichen positiven Items
+            des SUS-DE-Pos basieren auf dieser deutschen Fassung.
+          </li>
+          <li>Die projektspezifischen Aussagen sind eine eigene diagnostische Ergänzung und keine validierte Standardskala.</li>
+        </ul>
+      </section>
+    </main>
+
+    <a class="back-to-top" href="#top" aria-label="Zum Seitenanfang zurück" title="Zum Seitenanfang">↑</a>
+
+    <footer class="site-footer">
+      <strong>Circular Economy Analytics Hub</strong>
+      <span>Usability-Evaluation · SUS-DE-Pos · Projektspezifische Detailanalyse</span>
+    </footer>
+
+    <script src="./assets/evaluation.js"></script>
+  </body>
+</html>
