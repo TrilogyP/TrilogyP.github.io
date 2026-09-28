@@ -1,7 +1,7 @@
 {
-  "source_commit": "62406a92b7be0f1cf95ea435d815608e5cbd8e77",
+  "source_commit": "72625cff9acd3459dbdc194c4798140b5a438f41",
   "source_dirty": false,
-  "generated_at": "2026-09-28T17:53:53.021552+00:00",
+  "generated_at": "2026-09-28T18:01:32.850217+00:00",
   "pages": [
     "index.html",
     "nebula.html",
@@ -13,7 +13,7 @@
     "index.html": "f765e874f5a3502ec15f0d7b06422360e9ad4691574ba00e9ac918cab3ebb3b6",
     "nebula.html": "667bba29b89ac56b7c2baccb9bb236e57b69e2d8cf8796a36a033ba3370aec15",
     "mapping.html": "d432f7c5d4e82199f10629d2896b82a0e3fd3152c9cc638d0e54ed01fe71cba9",
-    "architecture.html": "c0d56bd3407f8302154d9ffc4006c3dae8eb8f3ef5cd5d6e3ca3de1dbbcef0df",
+    "architecture.html": "06c67590b78a718c2ef0b2b9ab2661d03e4a64ef8acbbade0d7c8c456f5349ec",
     "evaluation.html": "c82a8a8acf0e430f519d163b2aa040a21668c59fe79f49134aed8aec6ba01076",
     "assets/architecture.css": "d35d1340301c2ea6f1cdccb0dc9667d4e86faf142653e2c1c61c3b51b68b16e6",
     "assets/evaluation.css": "11f4f66e69f370e228dcc644a859305a396f393bcd7fb2be6d91c853e51c23a5",
