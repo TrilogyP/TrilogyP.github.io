@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="85 Literaturhinweise zur Kreislaufwirtschaft: Algorithmen, Methodenfamilien und Anwendungen als interaktive, quellenbezogene Sternkarte." />
+    <title>Literaturatlas · CEAH</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./assets/site.css" />
+    <link rel="stylesheet" href="./assets/nebula.css" />
+  </head>
+  <body class="nebula-page">
+    <header class="site-nav" aria-label="Hauptnavigation">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">CEAH</span><span>Circular Economy Analytics Hub</span></a>
+      <nav class="nav-links" aria-label="Seitenfolge">
+        <a href="./index.html">01 Plattform</a><a href="./nebula.html" aria-current="page">02 Literaturatlas</a><a href="./mapping.html">03 Plattform-Mapping</a><a href="./architecture.html">04 Architektur</a><a href="./evaluation.html">05 Evaluation</a>
+      </nav>
+    </header>
+    <nav class="section-nav" aria-label="Auf dieser Seite"><span>02 / 05 · Literaturatlas</span><a href="#atlas">Sternkarte</a><a href="#sources">Quellen</a><a href="#reading">Lesehilfe</a></nav>
+    <main id="top">
+      <section class="atlas-intro">
+        <div><p class="eyebrow">Forschungsraum · Machine Learning &amp; Kreislaufwirtschaft</p><h1>Methoden entdecken.<br>Verbindungen verstehen.</h1></div>
+        <div><p>85 Literaturhinweise verbinden Algorithmen mit Anwendungen: vom Recycling über Energie und Wasser bis zur Aufarbeitung. Erkunden Sie die Familien, öffnen Sie ihre Teilbereiche und folgen Sie jeder Verbindung zur Quelle.</p><a class="atlas-inline" href="./mapping.html">Zum engeren Plattform-Mapping mit 17 Quellen →</a></div>
+      </section>
+      <section class="atlas-shell" id="atlas" aria-labelledby="atlas-title">
+        <div class="atlas-toolbar">
+          <div><p class="eyebrow">Interaktive Sternkarte</p><h2 id="atlas-title">Ein Forschungsraum. Viele Wege.</h2></div>
+          <div class="atlas-filters" role="group" aria-label="Bildbezug filtern">
+            <button type="button" data-modality="all" aria-pressed="true">Gesamt <span>85</span></button>
+            <button type="button" data-modality="vision" aria-pressed="false">Mit Bildbezug <span>14</span></button>
+            <button type="button" data-modality="non_vision" aria-pressed="false">Ohne Bildbezug <span>34</span></button>
+            <button type="button" data-modality="unknown" aria-pressed="false">Ungeklärt <span>37</span></button>
+          </div>
+        </div>
+        <div class="atlas-controls">
+          <label>Literatur oder Methode suchen<input id="atlas-search" type="search" placeholder="z. B. CNN, Batterie, LIT-041 …" /></label>
+          <label>Quellenbasis<select id="atlas-evidence"><option value="all">Alle Quellenebenen</option><option value="substantive">Abstract / Methodik</option><option value="title">Nur Originaltitel</option></select></label>
+          <button type="button" id="atlas-reset">Alles zurücksetzen</button>
+        </div>
+        <div class="atlas-status" aria-live="polite"><strong id="atlas-count">85 Hinweise</strong><span id="atlas-summary"></span></div>
+        <div class="atlas-trails"><div><span>Methoden</span><button type="button" id="method-up">Alle Familien</button><span id="method-trail">Alle Familien</span></div><div><span>Anwendungen</span><button type="button" id="application-up">Alle Felder</button><span id="application-trail">Alle Felder</span></div></div>
+        <div class="atlas-canvas">
+          <svg id="nebula" viewBox="0 0 1440 820" role="group" aria-label="Interaktive Literaturkarte: Methodenfamilien und Anwendungsfelder" aria-describedby="graph-help"><title>Algorithmen und Anwendungen in 85 Literaturhinweisen</title></svg>
+          <p id="atlas-empty" hidden>Keine Hinweise für diese Kombination. Passen Sie die Suche oder die Auswahl an.</p>
+          <div class="atlas-view-controls" role="group" aria-label="Kartenausschnitt"><button type="button" id="zoom-out" aria-label="Verkleinern">−</button><button type="button" id="zoom-in" aria-label="Vergrößern">+</button><button type="button" id="zoom-reset">Ansicht einpassen</button><button type="button" id="atlas-export">SVG speichern ↓</button></div>
+        </div>
+        <div class="atlas-legend"><span><i class="legend-method"></i> Methodenfamilie / Algorithmus</span><span><i class="legend-app"></i> Anwendungsfeld / Aufgabe</span><span><i class="legend-parent"></i> Darstellungshierarchie</span><span><i class="legend-link"></i> in Literatur verbunden</span></div>
+        <p id="graph-help">Knoten anklicken oder mit Tab und Enter öffnen. Eine Verbindung wählt beide Seiten aus. „Eine Ebene zurück“ öffnet die Elternkategorie. Ziehen verschiebt die Karte; + / − vergrößert sie. Auf kleinen Bildschirmen helfen die aufklappbaren Listen unter der Karte.</p>
+        <details class="atlas-accessible"><summary>Familien und Anwendungen als bedienbare Listen</summary><div class="atlas-node-lists"><div><h3>Methodenseite</h3><div id="method-list"></div></div><div><h3>Anwendungsseite</h3><div id="application-list"></div></div></div></details>
+      </section>
+      <section class="atlas-sources" id="sources" aria-labelledby="sources-title">
+        <div class="atlas-source-head"><div><p class="eyebrow">Von der Beziehung zum Beleg</p><h2 id="sources-title">Die Quellen Ihrer Auswahl.</h2></div><div class="atlas-downloads"><a href="./assets/nebula-relations.csv" download>Alle Methodenbeziehungen · CSV ↓</a><a href="./assets/nebula-data.json" download>Atlas · JSON ↓</a></div></div>
+        <p class="atlas-export-note">CSV: Eine Zeile entspricht einer Methode–Aufgabe-Beziehung. Ein Literaturhinweis kann mehrere Zeilen belegen. Für Literaturzahlen und Bildbezug die eindeutigen IDs zählen, nicht die CSV-Zeilen. Der Download enthält alle Beziehungen, unabhängig vom Ansichtsfilter.</p>
+        <p id="source-count" aria-live="polite"></p><div id="atlas-records"></div><button type="button" id="more-sources">Weitere Quellen anzeigen</button>
+      </section>
+      <section class="atlas-reading" id="reading">
+        <p class="eyebrow">Die Karte richtig lesen</p><h2>Zusammenhänge zeigen.<br>Aussagegrenzen bewahren.</h2>
+        <div class="atlas-reading-grid">
+          <article><span>01 / Hierarchie</span><h3>Familie → Unterfamilie → Methode</h3><p>Beispiel: Neuronale Netze → Faltungsnetze → CNN. Rechts führen Anwendungsfelder zu konkreten Aufgaben. Die Gruppen mischen Architektur und Lernverfahren; sie sind keine disjunkten wissenschaftlichen Mengen. Hybride können mehrere Methoden verbinden. Attention steht bei Architekturbausteinen, getrennt von Vorverarbeitung.</p></article>
+          <article><span>02 / Quellenbasis</span><h3>Eine Verbindung ist kein Leistungsurteil.</h3><p>49 Hinweise sind anhand von Abstracts oder Vorschauen codiert, einer anhand von Methodikabschnitten und 35 nur anhand ihres Originaltitels. Auch Vergleichsmodelle und Reviewthemen sind enthalten. Unbenannte Algorithmen bleiben unspezifiziert.</p></article>
+          <article><span>03 / Bildbezug</span><h3>Der Eingang zählt, nicht der Modellname.</h3><p>Bildbezug umfasst auch gemischte Reviews. Ein CNN auf Zeitreihen oder nicht räumlichen Spektralwerten gehört nicht automatisch dazu. 37 Fälle bleiben ungeklärt; sie werden nicht als bildfrei gezählt.</p></article>
+          <article><span>04 / Plattformbezug</span><h3>85 Hinweise, 17 Bibliotheksquellen.</h3><p>Die Plattformbibliothek verbindet neun bestehende Quellen mit acht dieser Hinweise. Der breite Atlas erweitert nicht das ausführbare Modellangebot. Die Plattform verarbeitet numerische Daten; Bildverarbeitung ist kein nativer Pfad. Der Atlas enthält auch angrenzende Bereiche wie Primärrohstofferkundung, ohne sie als Kreislaufverfahren auszugeben.</p></article>
+        </div>
+        <p class="atlas-reading-note">Größe und Linienstärke zeigen die Zahl eindeutiger Hinweise, keine Qualität oder Modellleistung. Mehrfachzuordnungen sind nicht additiv. Die Positionen dienen der Lesbarkeit; sie sind kein semantisches Clustering. <a href="./mapping.html#protocol">Auswahl und Codierung nachlesen →</a></p>
+      </section>
+    </main>
+    <nav class="page-sequence" aria-label="Weiter durch das Showcase"><a href="./index.html">← 01 Plattform</a><a href="./mapping.html">Weiter: 03 Plattform-Mapping →</a></nav>
+    <footer class="site-footer"><strong>CEAH · Literaturatlas</strong><span>85 Recherchehinweise · Originalquellen · nachvollziehbare Beziehungen</span></footer>
+    <script src="./assets/nebula-data.js"></script><script src="./assets/nebula.js"></script>
+  </body>
+</html>

@@ -5,41 +5,33 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta
       name="description"
-      content="Circular Economy Analytics Hub: lokaler Forschungsprototyp für nachvollziehbare Sensordatenanalyse, Modellbewertung, Veröffentlichung und Batch-Anwendung."
+      content="Circular Economy Analytics Hub: lokaler Forschungsprototyp zur Bewertung, Veröffentlichung und Anwendung von ML-Modellen auf Sensordaten."
     />
     <title>Circular Economy Analytics Hub</title>
     <script>document.documentElement.classList.add("js");</script>
     <link rel="stylesheet" href="./assets/site.css" />
+    <link rel="stylesheet" href="./assets/mapping.css" />
   </head>
   <body>
     <div class="scroll-progress" aria-hidden="true"></div>
     <header class="site-nav" aria-label="Hauptnavigation">
-      <a class="brand" href="#top" aria-label="Circular Economy Analytics Hub">
-        <span class="brand-mark" aria-hidden="true">CEAH</span>
-        <span>Circular Economy Analytics Hub</span>
-      </a>
-      <nav class="nav-links" aria-label="Abschnitte">
-        <a href="#position">Plattform</a>
-        <a href="#architecture">Prozess</a>
-        <a href="#mapping">Mapping</a>
-        <a href="#workflow">Oberfläche</a>
-        <a href="#scenarios">Anwendung</a>
-        <a href="#evidence">Evidenz</a>
-        <a href="#status">Stand</a>
-        <a href="./evaluation.html">Evaluation</a>
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">CEAH</span><span>Circular Economy Analytics Hub</span></a>
+      <nav class="nav-links" aria-label="Seitenfolge">
+        <a href="./index.html" aria-current="page">01 Plattform</a><a href="./nebula.html">02 Literaturatlas</a><a href="./mapping.html">03 Plattform-Mapping</a><a href="./architecture.html">04 Architektur</a><a href="./evaluation.html">05 Evaluation</a>
       </nav>
     </header>
+    <nav class="section-nav" aria-label="Auf dieser Seite"><span>01 / 05 · Plattform</span><a href="#position">Plattform</a><a href="#architecture">Prozess</a><a href="#mapping">Mapping</a><a href="#workflow">Oberfläche</a><a href="#scenarios">Anwendung</a><a href="#evidence">Evidenz</a><a href="#status">Stand</a></nav>
 
     <main id="top">
       <section class="hero" aria-labelledby="hero-title">
-        <img class="hero-image" src="./assets/showcase-hero.png" alt="Aktuelle Gesamtansicht der Plattform mit allen Tabs einschließlich Anwendung" />
+        <img class="hero-image" src="./assets/showcase-results-hero.png" alt="Abgeschlossenes PM-Experiment mit Test-Holdout-Ergebnissen in CEAH" />
         <div class="hero-shade" aria-hidden="true"></div>
         <div class="hero-copy">
           <p class="eyebrow">Forschungsdemonstrator für Wirtschaftsinformatik</p>
           <h1 id="hero-title">Circular Economy Analytics Hub</h1>
           <p>
-            Eine lokale Plattform, die Sensordaten von der kontrollierten ML-Evaluation bis zur versionierten Anwendung
-            auf einen neuen Batch führt.
+            Von der begründeten Methodenwahl zur neuen Datenanwendung: Eine lokale Plattform verbindet
+            Literaturkontext, Modellvergleich, explizite Veröffentlichung und Sensordatenanalyse.
           </p>
           <div class="hero-actions">
             <a class="primary-action" href="#workflow">Plattform ansehen</a>
@@ -53,28 +45,28 @@
         <div class="section-head">
           <div>
             <p class="section-label">Plattformpositionierung</p>
-            <h2>Vom Benchmark zur nachvollziehbaren Anwendung auf neue Daten.</h2>
+            <h2>Vom Benchmark zur Anwendung auf neue Sensordaten.</h2>
           </div>
           <p>
-            Das Artefakt ist mehr als ein Modellvergleich: Ein ausgewähltes Modell kann explizit veröffentlicht,
-            versioniert auf allen markierten Daten neu trainiert und auf einem zeitlich nachgelagerten Batch ausgeführt
-            werden. Es bleibt ein lokaler Batch-Prototyp, kein Produktionsdienst oder MLOps-System.
+            Nach dem Benchmark kann ein ausgewähltes Modell veröffentlicht werden. Die Plattform trainiert es mit allen
+            Daten neu, für die Zielwerte vorliegen, und verarbeitet damit einen späteren Batch. Alles läuft lokal;
+            die Plattform ist kein Produktionsdienst und kein MLOps-System.
           </p>
         </div>
 
         <div class="capability-grid" aria-label="Kernfähigkeiten">
-          <article><span>01</span><h3>Kontrollierte Evaluation</h3><p>Chronologischer 70/15/15-Split, Validation-Auswahl und getrennte Test-Holdout-Evidenz.</p></article>
-          <article><span>02</span><h3>Explizite Veröffentlichung</h3><p>Leitmodell oder Tier-Sieger werden als unveränderliche lokale Modellversion vollständig neu gefittet.</p></article>
-          <article><span>03</span><h3>Preflight und Batch-Inferenz</h3><p>Schema, Zeitfortsetzung, Merkmale und Cold Starts werden vor der Anwendung eines neuen Batches geprüft.</p></article>
-          <article><span>04</span><h3>Szenariologik</h3><p>Erst Anwendungsergebnisse erzeugen RUL-, Zustands-, Anomalie- oder Effizienzdarstellungen mit Regeln.</p></article>
-          <article><span>05</span><h3>Getrennte Berichte</h3><p>Test Predictions und Evaluationsbericht bleiben getrennt von Anwendungsvorhersagen und Anwendungsbericht.</p></article>
+          <article><span>01</span><h3>Getrennte Evaluation</h3><p>70/15/15 ist die vorgesehene zeitliche Aufteilung. Validation wählt das Modell, Test bewertet es. Bei unzureichenden Zeitgrenzen besteht noch eine bekannte Ausnahme.</p></article>
+          <article><span>02</span><h3>Modell veröffentlichen</h3><p>Ein Leitmodell oder Tier-Sieger wird als feste lokale Modellversion mit allen Daten neu trainiert, für die Zielwerte vorliegen.</p></article>
+          <article><span>03</span><h3>Preflight für neue Daten</h3><p>Vor der Anwendung prüft der Preflight Spalten, Zeitverlauf, Merkmale und neue Geräte.</p></article>
+          <article><span>04</span><h3>Passende Auswertung</h3><p>Jedes Szenario zeigt für den neuen Batch passende Kurven, Zustände, Warnbereiche und Regeln.</p></article>
+          <article><span>05</span><h3>Getrennte Berichte</h3><p>Testprognosen und Evaluationsbericht sind von Anwendungsvorhersagen und Anwendungsbericht getrennt.</p></article>
         </div>
 
         <div class="motivation-grid" aria-label="Begründung des Plattformansatzes">
-          <article><span>01</span><h3>Datenqualität vor Modellwahl</h3><p>Fehlende Werte, Zielspalten, Zeitfenster und Szenariopassung entscheiden darüber, ob ein Modelllauf aussagekräftig ist.</p></article>
-          <article><span>02</span><h3>Algorithmus-Mapping statt Modellliste</h3><p>Modelle werden nach Analyseziel, Datenanforderung, Komplexität und Erklärbarkeit den vier Szenarien zugeordnet.</p></article>
-          <article><span>03</span><h3>Entscheidungsunterstützung</h3><p>Neben Metriken zeigt die Plattform Zeitverläufe, Risikobereiche, Erklärungsgrundlagen und fachlich einzuordnende Hinweise.</p></article>
-          <article><span>04</span><h3>Wirtschaftsinformatik-Perspektive</h3><p>Der Prototyp verbindet ML-Verfahren mit Prozesslogik, Benutzungsoberfläche, Persistenz und nachvollziehbarer Evidenz.</p></article>
+          <article><span>01</span><h3>Datenqualität vor Modellwahl</h3><p>Fehlende Werte, Zielspalten, Zeitfenster und die Eignung für das gewählte Szenario entscheiden darüber, ob ein Modelllauf aussagekräftig ist.</p></article>
+          <article><span>02</span><h3>Modelle passend zur Aufgabe</h3><p>Analyseziel, Datenbedarf, Komplexität und Erklärbarkeit bestimmen, welche Modelle zu einem Szenario passen.</p></article>
+          <article><span>03</span><h3>Entscheidungsunterstützung</h3><p>Neben Kennzahlen zeigt die Plattform Zeitverläufe, Risikobereiche, wichtige Merkmale und Hinweise für die fachliche Einordnung.</p></article>
+          <article><span>04</span><h3>Wirtschaftsinformatik-Perspektive</h3><p>Der Prototyp bringt ML-Verfahren, Arbeitsablauf, Oberfläche und lokale Speicherung in einer Anwendung zusammen. Ergebnisse bleiben ihrem Ursprung zugeordnet.</p></article>
         </div>
       </section>
 
@@ -82,12 +74,12 @@
         <div class="section-head">
           <div>
             <p class="section-label">Systemdesign und Prozesslogik</p>
-            <h2>Bewertung und Anwendung bleiben fachlich klar getrennt.</h2>
+            <h2>Modellbewertung und neue Daten sind 2 getrennte Schritte.</h2>
           </div>
           <p>
-            Vue führt durch den Ablauf; FastAPI, SQLite, lokale CSV-Dateien und kontrollierte joblib-Artefakte tragen
-            Daten, ETL, Experimente, Modellversionen und Batch-Inferenz. Die Geschäftslogik und Ereignisse entstehen im
-            Backend, nicht in den Visualisierungen.
+            Die Oberfläche läuft in Vue. FastAPI verarbeitet Daten, ETL, Experimente, Modellversionen und neue Batches;
+            SQLite, CSV und joblib speichern die zugehörigen Daten lokal. Ereignisse und Handlungshinweise berechnet das
+            Backend. Die Grafiken zeigen diese Ergebnisse nur an.
           </p>
         </div>
 
@@ -96,21 +88,21 @@
             <p class="step-label">Bewertungsebene</p>
             <h3>Results: Test Holdout</h3>
             <p>Validation wählt den Kandidaten. Results zeigt danach unabhängige Testmetriken, Datenqualität, Feature-Importance und passende Diagnostik.</p>
-            <ul><li>Chronologisch getrennter Testbereich</li><li>Aufgabengerechte Modell- und Fehlerdiagnostik</li><li>Test Predictions und Evaluationsbericht</li></ul>
+            <ul><li>Eigener Testbereich; zeitliche Grenzen prüfen</li><li>Aufgabengerechte Modell- und Fehlerdiagnostik</li><li>Test Predictions und Evaluationsbericht</li></ul>
           </article>
           <article class="contract-card contract-card-emphasis">
             <p class="step-label">Anwendungsebene</p>
             <h3>Anwendung: neuer Batch</h3>
-            <p>Eine veröffentlichte Version verarbeitet vollständige neue Daten und erzeugt eine regelgebundene, szenariospezifische Anwendungsausgabe.</p>
-            <ul><li>Modellversion, Eingabedaten und Regeln nachvollziehbar</li><li>Cold Starts und Preflight sichtbar</li><li>Anwendungsvorhersagen und eigener Bericht</li></ul>
+            <p>Eine veröffentlichte Version verarbeitet den gesamten neuen Batch. Regeln des gewählten Szenarios bestimmen die Darstellung und die Handlungsfenster.</p>
+            <ul><li>Modellversion, Eingabedaten und verwendete Regeln</li><li>Preflight und neue Geräte als Cold Starts</li><li>Anwendungsvorhersagen und eigener Bericht</li></ul>
           </article>
         </div>
 
         <div class="system-grid" aria-label="Systemarchitektur der Plattform">
-          <article><span>01</span><h3>Browser und Vue UI</h3><p>Die deutschsprachige Oberfläche organisiert elf Arbeitsbereiche vom Datensatz bis zur Anwendung und Forschungseinordnung.</p></article>
-          <article><span>02</span><h3>FastAPI Backend</h3><p>API-Routen prüfen Sitzungen und Eingaben und verbinden die Oberfläche mit Daten-, Analyse- und Berichtsfunktionen.</p></article>
-          <article><span>03</span><h3>Services und Hintergrundaufgaben</h3><p>Fusion, Feature Engineering, Modellvergleich, Veröffentlichung und Batch-Analyse werden zentral im Backend ausgeführt.</p></article>
-          <article><span>04</span><h3>SQLite und lokale Artefakte</h3><p>Metadaten, Datensätze, Experimente, Modellversionen und Analyseausgaben bleiben lokal und nachvollziehbar gespeichert.</p></article>
+          <article><span>01</span><h3>Oberfläche</h3><p>Vue organisiert 11 deutschsprachige Arbeitsbereiche vom Datensatz bis zur Anwendung und Forschungseinordnung.</p></article>
+          <article><span>02</span><h3>FastAPI-Backend</h3><p>FastAPI prüft Sitzungen und Eingaben und stellt Daten-, Analyse- und Berichtsfunktionen bereit.</p></article>
+          <article><span>03</span><h3>Analyse im Backend</h3><p>Das Backend führt Fusion, Feature Engineering, Modellvergleich, Veröffentlichung und Batch-Analyse aus.</p></article>
+          <article><span>04</span><h3>Lokale Speicherung</h3><p>SQLite verwaltet Metadaten. CSV- und joblib-Dateien speichern Datensätze, Modellversionen und Analyseausgaben.</p></article>
           <article><span>05</span><h3>Ergebnisse und Export</h3><p>Oberfläche, CSV und HTML-Berichte verwenden dieselben Ergebnisse für eine konsistente Darstellung.</p></article>
         </div>
 
@@ -129,25 +121,25 @@
         <div class="section-head">
           <div>
             <p class="section-label">Algorithmus-Mapping</p>
-            <h2>Eine Verbindung zwischen operativem Problem, ML-Aufgabe und Anwendungsausgabe.</h2>
+            <h2>So führt die Plattform vom praktischen Problem zum passenden ML-Verfahren.</h2>
           </div>
           <p>
-            Literatur liefert Kontext für Aufgaben und Methodenfamilien. Die Matrix zeigt die in der Plattform
-            verfügbaren Modellkandidaten. Der Benchmark liefert die Leistungsevidenz für den konkreten Daten-, Split- und
-            Kandidatenkontext. Diese drei Ebenen sind bewusst nicht austauschbar.
+            Literatur erklärt den Hintergrund der Szenarien und Methodenfamilien. Die Matrix nennt die Modelle, die in
+            der Plattform verfügbar sind. Der Benchmark vergleicht sie für den gewählten Datensatz und Split. Jede Ebene
+            beantwortet eine andere Frage.
           </p>
         </div>
 
-        <ol class="mapping-layers" aria-label="Sechsstufige Algorithmus-Mapping-Kette">
+        <ol class="mapping-layers" aria-label="6-stufige Algorithmus-Mapping-Kette">
           <li><span>01</span><strong>Operatives Problem</strong><small>Lebensdauer, Zustandskenntnis, Abweichung oder Effizienzlücke</small></li>
           <li><span>02</span><strong>Abstrakte Aufgabe</strong><small>RUL-Regression, Mehrklassen, One-Class oder Score-Regression</small></li>
           <li><span>03</span><strong>Daten und Features</strong><small>Tabellarische CSV-Zeitreihen, Asset, numerische Sensorwerte, ETL-Features</small></li>
           <li><span>04</span><strong>Kandidatenfamilien</strong><small>Linear, Ensemble, Kernel, Neighbourhood, statistisch oder One-Class</small></li>
           <li><span>05</span><strong>Evaluation</strong><small>Validation/Test mit RMSE, Macro-F1 oder Average Precision</small></li>
-          <li><span>06</span><strong>Anwendung</strong><small>Batch-Kurven, Risikofenster, Ereignisse und nachvollziehbarer Export</small></li>
+          <li><span>06</span><strong>Anwendung</strong><small>Batch-Kurven, Risikofenster, Ereignisse und getrennte Exporte</small></li>
         </ol>
 
-        <div class="scenario-map" aria-label="Vier Szenarien entlang der Mapping-Kette">
+        <div class="scenario-map" aria-label="4 Szenarien entlang der Mapping-Kette">
           <article><h3>Vorausschauende Wartung</h3><p>Asset-Lebensdauer</p><strong>RUL-Regression · RMSE</strong><small>RUL-Kurve und Wartungsrisikofenster</small></article>
           <article><h3>Zustandsüberwachung</h3><p>Inspektions- und Aufarbeitungspriorität</p><strong>Mehrklassen · Macro-F1</strong><small>Zustandsband, Segmente und Übergänge</small></article>
           <article><h3>Anomalieerkennung</h3><p>Vermeidung von Fehlern und Ausschuss</p><strong>One-Class · Average Precision</strong><small>Score, feste Grenze und Ereigniscluster</small></article>
@@ -155,21 +147,29 @@
         </div>
 
         <p class="boundary-note">
-          Der Forschungsbereich verweist auf kuratierte DOI-Quellen und kennzeichnet, ob eine Quelle den Szenariokontext,
-          eine Methodenfamilie oder ein bestimmtes Modell stützt. Bild-, Wellenform-, Hochspektral- und DPP-Daten liegen
-          außerhalb des tabellarischen Sensordatenfokus dieser Plattform.
+          Im Forschungsbereich ist jeder Quelle mit DOI ein klarer Geltungsbereich zugeordnet: Szenario, Methodenfamilie
+          oder bestimmtes Modell. Die Plattform arbeitet mit tabellarischen Sensordaten. Bilder, Audiowellenformen,
+          hyperspektrale Daten und Daten aus digitalen Produktpässen (DPP) werden nicht verarbeitet.
         </p>
+        <div class="mapping-teaser">
+          <p class="step-label">Literaturbestand und Auswahlweg</p>
+          <h3>85 Recherchehinweise. Ein Literaturatlas. Ein begründetes Plattform-Mapping.</h3>
+          <p>Der interaktive Literaturatlas verbindet Algorithmen, ihre Familien und Anwendungsfelder. Bildbezug und Quellenbasis lassen sich filtern. Das engere Plattform-Mapping verwendet 17 Bibliotheksquellen: neun bestehende Arbeiten und acht begrenzt aufgenommene Ergänzungen.</p>
+          <p>Literatur informiert die Auswahl; Aufgaben- und Datenbedingungen begrenzen die verfügbaren Modelle. Tier und Aufwand ergänzen die Entscheidung, Validation bestimmt den Leistungsgewinner. Danach folgen Test, Veröffentlichung und neue Batch-Anwendung.</p>
+          <a href="./nebula.html">02 · Literaturatlas mit 85 Hinweisen erkunden →</a>
+          <a href="./mapping.html">03 · Plattform-Mapping und Evidenztabelle öffnen →</a>
+        </div>
       </section>
 
       <section class="chapter chapter-dark" id="workflow">
         <div class="section-head">
           <div>
             <p class="section-label">Oberfläche und Prozess</p>
-            <h2>Elf Tabs, fünf Arbeitsphasen und eine reale Plattformansicht pro Schritt.</h2>
+            <h2>11 Tabs führen durch 5 Arbeitsphasen.</h2>
           </div>
           <p>
-            Der Auswahlbereich führt durch die aktuelle Plattformoberfläche. Die elf Ansichten zeigen, welche Information
-            in jeder Phase verfügbar ist und wie der nächste Analyseschritt anschließt.
+            Die Ansichten werden mit synthetischen Daten in einer getrennten lokalen Umgebung erfasst.
+            Sie zeigen die aktuelle Oberfläche; sie belegen keine Leistung im Industriebetrieb.
           </p>
         </div>
 
@@ -206,8 +206,8 @@
             <figure><img data-workflow-image src="./assets/showcase-hero.png" alt="Übersicht der aktuellen Plattform" /></figure>
             <div class="workflow-copy">
               <p class="step-label" data-workflow-phase>Arbeitsbereich</p>
-              <h3 data-workflow-title>Die Übersicht hält Daten, Experimente und den nächsten Arbeitsschritt zusammen.</h3>
-              <p data-workflow-description>Die Startansicht zeigt den aktuellen lokalen Arbeitsbereich; sie ersetzt weder die Datenprüfung noch die Bewertung eines abgeschlossenen Experiments.</p>
+              <h3 data-workflow-title>Die Übersicht zeigt Daten, Experimente und offene Arbeitsschritte.</h3>
+              <p data-workflow-description>Die Startansicht fasst den lokalen Arbeitsstand zusammen und führt zum nächsten Schritt.</p>
               <p class="workflow-evidence" data-workflow-evidence>Übersicht: Arbeitsstatus und Einstieg in den Analysezyklus</p>
             </div>
           </div>
@@ -218,12 +218,12 @@
         <div class="section-head">
           <div>
             <p class="section-label">Anwendung auf neue Daten</p>
-            <h2>Die operative Darstellung beginnt erst nach Veröffentlichung und Preflight.</h2>
+            <h2>Nach Veröffentlichung und Preflight beginnt die Arbeit mit neuen Daten.</h2>
           </div>
           <p>
-            Die vier Ansichten zeigen veröffentlichte Modellversionen auf neuen, unmarkierten Beispieldaten. Jeder Batch
-            enthält auch ein zuvor unbekanntes Gerät, damit der Umgang mit Cold Starts sichtbar wird. Die Beispieldaten
-            demonstrieren den vollständigen Ablauf, ersetzen aber keine Validierung mit realen Industriedaten.
+            Die 4 Ansichten zeigen veröffentlichte Modellversionen auf neuen Beispieldaten ohne Zielspalte. Jeder Batch
+            enthält auch 1 unbekanntes Gerät, das als Cold Start gekennzeichnet wird. Die Beispieldaten zeigen, wie der
+            Ablauf funktioniert. Aussagen zur Leistung mit realen Industriedaten lassen sich daraus nicht ableiten.
           </p>
         </div>
 
@@ -231,67 +231,72 @@
           <figure><img src="./assets/showcase-application-preflight.png" alt="Anwendung mit Modellversion, neuem Batch und erfolgreichem Preflight" /></figure>
           <div>
             <p class="step-label">Preflight vor Inferenz</p>
-            <h3>Vor dem Start entsteht eine klare Kompatibilitätsbewertung.</h3>
-            <p>Pflichtmerkmale, vollständig leere Spalten und unzulässige Zeitanschlüsse werden abgelehnt. Zusätzliche Spalten werden dokumentiert; eine fehlende Zielspalte ist ausdrücklich zulässig.</p>
+            <h3>Der Preflight zeigt, ob die Daten zum Modell passen.</h3>
+            <p>Fehlende Pflichtmerkmale, vollständig leere Spalten und Zeitangaben, die nicht an die Trainingshistorie anschließen, werden abgelehnt. Zusätzliche Spalten werden dokumentiert; die Zielspalte darf fehlen. Der aktuelle Prototyp verlangt außerdem dieselbe Szenariozuordnung für Datensatz und Modellversion; passende Spalten allein reichen bei abweichender Zuordnung noch nicht aus.</p>
           </div>
         </div>
 
-        <div class="scenario-gallery" aria-label="Vier reale Anwendungsergebnisse">
+        <div class="scenario-gallery" aria-label="4 Anwendungsergebnisse mit Beispieldaten">
           <article><figure><img src="./assets/showcase-pm.png" alt="PM Anwendung mit RUL-Prognose und Wartungsrisikofenstern" /></figure><div><span>01 · PM</span><h3>RUL und Wartungsrisiko</h3><p>Restlebensdauer und kritische Risikofenster.</p></div></article>
           <article><figure><img src="./assets/showcase-cm.png" alt="CM Anwendung mit Zustandsband und anhaltenden Segmenten" /></figure><div><span>02 · CM</span><h3>Zustände und Übergänge</h3><p>Zustandsband, Dauer und Wechsel.</p></div></article>
           <article><figure><img src="./assets/showcase-ad.png" alt="AD Anwendung mit Anomaliescore und Ereignisclustern" /></figure><div><span>03 · AD</span><h3>Score und Abweichung</h3><p>Feste Grenze und zusammenhängende Ereignisse.</p></div></article>
           <article><figure><img src="./assets/showcase-eo.png" alt="EO Anwendung mit Effizienzschätzung und Zielabstand" /></figure><div><span>04 · EO</span><h3>Effizienz und Zielabstand</h3><p>Score, Lücke und Verschlechterungstrend.</p></div></article>
         </div>
-        <p class="boundary-note">Handlungsfenster beruhen auf konfigurierbaren, versionierten Regeln. Sie unterstützen die Interpretation, sind aber keine fachlich validierte Handlungsanweisung und müssen vor realer Nutzung von Domänenexpertinnen und -experten kalibriert werden.</p>
+        <p class="boundary-note">Handlungsfenster entstehen aus konfigurierbaren, gespeicherten Regeln. Vor einer realen Nutzung müssen Fachleute diese Regeln festlegen und prüfen. Die Hinweise sind keine automatisch freigegebenen Handlungsanweisungen.</p>
+        <div class="application-update-grid">
+          <article><p class="step-label">Anwendung · Signale</p><h3>Modellausgabe und Eingangssignale getrennt untersuchen.</h3><p>Zuerst ein Asset wählen, dann zwischen Ergebnis und numerischen Sensorspuren wechseln. Zusätzliche Kontextsignale sind als vom Modell ungenutzt gekennzeichnet. Zeitliche Überlagerung zeigt keine Kausalität.</p><figure><img src="./assets/showcase-application-signals.png" alt="Aktuelle Anwendung: Asset-Auswahl und synchronisierte Eingangssignale" /></figure></article>
+          <article><p class="step-label">Anwendung · Qualitätsprüfung</p><h3>Vorhersagen mit beobachteten Werten vergleichen.</h3><p>Liegen für einen neuen PM-Batch tatsächliche Zielwerte vor, zeigt die Anwendung nachträglich RMSE, MAE und R². Das Beispiel vergleicht 240 RUL-Vorhersagen mit beobachteter Restlebensdauer. Die Zielwerte ändern weder Vorhersagen noch Ereignisse. Der Rückblick-Batch ist für diese Prüfung vorgesehen, nicht für Training; diese Nutzungsgrenze wird derzeit noch nicht an jedem Einstieg technisch erzwungen.</p><figure><img src="./assets/showcase-application-observed.png" alt="PM-Anwendung: RMSE, MAE und R² aus 240 Vorhersagen mit beobachteter Restlebensdauer" /></figure></article>
+        </div>
       </section>
 
       <section class="chapter chapter-soft" id="evidence">
         <div class="section-head">
           <div>
-            <p class="section-label">Verifizierbarkeit und Erklärbarkeit</p>
-            <h2>Evaluationserklärbarkeit und Anwendungserklärbarkeit haben verschiedene Beweisaufgaben.</h2>
+            <p class="section-label">Überprüfbarkeit und Erklärung</p>
+            <h2>Results bewertet das Modell; Anwendung zeigt die Auswertung eines neuen Batches.</h2>
           </div>
           <p>
-            Das System zeigt nicht nur eine Zahl. Es hält fest, welche Daten, Split-Entscheidungen, Modellkandidaten,
-            Versionen und Regeln zu einer Ausgabe gehören. Dennoch ersetzt Rückverfolgbarkeit weder reale Validierung
-            noch fachliche Ursachenanalyse.
+            Zu jedem Ergebnis speichert das System Datenbasis, Split, Modellkandidat, Modellversion und verwendete Regeln.
+            So lässt sich die Herkunft einer Ausgabe prüfen. Ob sie unter realen Bedingungen fachlich richtig ist, muss
+            weiterhin mit Industriedaten und Fachwissen untersucht werden.
           </p>
         </div>
         <div class="explain-grid">
-          <article><p class="step-label">Test Holdout</p><h3>Modellbewertung erklären</h3><p>Results verknüpft Modell, Split-Evidenz, Validation- und Testmetriken, Datenqualität und Feature-Importance mit einer aufgabengerechten Diagnostik.</p><ul><li>Regression: Residuen und Ist-gegen-Prognose</li><li>Klassifikation: Confusion Matrix</li><li>Anomalie: Detektionsmetriken und Score-Diagnostik</li></ul></article>
-          <article><p class="step-label">Neuer Batch</p><h3>Anwendung erklären</h3><p>Anwendung verknüpft Modellversion, Eingabedatensatz, Preflight, Regelversion, Cold Starts, Kurven, Ereignisse und unabhängige Exporte.</p><ul><li>Ansicht, CSV und HTML zeigen dieselben Ereignisse</li><li>Optional vorhandene Zielwerte dienen nur der nachträglichen Qualitätskontrolle</li><li>Sie beeinflussen weder Vorhersage noch Regel</li></ul></article>
+          <article><p class="step-label">Test Holdout</p><h3>Modellbewertung erklären</h3><p>Results zeigt, welches Modell bewertet wurde, auf welchem Split die Kennzahlen beruhen und welche Merkmale das Modell am stärksten berücksichtigt hat. Für jede Aufgabe kommt eine passende Diagnose hinzu.</p><ul><li>Regression: Residuen und Ist-gegen-Prognose</li><li>Klassifikation: Confusion Matrix</li><li>Anomalie: Detektionsmetriken und Score-Diagnostik</li></ul></article>
+          <article><p class="step-label">Neuer Batch</p><h3>Anwendung erklären</h3><p>Bei jedem Anwendungslauf sind Modellversion, Eingabedatensatz, Preflight und verwendete Regeln zu sehen. Die Seite kennzeichnet Cold Starts und zeigt Kurven, Ereignisse und eigene Exporte.</p><ul><li>Ansicht, CSV und HTML zeigen dieselben Ereignisse</li><li>Optional vorhandene Zielwerte dienen nur der nachträglichen Qualitätskontrolle</li><li>Sie verändern weder Vorhersage noch Regeln</li></ul></article>
         </div>
 
         <div class="evidence-chain" aria-label="Nachvollziehbarkeit entlang des Analyseprozesses">
-          <article><span>Daten</span><h3>Herkunft und Trainierbarkeit</h3><p>Datensatz, Bundle, Zielspalte, numerische Merkmale und Warnungen werden vor dem Training sichtbar.</p></article>
-          <article><span>ETL</span><h3>Zeitfenster und Features</h3><p>Train-, Validation- und Testbereiche bleiben getrennt, damit Metriken auf den richtigen Zeitraum bezogen werden.</p></article>
-          <article><span>Modell</span><h3>Baseline bis Spezialmodell</h3><p>Benchmark, Leitmetrik und Modellprofil begründen die Auswahl innerhalb des geprüften Kandidatenfelds.</p></article>
-          <article><span>Ergebnis</span><h3>Evaluation und Anwendung getrennt</h3><p>Testdiagnostik bewertet das Modell; neue Batch-Ergebnisse tragen Zeitverlauf, Regeln, Ereignisse und einen eigenen Export.</p></article>
+          <article><span>Daten</span><h3>Herkunft und Trainierbarkeit</h3><p>Vor dem Training prüft die Plattform Datensatz, Bundle, Zielspalte, numerische Merkmale und Warnungen.</p></article>
+          <article><span>ETL</span><h3>Zeitfenster und Features</h3><p>Training, Validation und Test haben getrennte Rollen. Bei zu wenigen unterschiedlichen Zeitstempeln ist die zeitliche Trennung noch nicht zuverlässig abgesichert.</p></article>
+          <article><span>Modell</span><h3>Verglichene Modelle</h3><p>Benchmark, Hauptmetrik und Modellprofil begründen die Auswahl innerhalb der geprüften Kandidaten.</p></article>
+          <article><span>Ergebnis</span><h3>Evaluation und Anwendung getrennt</h3><p>Die Testdiagnostik bewertet das Modell. Ergebnisse für neue Batches enthalten Zeitverlauf, Regeln, Ereignisse und einen eigenen Export.</p></article>
         </div>
       </section>
 
       <section class="chapter" id="status">
         <div class="section-head">
-          <div><p class="section-label">Projektstand</p><h2>DSR-Prototyp mit geschlossenem Offline- und Entscheidungszyklus.</h2></div>
-          <p>Das Artefakt validiert die Verbindung von Algorithmus-Mapping, Offline-Evaluation und lokaler Entscheidungsunterstützung. Die technische Demonstration ist nicht mit wissenschaftlicher Außenvalidität oder Produktionsreife gleichzusetzen.</p>
+          <div><p class="section-label">Projektstand</p><h2>DSR-Prototyp mit einem durchgängigen Offline-Ablauf.</h2></div>
+          <p>Der Prototyp verbindet Algorithmus-Mapping, Offline-Evaluation und lokale Entscheidungsunterstützung. Er wurde noch nicht mit realen Industriedaten validiert und ist nicht produktionsreif.</p>
         </div>
         <div class="dsr-grid" aria-label="Design-Science-Research-Prozess">
-          <article><span>01 · Abgeschlossen</span><h3>Problemidentifikation</h3><p>ML in der Kreislaufwirtschaft benötigt nachvollziehbare Daten-, Methoden- und Ergebnislogik statt isolierter Modellskripte.</p></article>
+          <article><span>01 · Abgeschlossen</span><h3>Problemidentifikation</h3><p>Für ML in der Kreislaufwirtschaft müssen Daten, Methoden und Ergebnisse in einem gemeinsamen Ablauf zusammenkommen.</p></article>
           <article><span>02 · Abgeschlossen</span><h3>Zieldefinition</h3><p>Ziel ist eine lokale Plattform für Sensordaten, ETL, Algorithmus-Mapping, Modellvergleich, Anwendung und Export.</p></article>
-          <article><span>03 · Artefakt vorhanden</span><h3>Design und Entwicklung</h3><p>Backend, Frontend, lokale Persistenz, vier Szenarien, Modellbibliothek, Mapping und Berichte sind umgesetzt.</p></article>
-          <article><span>04 · Demonstriert</span><h3>Demonstration</h3><p>Beispieldaten und durchgängige Abläufe zeigen Evaluation, Veröffentlichung und Anwendung im vorgesehenen Nutzungskontext.</p></article>
+          <article><span>03 · Prototyp vorhanden</span><h3>Design und Entwicklung</h3><p>Backend, Frontend, lokale Speicherung, 4 Szenarien, Modellbibliothek, Mapping und Berichte sind umgesetzt.</p></article>
+          <article><span>04 · Demonstriert</span><h3>Demonstration</h3><p>Beispieldaten durchlaufen Evaluation, Veröffentlichung und Anwendung innerhalb des Prototyps.</p></article>
           <article><span>05 · In Durchführung</span><h3>Evaluation</h3><p>Technische Prüfungen liegen vor; Nutzerbefragung, Expertenreview und Validierung mit realen Industriedaten stehen noch aus.</p></article>
-          <article><span>06 · In Vorbereitung</span><h3>Kommunikation</h3><p>Showcase, Dokumentation und exportierbare Berichte unterstützen die wissenschaftliche Einordnung des Artefakts.</p></article>
+          <article><span>06 · In Arbeit</span><h3>Kommunikation</h3><p>Showcase, Dokumentation und exportierbare Berichte halten Aufbau, Ergebnisse und Grenzen des Prototyps fest.</p></article>
         </div>
         <p class="dsr-loop"><span>Evaluation</span><strong>Nutzerfeedback, Expertenwissen und reale Daten fließen in die Weiterentwicklung zurück.</strong><span>Iteration</span></p>
         <div class="status-grid">
-          <article><h3>Umgesetzt</h3><ul><li>Datenverwaltung, Fusion, ETL und chronologische Test-Evaluation.</li><li>Vier Szenarien, Benchmark, Tier/Leitmodell und versionierte Veröffentlichung.</li><li>Schema- und Zeitpreflight, Cold Starts, Batch-Inferenz und getrennte Exporte.</li><li>Nachvollziehbare Modell-, Daten- und Ergebnisprovenienz.</li></ul></article>
-          <article><h3>Noch offen</h3><ul><li>Codierte Literatur-Evidenztabelle mit Suchprotokoll und Auswahlgründen.</li><li>Vollständige Validierung mit realen industriellen Folgebatches und Drift.</li><li>SUS, Projektdiagnose und Expertenreview als getrennte tatsächliche Erhebungen.</li><li>Domänenreview der Regeln und operativen Proxies.</li></ul></article>
-          <article><h3>Nächste Industrialisierungsstufe</h3><ul><li>TimescaleDB-basierte Zeitdatenarchitektur statt der heutigen SQLite-/CSV-Persistenz.</li><li>Native PyTorch-Modelle erst nach realer Zeitreihenvalidierung gegen die klassischen Baselines prüfen.</li><li>Dynamische gewichtete Empfehlungsengine mit sichtbaren fachlichen Gewichten, getrennt vom Validation-Gewinner.</li></ul></article>
+          <article><h3>Umgesetzt</h3><ul><li>Datenverwaltung, Fusion, ETL und getrennte Validation-/Test-Evaluation.</li><li>4 Szenarien, Benchmark, Tier/Leitmodell und versionierte Veröffentlichung.</li><li>Schema- und Zeitpreflight, Cold Starts, Batch-Inferenz und getrennte Exporte.</li><li>Assetbezogene Modell-/Signalansichten und geschützte Modellverwaltung.</li></ul></article>
+          <article><h3>Noch offen</h3><ul><li>Eine systematische Literaturübersicht mit dokumentierter Suche und Auswahl.</li><li>Prüfung mit echten Folgebatches aus Industriebetrieben und veränderten Datenmustern.</li><li>Getrennte Durchführung von SUS, Projektfragebogen und Expertenreview.</li><li>Fachliche Prüfung der Regeln, Schwellenwerte und operativen Kennzahlen.</li></ul></article>
+          <article><h3>Forschung und spätere Erweiterung</h3><ul><li>Volltextcodierung und explorative semantische Analyse der Literatur; noch kein durchgeführtes Clustering.</li><li>Transparente Filter anhand von Datenprofilen sowie Drift- und Unsicherheitsprüfung.</li><li>Agent-Unterstützung, native Sequenzmodelle, kontinuierliche Datenzufuhr und MLOps erst bei erweitertem Forschungsumfang.</li></ul></article>
         </div>
-        <div class="evaluation-callout"><div><p class="step-label">Vorbereitete Evaluation</p><h3>SUS-DE-Pos und 14 projektspezifische Fragen bleiben getrennte Instrumente.</h3><p>Die öffentliche Seite zeigt den siebenstufigen Aufgabenpfad und beide Fragebögen, sammelt aber keine Antworten.</p></div><a class="primary-action" href="./evaluation.html">Zur Evaluation</a></div>
+        <div class="evaluation-callout"><div><p class="step-label">Vorbereitete Evaluation</p><h3>SUS-DE-Pos und 14 projektspezifische Fragen werden getrennt ausgewertet.</h3><p>Die öffentliche Seite zeigt den 7-stufigen Aufgabenpfad und 2 Fragebögen. Antworten werden nicht gespeichert.</p></div><a class="primary-action" href="./evaluation.html">Zur Evaluation</a></div>
       </section>
     </main>
+<nav class="page-sequence" aria-label="Weiter durch das Showcase"><a href="#top">↑ Zum Seitenanfang</a><a href="./nebula.html">Weiter: 02 Literaturatlas →</a></nav>
     <a class="back-to-top" href="#top" aria-label="Zur Kopfzeile zurück" title="Zur Übersicht">↑</a>
     <footer class="site-footer"><strong>Circular Economy Analytics Hub</strong><span>Machine Learning in der Kreislaufwirtschaft · Algorithmus-Mapping · Sensordatenanalyse-Prototyp</span></footer>
     <script src="./assets/site.js"></script>

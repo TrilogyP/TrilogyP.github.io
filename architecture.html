@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Die Architektur von CEAH: Vue, FastAPI, lokale Datenhaltung und nachvollziehbare Verträge vom Benchmark bis zur Batch-Anwendung." />
+  <title>Technische Architektur · CEAH</title>
+  <link rel="icon" href="data:," />
+  <link rel="stylesheet" href="./assets/site.css" />
+  <link rel="stylesheet" href="./assets/architecture.css" />
+</head>
+<body class="architecture-page">
+  <header class="site-nav" aria-label="Hauptnavigation">
+    <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">CEAH</span><span>Circular Economy Analytics Hub</span></a>
+    <nav class="nav-links" aria-label="Seitenfolge"><a href="./index.html">01 Plattform</a><a href="./nebula.html">02 Literaturatlas</a><a href="./mapping.html">03 Plattform-Mapping</a><a href="./architecture.html" aria-current="page">04 Architektur</a><a href="./evaluation.html">05 Evaluation</a></nav>
+  </header>
+  <nav class="section-nav" aria-label="Auf dieser Seite"><span>04 / 05 · Architektur</span><a href="#system">System</a><a href="#logic">Geschäftslogik</a><a href="#defenses">Schutzmechanismen</a><a href="#choices">Entscheidungen</a><a href="#evolution">Entwicklung</a></nav>
+  <main id="top">
+    <section class="arch-intro arch-width">
+      <p class="eyebrow">Technische Architektur · Lokaler Forschungsprototyp</p>
+      <h1>Klare Verantwortungen.<br>Nachvollziehbare Ergebnisse.</h1>
+      <p class="arch-lead">Vue führt durch den Arbeitsablauf. FastAPI prüft Eingaben, berechnet Ergebnisse und speichert ihre Herkunft. Evaluation und Anwendung bleiben getrennt – vom Datenvertrag bis zum Export.</p>
+      <div class="arch-tags"><span>Vue 3 + TypeScript</span><span>FastAPI + Pydantic</span><span>pandas + scikit-learn</span><span>SQLite + CSV + Joblib</span></div>
+    </section>
+
+    <section class="arch-section" id="system">
+      <div class="arch-width">
+        <p class="eyebrow">01 / Systemaufbau</p><h2>Getrennte Aufgaben.<br>Ein lokales System.</h2>
+        <p>Frontend und Backend sind fachlich getrennt. Im lokalen Standardbetrieb liefert FastAPI auch das gebaute Vue-Frontend aus. Im Entwicklungsbetrieb leitet Vite API-Anfragen an FastAPI weiter. Die Trennung erfordert keine Microservices.</p>
+        <figure class="arch-diagram" aria-labelledby="architecture-caption">
+          <div class="arch-layer"><span>Browser</span><div><h3>Vue 3 · TypeScript · Vue Router</h3><p>Auswahl, Diagramme, Zustandsanzeige und Polling. Die Oberfläche konsumiert gespeicherte Backend-Verträge.</p></div></div>
+          <div class="arch-connector">↓ HTTP / JSON · Session-Cookie ↑</div>
+          <div class="arch-layer arch-layer-api"><span>API</span><div><h3>FastAPI · Pydantic</h3><p>Authentifizierung, benutzerbezogene Zugriffe, Parameter- und Antwortschemas unter <code>/api</code>.</p></div></div>
+          <div class="arch-connector">↓ validierte Aufträge · gespeicherte Ergebnisse ↑</div>
+          <div class="arch-layer"><span>Services</span><div><h3>Daten → ETL → Benchmark → Veröffentlichung → Anwendung</h3><p>Modellregistrierung, Merkmalsvertrag, Auswahlmetrik, Preflight, Ereignisbildung und Export liegen im Backend.</p></div></div>
+          <div class="arch-storage"><article><h3>SQLAlchemy / SQLite</h3><p>Sessions, Metadaten, Beziehungen, Status, Kennzahlen und Versionen.</p></article><article><h3>CSV / Joblib</h3><p>Daten und Vorhersagen als CSV; lokal erzeugte Modellpakete mit Manifest und Prüfsumme.</p></article><article><h3>ThreadPoolExecutor</h3><p>Training, Veröffentlichungs-Refit und Batch-Inferenz im Serverprozess.</p></article></div>
+          <figcaption id="architecture-caption">Schematische Darstellung der Implementierung. ETL-Vorschau, ETL- und Bundle-Materialisierung laufen synchron im Request; sie sind keine persistenten Queue-Jobs.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="arch-section arch-soft" id="logic">
+      <div class="arch-width">
+        <p class="eyebrow">02 / Backend-Geschäftslogik</p><h2>Vom Datensatz zum<br>versionierten Ergebnis.</h2>
+        <ol class="arch-flow">
+          <li><span>01 · Datenvertrag</span><h3>Import und Fusion</h3><p>CSV registrieren, Schema prüfen, Quellenrollen zuordnen und die Bundle-Materialisierung nachvollziehbar speichern.</p></li>
+          <li><span>02 · Merkmale</span><h3>ETL und Split</h3><p>Rolling-, Delta- und Kalendermerkmale bilden. Gelernte Vorverarbeitung verwendet im Evaluationspfad Trainingsstatistiken. Zeitgrenzen müssen gültig sein.</p></li>
+          <li><span>03 · Auswahl</span><h3>Validation-Benchmark</h3><p>Registrierte Kandidaten vergleichen: RMSE für PM/EO, Macro-F1 für CM, Average Precision für AD. Ein fehlgeschlagener Kandidat erhält einen Fehlerstatus.</p></li>
+          <li><span>04 · Evaluation</span><h3>Test Holdout</h3><p>Results und Evaluationsexport berichten den getrennten Test. <code>model_evaluation / test_holdout</code> enthält keine operativen Handlungsereignisse.</p></li>
+          <li><span>05 · Veröffentlichung</span><h3>Explizites Refit</h3><p>Ein zulässiger Gewinner wird auf allen markierten Daten neu trainiert. Seine Anwendungsversion bewahrt die ursprüngliche Validation-/Test-Evidenz.</p></li>
+          <li><span>06 · Anwendung</span><h3>Neuer Batch</h3><p>Preflight prüft den eingefrorenen Merkmalsvertrag. <code>inference_v1</code> liefert Vorhersagen und einmalig berechnete Ereignisse an UI, CSV und HTML.</p></li>
+        </ol>
+        <div class="arch-gallery">
+          <figure><img src="./assets/showcase-benchmark.png" alt="Aktueller Benchmark mit Kandidatenvergleich und Modellprofilen" loading="lazy" /><figcaption>Benchmark: modellbezogene Ergebnisse aus einem isolierten synthetischen Lauf. Tier beschreibt Nutzungsbedingungen, keine Leistungsklasse.</figcaption></figure>
+          <figure><img src="./assets/showcase-application-preflight.png" alt="Anwendung mit Modellversion und erfolgreicher Prüfung eines neuen Batch" loading="lazy" /><figcaption>Anwendung: Modellversion, Batch und Preflight. Ein bestandener technischer Check belegt keine fachliche oder industrielle Eignung.</figcaption></figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="arch-section" id="defenses">
+      <div class="arch-width">
+        <p class="eyebrow">03 / Defensive Umsetzung</p><h2>Prüfen, begrenzen,<br>Fehler sichtbar halten.</h2>
+        <p>Die Schutzmechanismen adressieren konkrete Fehlerklassen. Öffnen Sie einen Bereich für Wirkung, Implementierung und verbleibende Grenze.</p>
+        <div class="arch-defenses">
+          <details open><summary>Zugriff und Eingaben</summary><p>Serverseitige Sessions mit HttpOnly-Cookie, Passwortprüfung gegen gespeicherte Hashes und Eigentümerprüfungen schützen benutzerbezogene Ressourcen. Pydantic prüft API-Strukturen; Upload- und Datenservices prüfen fachliche Eingaben. Selbstregistrierung ist deaktiviert.</p><p class="arch-limit">Grenze: vorkonfigurierte lokale Konten und ein lokaler Forschungsbetrieb; kein Nachweis einer gehärteten Mehrmandantenplattform.</p><p class="arch-source">Code: <code title="Modul im lokalen Forschungsartefakt">security.py</code>, <code title="Modul im lokalen Forschungsartefakt">auth_service.py</code>, <code title="Modul im lokalen Forschungsartefakt">application_service.py</code></p></details>
+          <details><summary>Evaluation und Datenleckage</summary><p>Validation bestimmt den Gewinner; Test bleibt getrennte Bewertung. Imputation wird aus dem Trainingsfenster gelernt. Veröffentlichung erzeugt ein separates Refit-Modell und überschreibt keine Testkennzahlen. Optionale Zielwerte im neuen Batch erzeugen nur nachträgliche <code>observed_metrics</code>.</p><p class="arch-limit">Offene Grenze: Bei degenerierten Zeitstempeln kann ETL auf Zeilenpositionen zurückfallen und trotzdem <code>chronological_fixed</code> melden. Ein akzeptierter Datensatz garantiert deshalb nicht automatisch echte zeitliche Trennung.</p><p class="arch-source">Code: <code title="Modul im lokalen Forschungsartefakt">etl.py</code>, <code title="Modul im lokalen Forschungsartefakt">application_executor.py</code></p></details>
+          <details><summary>Modellartefakte und Versionswechsel</summary><p>Vor dem Joblib-Laden werden Ready-Status, kontrollierter Pfad, Dateiexistenz und SHA-256 geprüft; Vertragsinhalt und Artefakt-ID erst nach der Deserialisierung. Neue Dateien entstehen temporär und werden mit <code>os.replace</code> ersetzt. Erst ein erfolgreicher Aufbau aktiviert eine neue Standardversion unter einem prozesslokalen Lock.</p><p class="arch-limit">Grenze: vertrauenswürdige lokal erzeugte Dateien und Metadaten bleiben Voraussetzung. Prüfsummen machen fremde Joblib-Dateien nicht sicher. Dateisystem und SQLite bilden keine gemeinsame verteilte Transaktion.</p><p class="arch-source">Code: <code title="Modul im lokalen Forschungsartefakt">application_executor.py</code></p></details>
+          <details><summary>Batch-Kompatibilität und Herkunft</summary><p>Preflight prüft Zeit-/Gerätespalten, Merkmale, Typen und Zeitfortsetzung bekannter Geräte. Unbekannte Geräte werden als Cold Start markiert. Eingabeprüfsummen erkennen Änderungen während des Einlesens. Modellversion und Regelsnapshot bleiben mit dem Anwendungslauf verbunden.</p><p class="arch-limit">Offene Grenzen: Die API blockiert abweichende Szenariometadaten derzeit vor dem technischen Preflight. Die Trainingsrolle eines beschrifteten Anwendungs-Presets wird noch nicht an jedem Einstieg erzwungen. Schema-Kompatibilität erkennt zudem keine beliebige fachliche Drift.</p><p class="arch-source">Code: <code title="Modul im lokalen Forschungsartefakt">application_features.py</code>, <code title="Modul im lokalen Forschungsartefakt">experiment_service.py</code></p></details>
+          <details><summary>Fehler, Neustart und Löschung</summary><p>Kandidatenfehler werden im Benchmark protokolliert. Jobfehler führen zu Rollback, Aufräumen partieller Ausgaben und gespeichertem Fehlerstatus. Beim Start werden unterbrochene Anwendungsläufe und Modellaufbauten erkannt. Referenzierte Modellversionen und Versionen im Aufbau sind vor Löschung geschützt.</p><p class="arch-limit">Grenze: Die Jobs leben im Serverprozess. Neustarterkennung ist kein automatischer Wiederanlauf und keine dauerhafte verteilte Queue. Eine neue Standardversion ersetzt die bisherige erst nach erfolgreichem Aufbau.</p><p class="arch-source">Code: <code title="Modul im lokalen Forschungsartefakt">experiment_executor.py</code>, <code title="Modul im lokalen Forschungsartefakt">application_service.py</code>, <code title="Modul im lokalen Forschungsartefakt">application_executor.py</code></p></details>
+          <details><summary>Ein Ergebnisvertrag für Oberfläche und Export</summary><p>Das Backend erzeugt die kanonischen <code>action_events</code> der Anwendung einmal. Oberfläche, Inferenz-CSV und HTML-Bericht verwenden denselben gespeicherten Lauf. Die Zeitreihen-API ändert nur die Ansicht, nicht Modellentscheidung oder Ereignisse.</p><p class="arch-limit">Grenze: Vertragstests prüfen Softwarekonsistenz. Sie bestätigen weder industrielle Schwellenwerte noch einen kausalen Nutzen der vorgeschlagenen Handlungsfenster.</p><p class="arch-source">Code: <code title="Modul im lokalen Forschungsartefakt">scenario_results.py</code>, <code title="Modul im lokalen Forschungsartefakt">export_service.py</code></p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="arch-section arch-soft" id="choices">
+      <div class="arch-width"><p class="eyebrow">04 / Technische Entscheidungen</p><h2>Passend zum Forschungsziel.</h2><p>Die Architektur priorisiert lokale Reproduzierbarkeit, sichtbare Zwischenergebnisse und überprüfbare Verträge. Daraus entstehen konkrete Vorteile und bewusst begrenzte Einsatzbedingungen.</p>
+        <div class="arch-decisions">
+          <article><h3>Vue + TypeScript</h3><p>Komponenten und typisierte API-Daten trennen Interaktion von ML-Logik. Mehrstufige Auswahl und Ergebnisansichten lassen sich gezielt testen.</p><p class="arch-limit">Aufwand: Build-Werkzeuge und die Synchronisierung von TypeScript- und Backend-Schemas.</p></article>
+          <article><h3>FastAPI + Services</h3><p>HTTP-Verträge und Geschäftslogik bleiben getrennt. Python ermöglicht direkte Nutzung von pandas und scikit-learn ohne zusätzliche ML-Servicegrenze.</p><p class="arch-limit">Aufwand: lange synchrone ETL-Requests und begrenzte Kapazität eines lokalen Prozesses.</p></article>
+          <article><h3>SQLite + Dateien</h3><p>Keine separate Datenbankinstallation; Metadaten bleiben relational, CSV und Modellpakete lokal nachvollziehbar. Das erleichtert Demonstration und isolierte Tests.</p><p class="arch-limit">Grenze: Schreibkonkurrenz, Dateikonsistenz und Backups müssen bei größerem Betrieb neu bewertet werden.</p></article>
+          <article><h3>Prozessinterne Jobs + Polling</h3><p>Training und Inferenz blockieren nicht den auslösenden HTTP-Request. Der Status bleibt über einfache API-Abfragen sichtbar, ohne Queue- oder Streaming-Infrastruktur.</p><p class="arch-limit">Grenze: keine dauerhafte Queue, kein Multi-Worker-Lock und keine WebSocket-Echtzeitverarbeitung.</p></article>
+          <article><h3>Registrierte Kandidaten</h3><p>Mapping begrenzt das Modellangebot transparent; Benchmark trifft die datenbezogene Auswahl. Bibliotheksbeleg und gemessene Leistung bleiben unterscheidbar.</p><p class="arch-limit">Grenze: kein universelles AutoML und keine automatisch gelernte Literatur- oder Modellrangliste.</p></article>
+          <article><h3>Explizite Veröffentlichung</h3><p>Test-Evidenz bleibt erhalten, während ein getrenntes Modell alle markierten Daten für die Anwendung nutzt. Versionen verbinden spätere Ergebnisse mit ihrem Ursprung.</p><p class="arch-limit">Grenze: lokale Modellverwaltung, keine industrielle Freigabe oder vollständige MLOps-Plattform.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="arch-section" id="evolution">
+      <div class="arch-width"><p class="eyebrow">05 / Architekturentwicklung</p><h2>Vom Analyseprototyp<br>zum lokalen Kreislauf.</h2>
+        <p>Der frühe Python-/Web-Prototyp und die anschließende Trennung in Vue und FastAPI sind im Entwicklungsbericht beschrieben. Git wurde erst später eingeführt: Die früheste erhaltene Baseline enthält bereits Vue. Ein eigener „Backend → Vue“-Umbaucommit ist damit nicht belegt.</p>
+        <ol class="arch-history">
+          <li><span>01.07.2026 · <code>71a5664</code></span><h3>Vue und FastAPI als dokumentierte Baseline</h3><p>Frontend-Paket und Backend liegen bereits getrennt vor. Die frühere Umstellung ist Projektgeschichte, keine aus diesem Commit rekonstruierbare Migration.</p></li>
+          <li><span>25.–29.07.2026 · <code>945be43</code> / <code>5a1726b</code></span><h3>Benchmark und Ergebnisverträge schärfen</h3><p>Modell-Tier, Kandidatenvergleich und Ergebnis-/Exportdarstellung werden weiterentwickelt.</p></li>
+          <li><span>31.07.2026 · <code>3746d8d</code> / <code>731c533</code></span><h3>Evaluation von Anwendung trennen</h3><p>Backend-Veröffentlichung, Refit und Inferenz erhalten einen eigenen Anwendungspfad im Frontend.</p></li>
+          <li><span>06.08.2026 · <code>fb5b20c</code> / <code>812f615</code> / <code>e0ca56d</code></span><h3>Asset-Zeitlinien und Modellverwaltung</h3><p>Modellversionen und Eingangssignale werden gezielt untersuchbar. Version 2.0.0 bezeichnet den erweiterten lokalen Ablauf, keinen industriellen Reifegrad.</p></li>
+          <li><span>19.–25.09.2026 · <code>f29f9b5</code> / <code>dca6af1</code> / <code>c5a0189</code></span><h3>Zugang und Forschungsnachweise verbinden</h3><p>Lokale Start-/Stop-Skripte, die gemeinsame Literaturbibliothek und der breite Literaturatlas ergänzen den technischen Ablauf.</p></li>
+        </ol>
+        <div class="arch-reading"><a href="./architecture.html#system">Systemaufbau ansehen →</a><a href="./index.html#evidence">Nachweise und offene Grenzen →</a><a href="./architecture.html#evolution">Entwicklung im Überblick →</a></div>
+      </div>
+    </section>
+  </main>
+  <nav class="page-sequence" aria-label="Weiter durch das Showcase"><a href="./mapping.html">← 03 Plattform-Mapping</a><a href="./evaluation.html">Weiter: 05 Evaluation →</a></nav>
+  <footer class="site-footer"><strong>CEAH · Technische Architektur</strong><span>Lokaler Forschungsprototyp · prüfbare Verträge · explizite Grenzen</span></footer>
+</body>
+</html>

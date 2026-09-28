@@ -1,8 +1,8 @@
 const workflowViews = {
   overview: {
     phase: "Arbeitsbereich",
-    title: "Die Übersicht hält Daten, Experimente und den nächsten Arbeitsschritt zusammen.",
-    description: "Die Startansicht bündelt Datensätze, Experimente und zuletzt bearbeitete Analysen für einen direkten Einstieg in den nächsten Schritt.",
+    title: "Die Übersicht zeigt Daten, Experimente und offene Arbeitsschritte.",
+    description: "Die Startansicht fasst den lokalen Arbeitsstand zusammen und führt zum nächsten Schritt.",
     evidence: "Übersicht: Arbeitsstatus und Einstieg in den Analysezyklus",
     image: "./assets/showcase-hero.png",
     alt: "Übersicht der aktuellen Plattform",
@@ -17,16 +17,16 @@ const workflowViews = {
   },
   fusion: {
     phase: "Datenaufbereitung",
-    title: "Mehrere Quellen nachvollziehbar zu einem Bundle verbinden.",
-    description: "Zeit und Gerätekennung verbinden klar benannte Quellen. Diagnose und Materialisierung machen daraus eine wiederverwendbare Trainingsgrundlage.",
-    evidence: "Fusion: Quellen, Verbindungsschlüssel und erzeugtes Datenartefakt",
+    title: "Mehrere Quellen zu einem Bundle verbinden.",
+    description: "Zeit und Gerätekennung verknüpfen die Quellen. Die Diagnose prüft das Ergebnis, bevor daraus ein neuer Trainingsdatensatz entsteht.",
+    evidence: "Fusion: Quellen, Verbindungsschlüssel und erzeugter Trainingsdatensatz",
     image: "./assets/showcase-fusion.png",
     alt: "Fusion der aktuellen PM-Quellen in der Plattform",
   },
   etl: {
     phase: "ETL und Split",
-    title: "Vor dem Training werden Qualität, Features und Zeitfenster sichtbar.",
-    description: "Die Vorschau macht Datenqualität, vorbereitete Merkmale und die chronologische Aufteilung in Training, Validation und Test sichtbar.",
+    title: "Vor dem Training werden Datenqualität, Merkmale und Zeitfenster geprüft.",
+    description: "Die Vorschau zeigt vorbereitete Merkmale und die zeitliche Aufteilung in Training, Validation und Test.",
     evidence: "ETL: Datenqualität, Merkmalsbasis und 70/15/15-Aufteilung",
     image: "./assets/showcase-etl.png",
     alt: "ETL-Vorschau mit chronologischem Split",
@@ -41,56 +41,56 @@ const workflowViews = {
   },
   monitoring: {
     phase: "Monitoring",
-    title: "Historische Experimente bleiben als nachvollziehbare Läufe erhalten.",
-    description: "Status, Zeitpunkt, Szenario und Hinweise machen abgeschlossene, laufende und fehlgeschlagene Analysen unterscheidbar.",
+    title: "Monitoring zeigt laufende und abgeschlossene Experimente.",
+    description: "Status, Zeitpunkt, Szenario und Hinweise unterscheiden abgeschlossene, laufende und fehlgeschlagene Analysen.",
     evidence: "Monitoring: Status, Konfiguration, Ergebnisse und Berichte",
     image: "./assets/showcase-monitoring.png",
     alt: "Experimentmonitoring der aktuellen Plattform",
   },
   results: {
     phase: "Test-Evaluation",
-    title: "Results erklärt ausschließlich den unabhängigen Test Holdout.",
-    description: "Metriken, Datenaufteilung, Datenqualität, Feature-Importance und aufgabengerechte Diagnostik zeigen die Leistung auf dem unabhängigen Testbereich.",
+    title: "Results bewertet das Modell auf dem Test Holdout.",
+    description: "Metriken, Datenqualität, Feature-Importance und passende Diagnosen zeigen, wie das Modell auf den zurückgehaltenen Testdaten abschneidet.",
     evidence: "Results: Testvorhersagen, Diagnostik und Evaluationsbericht",
     image: "./assets/showcase-results.png",
     alt: "Results mit Test-Holdout-Evaluation und Feature-Importance",
   },
   benchmark: {
     phase: "Benchmark und Veröffentlichung",
-    title: "Validation bestimmt das Leitmodell, Veröffentlichung erzeugt die Anwendungsversion.",
-    description: "Der Validation-Vergleich bestimmt das Leitmodell. Tier und Anwendungseignung ergänzen den Vergleich; die Veröffentlichung erzeugt eine nachvollziehbare Modellversion.",
+    title: "Die Validation bestimmt das Leitmodell. Bei der Veröffentlichung entsteht eine Modellversion für neue Daten.",
+    description: "Der Benchmark vergleicht alle Kandidaten auf den Validation-Daten. Tier und Anwendungseignung ergänzen den Vergleich, bevor ein Modell veröffentlicht wird.",
     evidence: "Benchmark: Validation-Leistung, Tier, Leitmodell und Veröffentlichung",
     image: "./assets/showcase-benchmark.png",
     alt: "Benchmark mit Veröffentlichungssteuerung und Standardmodell",
   },
   application: {
     phase: "Anwendung",
-    title: "Ein veröffentliches Modell verarbeitet einen neuen Batch nach bestandenem Preflight.",
-    description: "Die Anwendung zeigt Modellversion, Eingabedaten, verwendete Regeln und Cold Starts. Neue Daten können auch ohne Zielwerte analysiert werden.",
+    title: "Ein veröffentlichtes Modell verarbeitet einen neuen Batch nach bestandenem Preflight.",
+    description: "Asset wählen und zwischen Modellergebnis und Eingangssignalen wechseln. Neue Geräte sind als Cold Starts markiert; optionale Zielwerte dienen nur der nachträglichen Prüfung.",
     evidence: "Anwendung: Batch-Ergebnis, Ereignisse, Vorhersage-CSV und Bericht",
     image: "./assets/showcase-application-result.png",
-    alt: "Anwendungsergebnis der aktuellen Plattform mit Provenienz und Handlungsfenstern",
+    alt: "Anwendungsergebnis mit Modellversion, Eingabedaten und Handlungsfenstern",
   },
   matrix: {
     phase: "Modellübersicht",
-    title: "Die Matrix beschreibt ausführbare Kandidaten, nicht Literaturbeweise.",
-    description: "Sie zeigt Modellfamilie, Tier, Datenbedarf, Erklärbarkeit und Engineering-Aufwand. Tier beschreibt Einsatzbedingungen und keine Leistungsstufe.",
+    title: "Die Matrix zeigt die in der Plattform verfügbaren Modellkandidaten.",
+    description: "Für jedes Modell nennt sie Familie, Tier, Datenbedarf, Erklärbarkeit und technischen Aufwand. Ein Tier beschreibt Einsatzbedingungen, keine Leistungsstufe.",
     evidence: "Matrix: verfügbare Modelle und ihre Anwendungsvoraussetzungen",
     image: "./assets/showcase-matrix.png",
     alt: "Algorithmus-Matrix der aktuellen Plattform",
   },
   research: {
-    phase: "Forschungsscoping",
-    title: "Literaturkontext verbindet Szenarien mit Methodenfamilien und verfügbaren Modellen.",
-    description: "Der Bereich zeigt DOI-Quellen mit ihrem jeweiligen Geltungsbereich und ordnet sie den unterstützten Analyseaufgaben und Modellfamilien zu.",
-    evidence: "Forschung: kuratierter Kontext für Szenarien, Aufgaben und Methoden",
+    phase: "Forschungsüberblick",
+    title: "Der Forschungsbereich ordnet Literatur den Szenarien und Methodenfamilien zu.",
+    description: "Zu jeder DOI-Quelle steht, ob sie ein Szenario, eine Methodenfamilie oder ein bestimmtes Modell betrifft.",
+    evidence: "Forschung: Literaturhintergrund zu Szenarien, Aufgaben und Methoden",
     image: "./assets/showcase-research.png",
-    alt: "Kuratiertes Forschungsscoping der aktuellen Plattform",
+    alt: "Forschungsüberblick der aktuellen Plattform",
   },
 };
 
 const progressBar = document.querySelector(".scroll-progress");
-const navLinks = Array.from(document.querySelectorAll(".nav-links a")).filter((link) => (link.getAttribute("href") || "").startsWith("#"));
+const navLinks = Array.from(document.querySelectorAll(".section-nav a")).filter((link) => (link.getAttribute("href") || "").startsWith("#"));
 const sections = navLinks.map((link) => document.querySelector(link.getAttribute("href"))).filter(Boolean);
 
 function selectWorkflowView(key) {

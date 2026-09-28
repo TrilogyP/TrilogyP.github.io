@@ -1,0 +1,3106 @@
+{
+  "schema_version": 1,
+  "library_total": 17,
+  "records": [
+    {
+      "id": "LIT-001",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fmath12142185",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "yolov8"
+          ],
+          "application": "waste_sort"
+        }
+      ],
+      "title": "Solid Waste Detection Using Enhanced YOLOv8 Lightweight Convolutional Neural Networks",
+      "authors": "Pan Li; Jiayin Xu; Shenbo Liu",
+      "year": 2024,
+      "doi": "10.3390/math12142185",
+      "url": "https://doi.org/10.3390/math12142185",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-002",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Frecycling10050179",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "waste_sort"
+        }
+      ],
+      "title": "Enhanced Waste Sorting Technology by Integrating Hyperspectral and RGB Imaging",
+      "authors": "Georgios Alexakis; Marina Pellegrino; Laura Rodriguez-Turienzo; Michail Maniadakis",
+      "year": 2025,
+      "doi": "10.3390/recycling10050179",
+      "url": "https://doi.org/10.3390/recycling10050179",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-003",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fs25123807",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "cnn",
+            "ensemble"
+          ],
+          "application": "waste_sort"
+        }
+      ],
+      "title": "AI for Sustainable Recycling: Efficient Model Optimization for Waste Classification Systems",
+      "authors": "Oriol Chacón-Albero; Mario Campos-Mocholí; Cédric Marco-Detchart; Vicente Julian; Jaime Andrés Rincon; Vicent Botti",
+      "year": 2025,
+      "doi": "10.3390/s25123807",
+      "url": "https://doi.org/10.3390/s25123807",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-004",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fs24092821",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rf",
+            "svm",
+            "mlp",
+            "cnn",
+            "dt",
+            "lr",
+            "nb",
+            "knn",
+            "ada",
+            "lda"
+          ],
+          "application": "plastic"
+        }
+      ],
+      "title": "Low-Cost Recognition of Plastic Waste Using Deep Learning and a Multi-Spectral Near-Infrared Sensor",
+      "authors": "Uriel Martinez-Hernandez; Gregory West; Tareq Assaf",
+      "year": 2024,
+      "doi": "10.3390/s24092821",
+      "url": "https://doi.org/10.3390/s24092821",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-005",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Ftoxics13121018",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "mnv4"
+          ],
+          "application": "microplastic"
+        }
+      ],
+      "title": "A Deep Learning Approach for Microplastic Segmentation in Microscopic Images",
+      "authors": "Yuan Yao; Wending Xu; Haoxin Fan",
+      "year": 2025,
+      "doi": "10.3390/toxics13121018",
+      "url": "https://doi.org/10.3390/toxics13121018",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-006",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://arxiv.org/abs/2409.16496v1",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rtdetr",
+            "yolov8",
+            "yolov9"
+          ],
+          "application": "pcb"
+        }
+      ],
+      "title": "Real-Time Detection of Electronic Components in Waste Printed Circuit Boards: A Transformer-Based Approach",
+      "authors": "Muhammad Mohsin; Stefano Rovetta; Francesco Masulli; Alberto Cabri",
+      "year": 2024,
+      "doi": null,
+      "url": "https://arxiv.org/abs/2409.16496v1",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-007",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://arxiv.org/abs/2406.17162v1",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "yolov5"
+          ],
+          "application": "pcb"
+        }
+      ],
+      "title": "Virtual Mines -- Component-level recycling of printed circuit boards using deep learning",
+      "authors": "Muhammad Mohsin; Stefano Rovetta; Francesco Masulli; Alberto Cabri",
+      "year": 2024,
+      "doi": null,
+      "url": "https://arxiv.org/abs/2406.17162v1",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-008",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41467-023-43883-y",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "federated"
+          ],
+          "application": "battery_sort"
+        }
+      ],
+      "title": "Collaborative and privacy-preserving retired battery sorting for profitable direct recycling via federated machine learning",
+      "authors": "Shengyu Tao; Haizhou Liu; Chongbo Sun; Haocheng Ji; Guanjun Ji; Zhiyuan Han; Runhua Gao; Jun Ma; Ruifei Ma; Yuou Chen; Shiyi Fu; Yu Wang; Yaojie Sun; Yu Rong; Xuan Zhang; Guangmin Zhou; Hongbin Sun",
+      "year": 2023,
+      "doi": "10.1038/s41467-023-43883-y",
+      "url": "https://doi.org/10.1038/s41467-023-43883-y",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-009",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fapp15020516",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "pso",
+            "lstm",
+            "cnn",
+            "svr"
+          ],
+          "application": "soh"
+        }
+      ],
+      "title": "Machine Learning-Based Lithium Battery State of Health Prediction Research",
+      "authors": "Kun Li; Xinling Chen",
+      "year": 2025,
+      "doi": "10.3390/app15020516",
+      "url": "https://doi.org/10.3390/app15020516",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-010",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fijerph17196997",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rf"
+          ],
+          "application": "demolition"
+        }
+      ],
+      "title": "Development of a Prediction Model for Demolition Waste Generation Using a Random Forest Algorithm Based on Small DataSets",
+      "authors": "Gi-Wook Cha; Hyeun Jun Moon; Young-Min Kim; Won-Hwa Hong; Jung-Ha Hwang; Won-Jun Park; Young-Chan Kim",
+      "year": 2020,
+      "doi": "10.3390/ijerph17196997",
+      "url": "https://doi.org/10.3390/ijerph17196997",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-011",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fconstrmater5010010",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "svm",
+            "ann",
+            "rf",
+            "knn",
+            "cnn"
+          ],
+          "application": "demolition"
+        }
+      ],
+      "title": "Estimation, Classification, and Prediction of Construction and Demolition Waste Using Machine Learning for Sustainable Waste Management: A Critical Review",
+      "authors": "Choudhury Gyanaranjan Samal; Dipti Ranjan Biswal; Gaurav Udgata; Sujit Kumar Pradhan",
+      "year": 2025,
+      "doi": "10.3390/constrmater5010010",
+      "url": "https://doi.org/10.3390/constrmater5010010",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-012",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fs25226961",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ann",
+            "svm",
+            "ensemble",
+            "graybox"
+          ],
+          "application": "biogas"
+        }
+      ],
+      "title": "Artificial Intelligence in Anaerobic Digestion: A Review of Sensors, Modeling Approaches, and Optimization Strategies",
+      "authors": "Milena Marycz; Izabela Turowska; Szymon Glazik; Piotr Jasiński",
+      "year": 2025,
+      "doi": "10.3390/s25226961",
+      "url": "https://doi.org/10.3390/s25226961",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-013",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3389%2Ffenvs.2025.1553121",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dt",
+            "rf",
+            "lgb",
+            "xgb"
+          ],
+          "application": "waste_quantity"
+        }
+      ],
+      "title": "Enhancing performance prediction of municipal solid waste generation: a strategic management",
+      "authors": "Xiaoming Liu; Wei Zhi; Abed Akhundzada",
+      "year": 2025,
+      "doi": "10.3389/fenvs.2025.1553121",
+      "url": "https://doi.org/10.3389/fenvs.2025.1553121",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-014",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://arxiv.org/abs/2505.03575v1",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "cnn",
+            "ae"
+          ],
+          "application": "textile"
+        }
+      ],
+      "title": "Supervised and Unsupervised Textile Classification via Near-Infrared Hyperspectral Imaging and Deep Learning",
+      "authors": "Maria Kainz; Johannes K. Krondorfer; Malte Jaschik; Maria Jernej; Harald Ganster",
+      "year": 2025,
+      "doi": null,
+      "url": "https://arxiv.org/abs/2505.03575v1",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-015",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu141811261",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rbfn",
+            "ffnn",
+            "svr",
+            "ga"
+          ],
+          "application": "leachate"
+        }
+      ],
+      "title": "Application of Machine Learning (ML) and Artificial Intelligence (AI)-Based Tools for Modelling and Enhancing Sustainable Optimization of the Classical/Photo-Fenton Processes for the Landfill Leachate Treatment",
+      "authors": "Hüseyin Cüce; Duygu Özçelik",
+      "year": 2022,
+      "doi": "10.3390/su141811261",
+      "url": "https://doi.org/10.3390/su141811261",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-016",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://publications.rwth-aachen.de/record/972852/files/978852.pdf",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ann"
+          ],
+          "application": "sorting_process"
+        }
+      ],
+      "title": "Towards digital twins of waste sorting plants: Developing data-driven process models of industrial-scale sensor-based sorting units by combining machine learning with near-infrared-based process monitoring",
+      "authors": "Nils Kroell; Abtin Maghmoumi; Tobias Dietl; Xiaozheng Chen; Bastian Küppers; Tabea Scherling; Alexander Feil; Kathrin Greiff",
+      "year": 2024,
+      "doi": "10.1016/j.resconrec.2023.107257",
+      "url": "https://doi.org/10.1016/j.resconrec.2023.107257",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-017",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fa18100650",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml",
+            "rlgeneric"
+          ],
+          "application": "reverse"
+        }
+      ],
+      "title": "Machine Learning in Reverse Logistics: A Systematic Literature Review",
+      "authors": "Abner Fernandes Souza da Silva; Virginia Aparecida da Silva Moris; João Eduardo Azevedo Ramos da Silva; Murilo Aparecido Voltarelli; Tiago F. A. C. Sigahi",
+      "year": 2025,
+      "doi": "10.3390/a18100650",
+      "url": "https://doi.org/10.3390/a18100650",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-018",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu17146367",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml",
+            "dl"
+          ],
+          "application": "returns"
+        }
+      ],
+      "title": "Forecasting Return Quantity, Timing and Condition in Remanufacturing with Machine Learning: A Mixed-Methods Approach",
+      "authors": "Julian Grosse Erdmann; Engjëll Ahmeti; Raphael Wolf; Jan Koller; Frank Döpper",
+      "year": 2025,
+      "doi": "10.3390/su17146367",
+      "url": "https://doi.org/10.3390/su17146367",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-019",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.compind.2023.103992",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rlgeneric"
+          ],
+          "application": "disassembly"
+        }
+      ],
+      "title": "Reinforcement learning for disassembly sequence planning optimization",
+      "authors": "Amal Allagui; Imen Belhadj; Régis Plateaux; Moncef Hammadi; Olivia Penas; Nizar Aifaoui",
+      "year": 2023,
+      "doi": "10.1016/j.compind.2023.103992",
+      "url": "https://doi.org/10.1016/j.compind.2023.103992",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-020",
+      "modality": "vision",
+      "coverage": "mixed_review",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Flogistics8040108",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "circular_supply"
+        }
+      ],
+      "title": "Leveraging Machine Learning for Advancing Circular Supply Chains: A Systematic Literature Review",
+      "authors": "Zeinab Farshadfar; Tomasz Mucha; Kari Tanskanen",
+      "year": 2024,
+      "doi": "10.3390/logistics8040108",
+      "url": "https://doi.org/10.3390/logistics8040108",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-021",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Flogistics9040152",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "nmf",
+            "rf",
+            "topsis"
+          ],
+          "application": "supplier"
+        }
+      ],
+      "title": "Integrating Machine Learning with Multi-Criteria Decision-Making Models for Sustainable Supplier Selection in Dynamic Supply Chains",
+      "authors": "Osheyor Joachim Gidiagba; Lagouge Tartibu; Modestus Okwu",
+      "year": 2025,
+      "doi": "10.3390/logistics9040152",
+      "url": "https://doi.org/10.3390/logistics9040152",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-022",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jclepro.2024.143802",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "returns"
+        }
+      ],
+      "title": "Return management in e-commerce firms: A machine learning approach to predict product returns and examine variables influencing returns",
+      "authors": "Anurag Mishra; Pankaj Dutta",
+      "year": 2024,
+      "doi": "10.1016/j.jclepro.2024.143802",
+      "url": "https://doi.org/10.1016/j.jclepro.2024.143802",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-023",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jenvman.2022.114918",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "waste_quantity"
+        }
+      ],
+      "title": "Machine learning based prediction for China's municipal solid waste under the shared socioeconomic pathways",
+      "authors": "Chenyi Zhang; Huijuan Dong; Yong Geng; Hongda Liang; Xiao Liu",
+      "year": 2022,
+      "doi": "10.1016/j.jenvman.2022.114918",
+      "url": "https://doi.org/10.1016/j.jenvman.2022.114918",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-024",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.wasman.2025.115012",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "entropy",
+            "shap",
+            "ml"
+          ],
+          "application": "waste_quantity"
+        }
+      ],
+      "title": "Predicting municipal solid waste generation using artificial intelligence: A hybrid approach of entropy analysis and SHAP for optimal feature selection",
+      "authors": "Vahid Nourani; Aida H. Baghanam; Elham Samadi; Selin Uzelaltinbulat",
+      "year": 2025,
+      "doi": "10.1016/j.wasman.2025.115012",
+      "url": "https://doi.org/10.1016/j.wasman.2025.115012",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-025",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.sca.2025.100182",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml",
+            "evolution"
+          ],
+          "application": "routing"
+        }
+      ],
+      "title": "A machine learning and evolutionary optimization framework for carbon-aware supply chain routing",
+      "authors": "Lorena Sánchez-Pravos; Javier Parra-Domínguez; Sara Rodríguez González; Pablo Chamoso",
+      "year": 2026,
+      "doi": "10.1016/j.sca.2025.100182",
+      "url": "https://doi.org/10.1016/j.sca.2025.100182",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-026",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.33166%2FAETiC.2022.02.002",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "ce_review"
+        }
+      ],
+      "title": "Machine Learning and Artificial Intelligence in Circular Economy: A Bibliometric Analysis and Systematic Literature Review",
+      "authors": "Abdulla All Noman; Umma Habiba Akter; Tahmid Hasan Pranto; AKM Bahalul Haque",
+      "year": 2022,
+      "doi": "10.33166/AETiC.2022.02.002",
+      "url": "https://doi.org/10.33166/aetic.2022.02.002",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-027",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs13243-026-00160-7",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rlgeneric"
+          ],
+          "application": "production"
+        }
+      ],
+      "title": "Towards autonomous production control: a reinforcement learning-based model for hybrid remanufacturing systems",
+      "authors": "Felix Paschko; Abderrahim Krini; Steffi Knorn",
+      "year": 2026,
+      "doi": "10.1007/s13243-026-00160-7",
+      "url": "https://doi.org/10.1007/s13243-026-00160-7",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-028",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs12652-022-04357-z",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "unknown"
+          ],
+          "application": "reverse"
+        }
+      ],
+      "title": "Big data-driven optimization for sustainable reverse logistics network design",
+      "authors": "Mohammad Amin Khoei; Seyed Sina Aria; Hadi Gholizadeh; Mark Goh; Naoufel Cheikhrouhou",
+      "year": 2022,
+      "doi": "10.1007/s12652-022-04357-z",
+      "url": "https://doi.org/10.1007/s12652-022-04357-z",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-029",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu162310601",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "arima",
+            "lstm",
+            "rf",
+            "gbr",
+            "ann"
+          ],
+          "application": "market_forecast"
+        },
+        {
+          "methods": [
+            "ql",
+            "dql"
+          ],
+          "application": "pricing"
+        }
+      ],
+      "title": "Evaluating Artificial Intelligence Models for Resource Allocation in Circular Economy Digital Marketplace",
+      "authors": "Arifuzzaman (Arif) Sheikh; Steven J. Simske; Edwin K. P. Chong",
+      "year": 2024,
+      "doi": "10.3390/su162310601",
+      "url": "https://doi.org/10.3390/su162310601",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-030",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu15054408",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ga"
+          ],
+          "application": "reverse"
+        },
+        {
+          "methods": [
+            "game"
+          ],
+          "application": "pricing"
+        }
+      ],
+      "title": "Reverse Logistics Network Model of Dual-Channel Recycling Boxes Based on Genetic Algorithm Optimization: A Multi-Objective and Uncertain Environment Perspective",
+      "authors": "Guo Chen; Jiapeng Chen",
+      "year": 2023,
+      "doi": "10.3390/su15054408",
+      "url": "https://doi.org/10.3390/su15054408",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-031",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fa17120562",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "reman_review"
+        }
+      ],
+      "title": "Unlocking the Potential of Remanufacturing Through Machine Learning and Data-Driven Models—A Survey",
+      "authors": "Yong Han Kim; Wei Ye; Ritbik Kumar; Finn Bail; Julia Dvorak; Yanchao Tan; Marvin Carl May; Qing Chang; Ragu Athinarayanan; Gisela Lanza; John W. Sutherland; Xingyu Li; Chandra Nath",
+      "year": 2024,
+      "doi": "10.3390/a17120562",
+      "url": "https://doi.org/10.3390/a17120562",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-032",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs13243-024-00147-2",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "yolov7",
+            "yolov8",
+            "yolo11",
+            "maskrcnn"
+          ],
+          "application": "refurb_defect"
+        }
+      ],
+      "title": "Deep learning enabled computer vision in remanufacturing and refurbishment applications: defect detection and grading for smart phones",
+      "authors": "Reenu Mohandas; Mark Southern; Colin Fitzpatrick; Martin Hayes",
+      "year": 2025,
+      "doi": "10.1007/s13243-024-00147-2",
+      "url": "https://doi.org/10.1007/s13243-024-00147-2",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-033",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.egyr.2024.04.065",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "pv"
+        }
+      ],
+      "title": "A hybrid machine learning forecasting model for photovoltaic power",
+      "authors": "Zhijian Hou; Yunhui Zhang; Qian Liu; Xiaojiang Ye",
+      "year": 2024,
+      "doi": "10.1016/j.egyr.2024.04.065",
+      "url": "https://doi.org/10.1016/j.egyr.2024.04.065",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-034",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.egyr.2023.05.154",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dl",
+            "vmd"
+          ],
+          "application": "pv"
+        }
+      ],
+      "title": "Short-term PV power forecast using hybrid deep learning model and Variational Mode Decomposition",
+      "authors": "Thanh Nguyen Trong; Huu Vu Xuan Son; Hieu Do Dinh; Hirotaka Takano; Tuyen Nguyen Duc",
+      "year": 2023,
+      "doi": "10.1016/j.egyr.2023.05.154",
+      "url": "https://doi.org/10.1016/j.egyr.2023.05.154",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-035",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.solener.2020.03.049",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dl"
+          ],
+          "application": "pv_defect"
+        }
+      ],
+      "title": "Deep learning based automatic defect identification of photovoltaic module using electroluminescence images",
+      "authors": "Wuqin Tang; Qiang Yang; Kuixiang Xiong; Wenjun Yan",
+      "year": 2020,
+      "doi": "10.1016/j.solener.2020.03.049",
+      "url": "https://doi.org/10.1016/j.solener.2020.03.049",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-036",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs11554-024-01415-x",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "deeplabyolo"
+          ],
+          "application": "pv_defect"
+        }
+      ],
+      "title": "Deeplab-YOLO: a method for detecting hot-spot defects in infrared image PV panels by combining segmentation and detection",
+      "authors": "Ye Lei; Xiaoye Wang; Aimin An; Haijiao Guan",
+      "year": 2024,
+      "doi": "10.1007/s11554-024-01415-x",
+      "url": "https://doi.org/10.1007/s11554-024-01415-x",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-037",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.apenergy.2024.123239",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "clustering"
+          ],
+          "application": "pv"
+        }
+      ],
+      "title": "Day-ahead Numerical Weather Prediction solar irradiance correction using a clustering method based on weather conditions",
+      "authors": "Weijing Dou; Kai Wang; Shuo Shan; Chenxi Li; Yiye Wang; Kanjian Zhang; Haikun Wei; Victor Sreeram",
+      "year": 2024,
+      "doi": "10.1016/j.apenergy.2024.123239",
+      "url": "https://doi.org/10.1016/j.apenergy.2024.123239",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-038",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu142215260",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "pso",
+            "xgb",
+            "lstm",
+            "gbr",
+            "ann",
+            "cnn",
+            "rf"
+          ],
+          "application": "pv"
+        }
+      ],
+      "title": "Solar Irradiance Probabilistic Forecasting Using Machine Learning, Metaheuristic Models and Numerical Weather Predictions",
+      "authors": "Vateanui Sansine; Pascal Ortega; Daniel Hissel; Marania Hopuare",
+      "year": 2022,
+      "doi": "10.3390/su142215260",
+      "url": "https://doi.org/10.3390/su142215260",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-039",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu151310609",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rfe",
+            "dt",
+            "pearson",
+            "lr",
+            "gbr",
+            "rf"
+          ],
+          "application": "pv"
+        }
+      ],
+      "title": "A Novel Machine Learning Approach for Solar Radiation Estimation",
+      "authors": "Hasna Hissou; Said Benkirane; Azidine Guezzaz; Mourade Azrour; Abderrahim Beni-Hssane",
+      "year": 2023,
+      "doi": "10.3390/su151310609",
+      "url": "https://doi.org/10.3390/su151310609",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-040",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs11356-022-22959-0",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ceemdan",
+            "iwoa",
+            "lstm"
+          ],
+          "application": "wind"
+        }
+      ],
+      "title": "A novel model based on CEEMDAN, IWOA, and LSTM for ultra-short-term wind power forecasting",
+      "authors": "Shaomei Yang; Aijia Yuan; Zhengqin Yu",
+      "year": 2022,
+      "doi": "10.1007/s11356-022-22959-0",
+      "url": "https://doi.org/10.1007/s11356-022-22959-0",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-041",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fpr13072046",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ceemdan",
+            "vmd",
+            "cnn",
+            "bilstm",
+            "kmeans",
+            "arima",
+            "lstm"
+          ],
+          "application": "wind"
+        }
+      ],
+      "title": "Multi-Scale Decomposition and Hybrid Deep Learning CEEMDAN-VMD-CNN-BiLSTM Approach for Wind Power Forecasting",
+      "authors": "Zhanhu Ning; Guoping Chen; Jiwu Wang; Wei Hu",
+      "year": 2025,
+      "doi": "10.3390/pr13072046",
+      "url": "https://doi.org/10.3390/pr13072046",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-042",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1049%2Frpg2.12449",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "stemgnn"
+          ],
+          "application": "wind"
+        }
+      ],
+      "title": "A robust spatio‐temporal prediction approach for wind power generation based on spectral temporal graph neural network",
+      "authors": "Yuqin He; Songjian Chai; Jian Zhao; Yuxin Sun; Xian Zhang",
+      "year": 2022,
+      "doi": "10.1049/rpg2.12449",
+      "url": "https://doi.org/10.1049/rpg2.12449",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-043",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://arxiv.org/abs/2302.11159v1",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "agcrn",
+            "mtgnn"
+          ],
+          "application": "wind"
+        }
+      ],
+      "title": "BUAA_BIGSCity: Spatial-Temporal Graph Neural Network for Wind Power Forecasting in Baidu KDD CUP 2022",
+      "authors": "Jiawei Jiang; Chengkai Han; Jingyuan Wang",
+      "year": 2023,
+      "doi": "10.48550/arXiv.2302.11159",
+      "url": "https://arxiv.org/abs/2302.11159v1",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-044",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.apenergy.2022.119151",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "multiagent"
+          ],
+          "application": "microgrid"
+        }
+      ],
+      "title": "Renewable energy integration and microgrid energy trading using multi-agent deep reinforcement learning",
+      "authors": "Daniel J.B. Harrold; Jun Cao; Zhong Fan",
+      "year": 2022,
+      "doi": "10.1016/j.apenergy.2022.119151",
+      "url": "https://doi.org/10.1016/j.apenergy.2022.119151",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-045",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S0019057823001635",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "tripletae",
+            "gan"
+          ],
+          "application": "wind_anomaly"
+        }
+      ],
+      "title": "Wind turbine anomaly detection based on SCADA: A deep autoencoder enhanced by fault instances",
+      "authors": "Jiarui Liu; Guotian Yang; Xinli Li; Qianming Wang; Yuchen He; Xiyun Yang",
+      "year": 2023,
+      "doi": "10.1016/j.isatra.2023.03.045",
+      "url": "https://doi.org/10.1016/j.isatra.2023.03.045",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-046",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3389%2Ffenrg.2023.1252057",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "xgb",
+            "lgb",
+            "cat",
+            "qrlstm",
+            "stacking",
+            "tpe"
+          ],
+          "application": "pv"
+        }
+      ],
+      "title": "Short-term interval prediction of PV power based on quantile regression-stacking model and tree-structured parzen estimator optimization algorithm",
+      "authors": "Hongyang Zhang; Rong Jia; Haodong Du; Yan Liang; Jiangfeng Li",
+      "year": 2023,
+      "doi": "10.3389/fenrg.2023.1252057",
+      "url": "https://doi.org/10.3389/fenrg.2023.1252057",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-047",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.energy.2023.129302",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "hydrogen"
+        }
+      ],
+      "title": "Analysis and prediction of green hydrogen production potential by photovoltaic-powered water electrolysis using machine learning in China",
+      "authors": "Guishi Cheng; Ercheng Luo; Ying Zhao; Yihao Yang; Binbin Chen; Youcheng Cai; Xiaoqiang Wang; Changqing Dong",
+      "year": 2023,
+      "doi": "10.1016/j.energy.2023.129302",
+      "url": "https://doi.org/10.1016/j.energy.2023.129302",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-048",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://eprints.gla.ac.uk/270667/",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rf",
+            "mc"
+          ],
+          "application": "gasification"
+        }
+      ],
+      "title": "Process optimization of biomass gasification with a Monte Carlo approach and random forest algorithm",
+      "authors": "Yi Fang; Li Ma; Zhiyi Yao; Wangliang Li; Siming You",
+      "year": 2022,
+      "doi": "10.1016/j.enconman.2022.115734",
+      "url": "https://doi.org/10.1016/j.enconman.2022.115734",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-049",
+      "modality": "vision",
+      "coverage": "mixed_review",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fen16217417",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "knn",
+            "rf",
+            "cnn",
+            "ann"
+          ],
+          "application": "pv_defect"
+        }
+      ],
+      "title": "Artificial Intelligence in Photovoltaic Fault Identification and Diagnosis: A Systematic Review",
+      "authors": "Mahmudul Islam; Masud Rana Rashel; Md Tofael Ahmed; A. K. M. Kamrul Islam; Mouhaydine Tlemçani",
+      "year": 2023,
+      "doi": "10.3390/en16217417",
+      "url": "https://doi.org/10.3390/en16217417",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-050",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jclepro.2023.136959",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "decomposition",
+            "dl"
+          ],
+          "application": "carbon_price"
+        }
+      ],
+      "title": "Multi-step carbon price forecasting using a hybrid model based on multivariate decomposition strategy and deep learning algorithms",
+      "authors": "Kefei Zhang; Xiaolin Yang; Teng Wang; Jesse Thé; Zhongchao Tan; Hesheng Yu",
+      "year": 2023,
+      "doi": "10.1016/j.jclepro.2023.136959",
+      "url": "https://doi.org/10.1016/j.jclepro.2023.136959",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-051",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.apenergy.2022.118601",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ceemdan",
+            "lstm"
+          ],
+          "application": "carbon_price"
+        }
+      ],
+      "title": "Carbon price forecasting based on CEEMDAN and LSTM",
+      "authors": "Feite Zhou; Zhehao Huang; Changhong Zhang",
+      "year": 2022,
+      "doi": "10.1016/j.apenergy.2022.118601",
+      "url": "https://doi.org/10.1016/j.apenergy.2022.118601",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-052",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-91326-z",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "drl"
+          ],
+          "application": "hvac"
+        }
+      ],
+      "title": "Efficient and assured reinforcement learning-based building HVAC control with heterogeneous expert-guided training",
+      "authors": "Shichao Xu; Yangyang Fu; Yixuan Wang; Zhuoran Yang; Chao Huang; Zheng O’Neill; Zhaoran Wang; Qi Zhu",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-91326-z",
+      "url": "https://doi.org/10.1038/s41598-025-91326-z",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-053",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.apenergy.2021.117164",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rlgeneric"
+          ],
+          "application": "hvac"
+        }
+      ],
+      "title": "Experimental evaluation of model-free reinforcement learning algorithms for continuous HVAC control",
+      "authors": "Marco Biemann; Fabian Scheller; Xiufeng Liu; Lizhen Huang",
+      "year": 2021,
+      "doi": "10.1016/j.apenergy.2021.117164",
+      "url": "https://doi.org/10.1016/j.apenergy.2021.117164",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-054",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs10462-024-10819-x",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "sac",
+            "td3"
+          ],
+          "application": "hvac"
+        }
+      ],
+      "title": "An experimental evaluation of deep reinforcement learning algorithms for HVAC control",
+      "authors": "Antonio Manjavacas; Alejandro Campoy-Nieves; Javier Jiménez-Raboso; Miguel Molina-Solana; Juan Gómez-Romero",
+      "year": 2024,
+      "doi": "10.1007/s10462-024-10819-x",
+      "url": "https://doi.org/10.1007/s10462-024-10819-x",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-055",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.energy.2024.133242",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "building_energy"
+        }
+      ],
+      "title": "Data-driven energy consumption prediction of a university office building using machine learning algorithms",
+      "authors": "Hasan Yesilyurt; Yesim Dokuz; Ahmet Sakir Dokuz",
+      "year": 2024,
+      "doi": "10.1016/j.energy.2024.133242",
+      "url": "https://doi.org/10.1016/j.energy.2024.133242",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-056",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.buildenv.2025.113582",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "building_energy"
+        }
+      ],
+      "title": "Evaluating Machine Learning Models for Sustainable Building Design: Energy, Emissions, and Comfort Metrics",
+      "authors": "Farshid Dehghan; César Porras Amores; Leila Khanmohammadi; Rania Labib",
+      "year": 2025,
+      "doi": "10.1016/j.buildenv.2025.113582",
+      "url": "https://doi.org/10.1016/j.buildenv.2025.113582",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-057",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.buildenv.2024.111595",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "building_carbon"
+        }
+      ],
+      "title": "Predictive models of embodied carbon emissions in building design phases: Machine learning approaches based on residential buildings in China",
+      "authors": "Xiaocun Zhang; Hailiang Chen; Jiayue Sun; Xueqi Zhang",
+      "year": 2024,
+      "doi": "10.1016/j.buildenv.2024.111595",
+      "url": "https://doi.org/10.1016/j.buildenv.2024.111595",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-058",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-17746-z",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "building_carbon"
+        }
+      ],
+      "title": "Machine learning models for predicting rural residential carbon emissions and optimising spatial forms",
+      "authors": "Xu Cui; Yao Xu; Liang Sun; Tianning Yao",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-17746-z",
+      "url": "https://doi.org/10.1038/s41598-025-17746-z",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-059",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-31260-2",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "xgb",
+            "shap"
+          ],
+          "application": "urban_carbon"
+        }
+      ],
+      "title": "An XGBoost-SHAP analysis of the driving factors of carbon emissions in China’s first-tier cities",
+      "authors": "Yi Li; Yujuan He; Fei Yang; Hongyu An; Jiayu Li; Yizhang Xie",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-31260-2",
+      "url": "https://doi.org/10.1038/s41598-025-31260-2",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-060",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.cherd.2022.03.022",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "heat"
+        }
+      ],
+      "title": "Incorporating machine learning for thermal engines modeling in industrial waste heat recovery",
+      "authors": "Francisco Javier López-Flores; Eusiel Rubio-Castro; José María Ponce-Ortega",
+      "year": 2022,
+      "doi": "10.1016/j.cherd.2022.03.022",
+      "url": "https://doi.org/10.1016/j.cherd.2022.03.022",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-061",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.tsep.2024.103098",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "heat"
+        }
+      ],
+      "title": "Thermodynamic modeling and AI-enhanced optimization of a novel tri-level waste heat recovery system for industrial processes",
+      "authors": "Gerard Deepak; L. Sudha; S. Pauline; V. Daya Sagar Ketaraju; N. Aravindan; S. Neelima",
+      "year": 2024,
+      "doi": "10.1016/j.tsep.2024.103098",
+      "url": "https://doi.org/10.1016/j.tsep.2024.103098",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-062",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jclepro.2025.145607",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "symbiosis"
+        }
+      ],
+      "title": "A novel machine learning-based method for identifying Industrial Symbiosis opportunities",
+      "authors": "Lan Zhao; Yajuan Sun; Gaoxi Xiao",
+      "year": 2025,
+      "doi": "10.1016/j.jclepro.2025.145607",
+      "url": "https://doi.org/10.1016/j.jclepro.2025.145607",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-063",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41467-025-66599-7",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "llm"
+          ],
+          "application": "symbiosis"
+        }
+      ],
+      "title": "Construction of waste-to-resource knowledge graph for industrial symbiosis identification using large language models",
+      "authors": "Lan Zhao; Yajuan Sun; Junhao Ren; Honglin Gao; Gaoxi Xiao",
+      "year": 2025,
+      "doi": "10.1038/s41467-025-66599-7",
+      "url": "https://doi.org/10.1038/s41467-025-66599-7",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-064",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs11367-025-02437-8",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "lca"
+        }
+      ],
+      "title": "Integrating machine learning with life cycle assessment: a comprehensive review and guide for predicting environmental impacts",
+      "authors": "João Victor Encide Salla; Tiago Agostinho de Almeida; Diogo Aparecido Lopes Silva",
+      "year": 2025,
+      "doi": "10.1007/s11367-025-02437-8",
+      "url": "https://doi.org/10.1007/s11367-025-02437-8",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-065",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jclepro.2025.145109",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "lca"
+        }
+      ],
+      "title": "Machine learning-assisted life cycle assessment of biochar soil application",
+      "authors": "Yize Li; Rohit Gupta; Wangliang Li; Yi Fang; Jaime Toney; Siming You",
+      "year": 2025,
+      "doi": "10.1016/j.jclepro.2025.145109",
+      "url": "https://doi.org/10.1016/j.jclepro.2025.145109",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-066",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://mostwiedzy.pl/pl/publication/energy-consumption-optimization-in-wastewater-treatment-plants-machine-learning-for-monitoring-incin,159798-1",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ann",
+            "multioutput"
+          ],
+          "application": "sludge_energy"
+        }
+      ],
+      "title": "Energy consumption optimization in wastewater treatment plants: Machine learning for monitoring incineration of sewage sludge",
+      "authors": "Behrouz Adibimanesh; Sylwia Polesek-Karczewska; Faramarz Bagherzadeh; Piotr Szczuko; Torkan Shafighfard",
+      "year": 2023,
+      "doi": "10.1016/j.seta.2023.103040",
+      "url": "https://doi.org/10.1016/j.seta.2023.103040",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-067",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu151813380",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "xgb",
+            "rf"
+          ],
+          "application": "sludge_output"
+        }
+      ],
+      "title": "Analysis of Machine Learning Models for Wastewater Treatment Plant Sludge Output Prediction",
+      "authors": "Shuai Shao; Dianzheng Fu; Tianji Yang; Hailin Mu; Qiufeng Gao; Yun Zhang",
+      "year": 2023,
+      "doi": "10.3390/su151813380",
+      "url": "https://doi.org/10.3390/su151813380",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-068",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1177%2F0734242X231192766",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "bpnn"
+          ],
+          "application": "waste_quantity"
+        }
+      ],
+      "title": "Prediction of municipal solid waste generation and analysis of dominant variables in rapidly developing cities based on machine learning – a case study of China",
+      "authors": "Ying Zhao; Zhe Tao; Ying Li; Huige Sun; Jingrui Tang; Qianya Wang; Liang Guo; Weiwei Song; Bailian Larry Li",
+      "year": 2023,
+      "doi": "10.1177/0734242X231192766",
+      "url": "https://doi.org/10.1177/0734242x231192766",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-069",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://www.sciencedirect.com/science/article/pii/S2352711025002791",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dl"
+          ],
+          "application": "datacenter"
+        }
+      ],
+      "title": "PULSE: A modular framework for predictive energy efficiency in heterogeneous data centers",
+      "authors": "Daniel Flores-Martin; Felipe Lemus-Prieto; Juan A. Rico-Gallego",
+      "year": 2025,
+      "doi": "10.1016/j.softx.2025.102313",
+      "url": "https://doi.org/10.1016/j.softx.2025.102313",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-070",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41598-024-63262-x",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "gru",
+            "tcn",
+            "attention"
+          ],
+          "application": "load"
+        }
+      ],
+      "title": "Deep learning-driven hybrid model for short-term load forecasting and smart grid information management",
+      "authors": "Xinyu Wen; Jiacheng Liao; Qingyi Niu; Nachuan Shen; Yingxu Bao",
+      "year": 2024,
+      "doi": "10.1038/s41598-024-63262-x",
+      "url": "https://doi.org/10.1038/s41598-024-63262-x",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-071",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fmca30050102",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dea"
+          ],
+          "application": "ce_metrics"
+        }
+      ],
+      "title": "Measuring Circular Economy with Data Envelopment Analysis: A Systematic Literature Review",
+      "authors": "Svetlana V. Ratner; Andrey V. Lychev; Elisaveta D. Muravleva; Daniil M. Muravlev",
+      "year": 2025,
+      "doi": "10.3390/mca30050102",
+      "url": "https://doi.org/10.3390/mca30050102",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-072",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1007%2Fs43615-025-00537-z",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dea"
+          ],
+          "application": "ce_metrics"
+        }
+      ],
+      "title": "Enhancing Data Envelopment Analysis (DEA) for Incorporating Energy Recycling in Circular Economy",
+      "authors": "Seyedhossein Sajadifar; Balal Karimi; Hamed Mogouie; Hengameh Dolatshahi; Seyedeh Armita Sajadifar",
+      "year": 2025,
+      "doi": "10.1007/s43615-025-00537-z",
+      "url": "https://doi.org/10.1007/s43615-025-00537-z",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-073",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1038%2Fs41598-025-27237-w",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "waste_quantity"
+        }
+      ],
+      "title": "Advanced predictive modeling of municipal solid waste management using robust machine learning",
+      "authors": "Ka Yin Chau; Massoud Moslehpour; Shin-Hung Pan; Abed Akhundzada",
+      "year": 2025,
+      "doi": "10.1038/s41598-025-27237-w",
+      "url": "https://doi.org/10.1038/s41598-025-27237-w",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-074",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://research.aston.ac.uk/en/publications/predictive-maintenance-for-remanufacturing-based-on-hybrid-driven/",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "hybrid"
+          ],
+          "application": "rul"
+        }
+      ],
+      "title": "Predictive Maintenance for Remanufacturing Based on Hybrid-Driven Remaining Useful Life Prediction",
+      "authors": "Ming Zhang; Nasser Amaitik; Zezhong Wang; Yuchun Xu; Alexander Maisuradze; Michael Peschl; Dimitrios Tzovaras",
+      "year": 2022,
+      "doi": "10.3390/app12073218",
+      "url": "https://doi.org/10.3390/app12073218",
+      "in_library": true,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-075",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://arxiv.org/abs/2203.04249",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "gpr",
+            "bagging"
+          ],
+          "application": "secondlife"
+        }
+      ],
+      "title": "Evaluating feasibility of batteries for second-life applications using machine learning",
+      "authors": "Aki Takahashi; Anirudh Allam; Simona Onori",
+      "year": 2022,
+      "doi": null,
+      "url": "https://arxiv.org/abs/2203.04249",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-076",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fsu16031017",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "xgb",
+            "shap"
+          ],
+          "application": "waste_quantity"
+        }
+      ],
+      "title": "Leveraging Circular Economy Metrics for Data-Driven Forecasting of Solid Waste Production in Europe",
+      "authors": "Chun-Chih Chen; Yu-Shing Chang",
+      "year": 2024,
+      "doi": "10.3390/su16031017",
+      "url": "https://doi.org/10.3390/su16031017",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-077",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "excerpt",
+      "source_url": "https://journals.plos.org/plosone/article?id=10.1371/journal.pone.0312709",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ner",
+            "louvain"
+          ],
+          "application": "literature"
+        }
+      ],
+      "title": "Identifying technologies in circular economy paradigm through text mining on scientific literature",
+      "authors": "Vito Giordano; Alessio Castagnoli; Isabella Pecorini; Filippo Chiarello",
+      "year": 2024,
+      "doi": "10.1371/journal.pone.0312709",
+      "url": "https://doi.org/10.1371/journal.pone.0312709",
+      "in_library": true,
+      "source_locator": "Methodik, Abschnitte 3.1–3.4"
+    },
+    {
+      "id": "LIT-078",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.frl.2024.104979",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "nlp"
+          ],
+          "application": "esg"
+        }
+      ],
+      "title": "Bridging the gap in ESG measurement: Using NLP to quantify environmental, social, and governance communication",
+      "authors": "Tobias Schimanski; Andrin Reding; Nico Reding; Julia Bingler; Mathias Kraus; Markus Leippold",
+      "year": 2024,
+      "doi": "10.1016/j.frl.2024.104979",
+      "url": "https://doi.org/10.1016/j.frl.2024.104979",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-079",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.joitmc.2025.100469",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "design"
+        }
+      ],
+      "title": "Sustainable design and repair: Leveraging circular economy and machine learning for product development",
+      "authors": "Noushin Mohammadian; Omid Fatahi Valilai; Alexander Schlüter",
+      "year": 2025,
+      "doi": "10.1016/j.joitmc.2025.100469",
+      "url": "https://doi.org/10.1016/j.joitmc.2025.100469",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-080",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fapp131810224",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "yolo"
+          ],
+          "application": "plastic"
+        }
+      ],
+      "title": "Advancing Plastic Waste Classification and Recycling Efficiency: Integrating Image Sensors and Deep Learning Algorithms",
+      "authors": "Janghee Choi; Byeongju Lim; Youngjun Yoo",
+      "year": 2023,
+      "doi": "10.3390/app131810224",
+      "url": "https://doi.org/10.3390/app131810224",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-081",
+      "modality": "vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.53623%2Fidwm.v5i1.580",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "yolo11",
+            "yolo10",
+            "mobilenet",
+            "resnet"
+          ],
+          "application": "plastic"
+        }
+      ],
+      "title": "Plastic Waste Detection Using Deep Learning: Insights from the WaDaBa Dataset",
+      "authors": "Suman Kunwar; Banji Raphael Owabumoye; Abayomi Simeon Alade",
+      "year": 2025,
+      "doi": "10.53623/idwm.v5i1.580",
+      "url": "https://doi.org/10.53623/idwm.v5i1.580",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    },
+    {
+      "id": "LIT-082",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.geogeo.2025.100361",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "ml"
+          ],
+          "application": "mineral"
+        }
+      ],
+      "title": "Artificial intelligence and machine learning to enhance critical mineral deposit discovery",
+      "authors": "Rhys S. Davies; McLean Trott; Jaakko Georgi; Alexander Farrar",
+      "year": 2025,
+      "doi": "10.1016/j.geogeo.2025.100361",
+      "url": "https://doi.org/10.1016/j.geogeo.2025.100361",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-083",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.jwpe.2024.105770",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "decomposition",
+            "dl"
+          ],
+          "application": "water_reuse"
+        }
+      ],
+      "title": "Forecasting the potential of reclaimed water using signal decomposition and deep learning",
+      "authors": "Yinglong Chen; Hongling Zhang; Jingkai Peng; Shilong Ma; Tengsheng Xu; Lian Tang",
+      "year": 2024,
+      "doi": "10.1016/j.jwpe.2024.105770",
+      "url": "https://doi.org/10.1016/j.jwpe.2024.105770",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-084",
+      "modality": "unknown",
+      "coverage": "coded_scope",
+      "source_level": "title",
+      "source_url": "https://api.crossref.org/works/10.1016%2Fj.watres.2023.121092",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "dl"
+          ],
+          "application": "effluent"
+        }
+      ],
+      "title": "A hybrid deep learning approach to improve real-time effluent quality prediction in wastewater treatment plant",
+      "authors": "Yifan Xie; Yongqi Chen; Qing Wei; Hailong Yin",
+      "year": 2024,
+      "doi": "10.1016/j.watres.2023.121092",
+      "url": "https://doi.org/10.1016/j.watres.2023.121092",
+      "in_library": false,
+      "source_locator": "Registrierter Originaltitel"
+    },
+    {
+      "id": "LIT-085",
+      "modality": "non_vision",
+      "coverage": "coded_scope",
+      "source_level": "abstract",
+      "source_url": "https://api.crossref.org/works/10.3390%2Fw15193325",
+      "checked_on": "2026-09-25",
+      "relations": [
+        {
+          "methods": [
+            "rnn",
+            "lstm"
+          ],
+          "application": "effluent"
+        }
+      ],
+      "title": "Prediction of Wastewater Treatment Plant Effluent Water Quality Using Recurrent Neural Network (RNN) Models",
+      "authors": "Praewa Wongburi; Jae K. Park",
+      "year": 2023,
+      "doi": "10.3390/w15193325",
+      "url": "https://doi.org/10.3390/w15193325",
+      "in_library": false,
+      "source_locator": "Original-Abstract / Verlagsvorschau"
+    }
+  ],
+  "methods": [
+    {
+      "id": "neural",
+      "parent": null,
+      "label": "Neuronale Netze",
+      "kind": "family"
+    },
+    {
+      "id": "conv",
+      "parent": "neural",
+      "label": "Faltungsnetze",
+      "kind": "family"
+    },
+    {
+      "id": "recurrent",
+      "parent": "neural",
+      "label": "Rekurrente Netze",
+      "kind": "family"
+    },
+    {
+      "id": "graph",
+      "parent": "neural",
+      "label": "Graphnetze",
+      "kind": "family"
+    },
+    {
+      "id": "transformer",
+      "parent": "neural",
+      "label": "Transformer",
+      "kind": "family"
+    },
+    {
+      "id": "autoencoder",
+      "parent": "neural",
+      "label": "Autoencoder",
+      "kind": "family"
+    },
+    {
+      "id": "tree",
+      "parent": null,
+      "label": "Bäume & Baum-Ensembles",
+      "kind": "family"
+    },
+    {
+      "id": "kernel",
+      "parent": null,
+      "label": "Kernel & probabilistische Modelle",
+      "kind": "family"
+    },
+    {
+      "id": "classical",
+      "parent": null,
+      "label": "Statistik & Nachbarschaft",
+      "kind": "family"
+    },
+    {
+      "id": "rl",
+      "parent": null,
+      "label": "Reinforcement Learning",
+      "kind": "family"
+    },
+    {
+      "id": "unsupervised",
+      "parent": null,
+      "label": "Clustering & Faktorisierung",
+      "kind": "family"
+    },
+    {
+      "id": "text",
+      "parent": null,
+      "label": "Text & Wissensmethoden",
+      "kind": "family"
+    },
+    {
+      "id": "framework",
+      "parent": null,
+      "label": "Lern- & Hybridkonzepte",
+      "kind": "family"
+    },
+    {
+      "id": "support",
+      "parent": null,
+      "label": "Begleitende Verfahren",
+      "kind": "family"
+    },
+    {
+      "id": "optimization",
+      "parent": "support",
+      "label": "Optimierung & Entscheidung",
+      "kind": "family"
+    },
+    {
+      "id": "architecture_components",
+      "parent": "support",
+      "label": "Architekturbausteine",
+      "kind": "family"
+    },
+    {
+      "id": "processing",
+      "parent": "support",
+      "label": "Vorverarbeitung & Erklärung",
+      "kind": "family"
+    },
+    {
+      "id": "unspecified",
+      "parent": null,
+      "label": "Methode nicht spezifiziert",
+      "kind": "family"
+    },
+    {
+      "id": "cnn",
+      "parent": "conv",
+      "label": "CNN",
+      "kind": "method"
+    },
+    {
+      "id": "yolo",
+      "parent": "yolo_family",
+      "label": "YOLO",
+      "kind": "method"
+    },
+    {
+      "id": "yolov5",
+      "parent": "yolo_family",
+      "label": "YOLOv5",
+      "kind": "method"
+    },
+    {
+      "id": "yolov8",
+      "parent": "yolo_family",
+      "label": "YOLOv8 / YOLOv8s",
+      "kind": "method"
+    },
+    {
+      "id": "yolov9",
+      "parent": "yolo_family",
+      "label": "YOLOv9",
+      "kind": "method"
+    },
+    {
+      "id": "yolov7",
+      "parent": "yolo_family",
+      "label": "YOLOv7",
+      "kind": "method"
+    },
+    {
+      "id": "yolo11",
+      "parent": "yolo_family",
+      "label": "YOLO11",
+      "kind": "method"
+    },
+    {
+      "id": "yolo10",
+      "parent": "yolo_family",
+      "label": "YOLO10",
+      "kind": "method"
+    },
+    {
+      "id": "maskrcnn",
+      "parent": "conv",
+      "label": "Mask R-CNN",
+      "kind": "method"
+    },
+    {
+      "id": "mnv4",
+      "parent": "conv",
+      "label": "MNv4-Conv-M-fpn",
+      "kind": "method"
+    },
+    {
+      "id": "mobilenet",
+      "parent": "conv",
+      "label": "MobileNetV2",
+      "kind": "method"
+    },
+    {
+      "id": "resnet",
+      "parent": "conv",
+      "label": "ResNet50",
+      "kind": "method"
+    },
+    {
+      "id": "deeplabyolo",
+      "parent": "yolo_family",
+      "label": "Deeplab-YOLO",
+      "kind": "method"
+    },
+    {
+      "id": "tcn",
+      "parent": "conv",
+      "label": "TCN",
+      "kind": "method"
+    },
+    {
+      "id": "rtdetr",
+      "parent": "transformer",
+      "label": "RT-DETR",
+      "kind": "method"
+    },
+    {
+      "id": "llm",
+      "parent": "text",
+      "label": "LLM (Architektur offen)",
+      "kind": "method"
+    },
+    {
+      "id": "rnn",
+      "parent": "recurrent",
+      "label": "RNN",
+      "kind": "method"
+    },
+    {
+      "id": "lstm",
+      "parent": "lstm_family",
+      "label": "LSTM",
+      "kind": "method"
+    },
+    {
+      "id": "bilstm",
+      "parent": "lstm_family",
+      "label": "BiLSTM",
+      "kind": "method"
+    },
+    {
+      "id": "gru",
+      "parent": "recurrent",
+      "label": "GRU",
+      "kind": "method"
+    },
+    {
+      "id": "qrlstm",
+      "parent": "lstm_family",
+      "label": "QR-LSTM",
+      "kind": "method"
+    },
+    {
+      "id": "stemgnn",
+      "parent": "graph",
+      "label": "MCC-Stem-GNN",
+      "kind": "method"
+    },
+    {
+      "id": "agcrn",
+      "parent": "graph",
+      "label": "AGCRN",
+      "kind": "method"
+    },
+    {
+      "id": "mtgnn",
+      "parent": "graph",
+      "label": "MTGNN",
+      "kind": "method"
+    },
+    {
+      "id": "ae",
+      "parent": "autoencoder",
+      "label": "Autoencoder (Architektur offen)",
+      "kind": "method"
+    },
+    {
+      "id": "tripletae",
+      "parent": "autoencoder",
+      "label": "Triplet-convolutional deep autoencoder",
+      "kind": "method"
+    },
+    {
+      "id": "ann",
+      "parent": "neural",
+      "label": "ANN / NN (Architektur offen)",
+      "kind": "method"
+    },
+    {
+      "id": "ffnn",
+      "parent": "neural",
+      "label": "FFNN",
+      "kind": "method"
+    },
+    {
+      "id": "rbfn",
+      "parent": "neural",
+      "label": "RBFN",
+      "kind": "method"
+    },
+    {
+      "id": "bpnn",
+      "parent": "neural",
+      "label": "BP neural network",
+      "kind": "method"
+    },
+    {
+      "id": "dl",
+      "parent": "neural",
+      "label": "Deep Learning (Architektur offen)",
+      "kind": "method"
+    },
+    {
+      "id": "gan",
+      "parent": "neural",
+      "label": "GAN",
+      "kind": "method"
+    },
+    {
+      "id": "dt",
+      "parent": "tree",
+      "label": "Decision Tree",
+      "kind": "method"
+    },
+    {
+      "id": "rf",
+      "parent": "tree",
+      "label": "Random Forest",
+      "kind": "method"
+    },
+    {
+      "id": "gbr",
+      "parent": "boosting",
+      "label": "Gradient Boosting / GBRT / GBM",
+      "kind": "method"
+    },
+    {
+      "id": "xgb",
+      "parent": "boosting",
+      "label": "XGBoost",
+      "kind": "method"
+    },
+    {
+      "id": "lgb",
+      "parent": "boosting",
+      "label": "LightGBM",
+      "kind": "method"
+    },
+    {
+      "id": "cat",
+      "parent": "boosting",
+      "label": "CatBoost",
+      "kind": "method"
+    },
+    {
+      "id": "ada",
+      "parent": "framework",
+      "label": "AdaBoost (Basis offen)",
+      "kind": "method"
+    },
+    {
+      "id": "svm",
+      "parent": "support_vectors",
+      "label": "SVM",
+      "kind": "method"
+    },
+    {
+      "id": "gpr",
+      "parent": "kernel",
+      "label": "Gaussian Process Regression",
+      "kind": "method"
+    },
+    {
+      "id": "knn",
+      "parent": "classical",
+      "label": "KNN",
+      "kind": "method"
+    },
+    {
+      "id": "lr",
+      "parent": "classical",
+      "label": "Logistic Regression",
+      "kind": "method"
+    },
+    {
+      "id": "nb",
+      "parent": "classical",
+      "label": "Naive Bayes",
+      "kind": "method"
+    },
+    {
+      "id": "lda",
+      "parent": "classical",
+      "label": "LDA",
+      "kind": "method"
+    },
+    {
+      "id": "arima",
+      "parent": "classical",
+      "label": "ARIMA",
+      "kind": "method"
+    },
+    {
+      "id": "ql",
+      "parent": "rl",
+      "label": "Q-learning",
+      "kind": "method"
+    },
+    {
+      "id": "dql",
+      "parent": "rl",
+      "label": "Deep Q-learning",
+      "kind": "method"
+    },
+    {
+      "id": "sac",
+      "parent": "rl",
+      "label": "SAC",
+      "kind": "method"
+    },
+    {
+      "id": "td3",
+      "parent": "rl",
+      "label": "TD3",
+      "kind": "method"
+    },
+    {
+      "id": "rlgeneric",
+      "parent": "rl",
+      "label": "RL (Agent offen)",
+      "kind": "method"
+    },
+    {
+      "id": "drl",
+      "parent": "rl",
+      "label": "Deep RL (Agent offen)",
+      "kind": "method"
+    },
+    {
+      "id": "multiagent",
+      "parent": "rl",
+      "label": "Multi-Agent Deep RL (Agent offen)",
+      "kind": "method"
+    },
+    {
+      "id": "kmeans",
+      "parent": "unsupervised",
+      "label": "k-means",
+      "kind": "method"
+    },
+    {
+      "id": "nmf",
+      "parent": "unsupervised",
+      "label": "NMF",
+      "kind": "method"
+    },
+    {
+      "id": "clustering",
+      "parent": "unsupervised",
+      "label": "Clustering (Verfahren offen)",
+      "kind": "method"
+    },
+    {
+      "id": "ner",
+      "parent": "text",
+      "label": "Rule / gazetteer NER",
+      "kind": "method"
+    },
+    {
+      "id": "louvain",
+      "parent": "community",
+      "label": "Louvain community detection",
+      "kind": "method"
+    },
+    {
+      "id": "nlp",
+      "parent": "text",
+      "label": "NLP (Verfahren offen)",
+      "kind": "method"
+    },
+    {
+      "id": "federated",
+      "parent": "framework",
+      "label": "Federated Learning",
+      "kind": "method"
+    },
+    {
+      "id": "hybrid",
+      "parent": "framework",
+      "label": "Wissens-/Datenhybrid",
+      "kind": "method"
+    },
+    {
+      "id": "graybox",
+      "parent": "framework",
+      "label": "Gray-Box-Hybrid",
+      "kind": "method"
+    },
+    {
+      "id": "ensemble",
+      "parent": "framework",
+      "label": "Ensemble (Mitglieder offen)",
+      "kind": "method"
+    },
+    {
+      "id": "stacking",
+      "parent": "framework",
+      "label": "Stacking",
+      "kind": "method"
+    },
+    {
+      "id": "bagging",
+      "parent": "framework",
+      "label": "Bagging",
+      "kind": "method"
+    },
+    {
+      "id": "multioutput",
+      "parent": "framework",
+      "label": "Multi-Output-Lernen",
+      "kind": "method"
+    },
+    {
+      "id": "ga",
+      "parent": "optimization",
+      "label": "Genetic Algorithm",
+      "kind": "method"
+    },
+    {
+      "id": "pso",
+      "parent": "optimization",
+      "label": "Particle Swarm Optimization",
+      "kind": "method"
+    },
+    {
+      "id": "iwoa",
+      "parent": "optimization",
+      "label": "IWOA",
+      "kind": "method"
+    },
+    {
+      "id": "tpe",
+      "parent": "optimization",
+      "label": "Tree-structured Parzen Estimator",
+      "kind": "method"
+    },
+    {
+      "id": "topsis",
+      "parent": "optimization",
+      "label": "TOPSIS",
+      "kind": "method"
+    },
+    {
+      "id": "dea",
+      "parent": "optimization",
+      "label": "Data Envelopment Analysis",
+      "kind": "method"
+    },
+    {
+      "id": "game",
+      "parent": "optimization",
+      "label": "Stackelberg game",
+      "kind": "method"
+    },
+    {
+      "id": "evolution",
+      "parent": "optimization",
+      "label": "Evolutionäre Optimierung (offen)",
+      "kind": "method"
+    },
+    {
+      "id": "mc",
+      "parent": "simulation",
+      "label": "Monte-Carlo-Simulation",
+      "kind": "method"
+    },
+    {
+      "id": "vmd",
+      "parent": "processing",
+      "label": "VMD",
+      "kind": "method"
+    },
+    {
+      "id": "ceemdan",
+      "parent": "processing",
+      "label": "CEEMDAN",
+      "kind": "method"
+    },
+    {
+      "id": "shap",
+      "parent": "processing",
+      "label": "SHAP",
+      "kind": "method"
+    },
+    {
+      "id": "entropy",
+      "parent": "processing",
+      "label": "Entropieanalyse",
+      "kind": "method"
+    },
+    {
+      "id": "rfe",
+      "parent": "processing",
+      "label": "Recursive Feature Elimination",
+      "kind": "method"
+    },
+    {
+      "id": "pearson",
+      "parent": "processing",
+      "label": "Pearson-Korrelation",
+      "kind": "method"
+    },
+    {
+      "id": "attention",
+      "parent": "architecture_components",
+      "label": "Aufmerksamkeitsmechanismus",
+      "kind": "method"
+    },
+    {
+      "id": "decomposition",
+      "parent": "processing",
+      "label": "Signalzerlegung (Verfahren offen)",
+      "kind": "method"
+    },
+    {
+      "id": "ml",
+      "parent": "unspecified",
+      "label": "ML / KI (Modell offen)",
+      "kind": "method"
+    },
+    {
+      "id": "unknown",
+      "parent": "unspecified",
+      "label": "Methode nicht benannt",
+      "kind": "method"
+    },
+    {
+      "id": "yolo_family",
+      "parent": "conv",
+      "label": "YOLO-Detektoren",
+      "kind": "family"
+    },
+    {
+      "id": "lstm_family",
+      "parent": "recurrent",
+      "label": "LSTM-Varianten",
+      "kind": "family"
+    },
+    {
+      "id": "boosting",
+      "parent": "tree",
+      "label": "Boosting-Bäume",
+      "kind": "family"
+    },
+    {
+      "id": "mlp",
+      "parent": "neural",
+      "label": "Multilayer Perceptron",
+      "kind": "method"
+    },
+    {
+      "id": "support_vectors",
+      "parent": "kernel",
+      "label": "Support-Vektor-Verfahren",
+      "kind": "family"
+    },
+    {
+      "id": "svr",
+      "parent": "support_vectors",
+      "label": "SVR",
+      "kind": "method"
+    },
+    {
+      "id": "community",
+      "parent": "unsupervised",
+      "label": "Community Detection",
+      "kind": "family"
+    },
+    {
+      "id": "simulation",
+      "parent": "support",
+      "label": "Simulation",
+      "kind": "family"
+    }
+  ],
+  "applications": [
+    {
+      "id": "resources",
+      "parent": null,
+      "label": "Primärrohstoffe (Randbereich)",
+      "kind": "domain"
+    },
+    {
+      "id": "materials",
+      "parent": null,
+      "label": "Materialrückgewinnung",
+      "kind": "domain"
+    },
+    {
+      "id": "battery",
+      "parent": null,
+      "label": "Batterielebenszyklus",
+      "kind": "domain"
+    },
+    {
+      "id": "logistics",
+      "parent": null,
+      "label": "Zirkuläre Lieferketten",
+      "kind": "domain"
+    },
+    {
+      "id": "renewables",
+      "parent": null,
+      "label": "Erneuerbare Energie",
+      "kind": "domain"
+    },
+    {
+      "id": "buildings",
+      "parent": null,
+      "label": "Gebäude & Energiebedarf",
+      "kind": "domain"
+    },
+    {
+      "id": "carbon",
+      "parent": null,
+      "label": "Umwelt & Emissionen",
+      "kind": "domain"
+    },
+    {
+      "id": "process",
+      "parent": null,
+      "label": "Prozess & Wasser",
+      "kind": "domain"
+    },
+    {
+      "id": "knowledge",
+      "parent": null,
+      "label": "Wissen & Forschung",
+      "kind": "domain"
+    },
+    {
+      "id": "reman",
+      "parent": null,
+      "label": "Aufarbeitung & Reparatur",
+      "kind": "domain"
+    },
+    {
+      "id": "waste_sort",
+      "parent": "materials",
+      "label": "Abfall erkennen & sortieren",
+      "kind": "application"
+    },
+    {
+      "id": "plastic",
+      "parent": "materials",
+      "label": "Kunststoff erkennen",
+      "kind": "application"
+    },
+    {
+      "id": "microplastic",
+      "parent": "materials",
+      "label": "Mikroplastik segmentieren",
+      "kind": "application"
+    },
+    {
+      "id": "pcb",
+      "parent": "materials",
+      "label": "Leiterplatten-Komponenten",
+      "kind": "application"
+    },
+    {
+      "id": "textile",
+      "parent": "materials",
+      "label": "Textilien sortieren",
+      "kind": "application"
+    },
+    {
+      "id": "demolition",
+      "parent": "materials",
+      "label": "Bau- & Abbruchabfall",
+      "kind": "application"
+    },
+    {
+      "id": "waste_quantity",
+      "parent": "materials",
+      "label": "Abfallmengen prognostizieren",
+      "kind": "application"
+    },
+    {
+      "id": "sorting_process",
+      "parent": "materials",
+      "label": "Sortierprozesse modellieren",
+      "kind": "application"
+    },
+    {
+      "id": "mineral",
+      "parent": "resources",
+      "label": "Minerallagerstätten",
+      "kind": "application"
+    },
+    {
+      "id": "battery_sort",
+      "parent": "battery",
+      "label": "Batterien sortieren",
+      "kind": "application"
+    },
+    {
+      "id": "soh",
+      "parent": "battery",
+      "label": "Batteriezustand schätzen",
+      "kind": "application"
+    },
+    {
+      "id": "secondlife",
+      "parent": "battery",
+      "label": "Zweitnutzung prüfen",
+      "kind": "application"
+    },
+    {
+      "id": "reverse",
+      "parent": "logistics",
+      "label": "Rückführungslogistik",
+      "kind": "application"
+    },
+    {
+      "id": "returns",
+      "parent": "logistics",
+      "label": "Rückläufe prognostizieren",
+      "kind": "application"
+    },
+    {
+      "id": "circular_supply",
+      "parent": "logistics",
+      "label": "Zirkuläre Lieferketten",
+      "kind": "application"
+    },
+    {
+      "id": "supplier",
+      "parent": "logistics",
+      "label": "Lieferanten auswählen",
+      "kind": "application"
+    },
+    {
+      "id": "routing",
+      "parent": "logistics",
+      "label": "Emissionsbewusste Routen",
+      "kind": "application"
+    },
+    {
+      "id": "market_forecast",
+      "parent": "logistics",
+      "label": "Marktbedarf prognostizieren",
+      "kind": "application"
+    },
+    {
+      "id": "pricing",
+      "parent": "logistics",
+      "label": "Preise steuern",
+      "kind": "application"
+    },
+    {
+      "id": "pv",
+      "parent": "renewables",
+      "label": "PV & Einstrahlung",
+      "kind": "application"
+    },
+    {
+      "id": "pv_defect",
+      "parent": "renewables",
+      "label": "PV-Defekte erkennen",
+      "kind": "application"
+    },
+    {
+      "id": "wind",
+      "parent": "renewables",
+      "label": "Windleistung prognostizieren",
+      "kind": "application"
+    },
+    {
+      "id": "wind_anomaly",
+      "parent": "renewables",
+      "label": "Windanlagen überwachen",
+      "kind": "application"
+    },
+    {
+      "id": "microgrid",
+      "parent": "renewables",
+      "label": "Microgrid-Energiehandel",
+      "kind": "application"
+    },
+    {
+      "id": "hydrogen",
+      "parent": "renewables",
+      "label": "Wasserstoffpotenzial",
+      "kind": "application"
+    },
+    {
+      "id": "hvac",
+      "parent": "buildings",
+      "label": "HVAC regeln",
+      "kind": "application"
+    },
+    {
+      "id": "building_energy",
+      "parent": "buildings",
+      "label": "Gebäudeenergie",
+      "kind": "application"
+    },
+    {
+      "id": "datacenter",
+      "parent": "buildings",
+      "label": "Rechenzentren / PUE",
+      "kind": "application"
+    },
+    {
+      "id": "load",
+      "parent": "buildings",
+      "label": "Lastprognose",
+      "kind": "application"
+    },
+    {
+      "id": "carbon_price",
+      "parent": "carbon",
+      "label": "CO₂-Preisprognose",
+      "kind": "application"
+    },
+    {
+      "id": "building_carbon",
+      "parent": "carbon",
+      "label": "Gebäudeemissionen",
+      "kind": "application"
+    },
+    {
+      "id": "urban_carbon",
+      "parent": "carbon",
+      "label": "Stadtemissionen",
+      "kind": "application"
+    },
+    {
+      "id": "lca",
+      "parent": "carbon",
+      "label": "Lebenszyklusbewertung",
+      "kind": "application"
+    },
+    {
+      "id": "ce_metrics",
+      "parent": "carbon",
+      "label": "Zirkularität bewerten",
+      "kind": "application"
+    },
+    {
+      "id": "biogas",
+      "parent": "process",
+      "label": "Biogasprozesse",
+      "kind": "application"
+    },
+    {
+      "id": "leachate",
+      "parent": "process",
+      "label": "Sickerwasser behandeln",
+      "kind": "application"
+    },
+    {
+      "id": "gasification",
+      "parent": "process",
+      "label": "Biomassevergasung",
+      "kind": "application"
+    },
+    {
+      "id": "heat",
+      "parent": "process",
+      "label": "Abwärmenutzung",
+      "kind": "application"
+    },
+    {
+      "id": "symbiosis",
+      "parent": "process",
+      "label": "Industrielle Symbiose",
+      "kind": "application"
+    },
+    {
+      "id": "sludge_energy",
+      "parent": "process",
+      "label": "Energie / Schlammverbrennung",
+      "kind": "application"
+    },
+    {
+      "id": "sludge_output",
+      "parent": "process",
+      "label": "Schlammmenge prognostizieren",
+      "kind": "application"
+    },
+    {
+      "id": "water_reuse",
+      "parent": "process",
+      "label": "Wasserwiederverwendung",
+      "kind": "application"
+    },
+    {
+      "id": "effluent",
+      "parent": "process",
+      "label": "Ablaufqualität prognostizieren",
+      "kind": "application"
+    },
+    {
+      "id": "literature",
+      "parent": "knowledge",
+      "label": "Literatur & Technologien",
+      "kind": "application"
+    },
+    {
+      "id": "ce_review",
+      "parent": "knowledge",
+      "label": "CE-Forschungsüberblick",
+      "kind": "application"
+    },
+    {
+      "id": "esg",
+      "parent": "knowledge",
+      "label": "ESG-Kommunikation",
+      "kind": "application"
+    },
+    {
+      "id": "disassembly",
+      "parent": "reman",
+      "label": "Demontage planen",
+      "kind": "application"
+    },
+    {
+      "id": "production",
+      "parent": "reman",
+      "label": "Aufarbeitung steuern",
+      "kind": "application"
+    },
+    {
+      "id": "refurb_defect",
+      "parent": "reman",
+      "label": "Defekte zur Aufarbeitung",
+      "kind": "application"
+    },
+    {
+      "id": "reman_review",
+      "parent": "reman",
+      "label": "Aufarbeitung im Überblick",
+      "kind": "application"
+    },
+    {
+      "id": "rul",
+      "parent": "reman",
+      "label": "Restlebensdauer & Zustand",
+      "kind": "application"
+    },
+    {
+      "id": "design",
+      "parent": "reman",
+      "label": "Design & Reparatur",
+      "kind": "application"
+    }
+  ]
+}

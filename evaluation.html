@@ -17,28 +17,23 @@
   <body class="evaluation-body">
     <div class="scroll-progress" aria-hidden="true"></div>
 
-    <header class="site-nav" aria-label="Navigation der Evaluation">
-      <a class="brand" href="./index.html" aria-label="Zur Projektübersicht">
-        <span class="brand-mark" aria-hidden="true">CEAH</span>
-        <span>Circular Economy Analytics Hub</span>
-      </a>
-      <nav class="nav-links" aria-label="Abschnitte">
-        <a href="#protocol">Ablauf</a>
-        <a href="#sus">SUS-DE-Pos</a>
-        <a href="#project">Detailfragen</a>
-        <a href="./index.html">Projektseite</a>
+    <header class="site-nav" aria-label="Hauptnavigation">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">CEAH</span><span>Circular Economy Analytics Hub</span></a>
+      <nav class="nav-links" aria-label="Seitenfolge">
+        <a href="./index.html">01 Plattform</a><a href="./nebula.html">02 Literaturatlas</a><a href="./mapping.html">03 Plattform-Mapping</a><a href="./architecture.html">04 Architektur</a><a href="./evaluation.html" aria-current="page">05 Evaluation</a>
       </nav>
     </header>
+    <nav class="section-nav" aria-label="Auf dieser Seite"><span>05 / 05 · Evaluation</span><a href="#protocol">Ablauf</a><a href="#sus">SUS-DE-Pos</a><a href="#project">Detailfragen</a></nav>
 
     <main id="top" class="evaluation-page">
       <section class="evaluation-hero">
         <div class="evaluation-hero-copy">
           <p class="eyebrow">Nutzerbewertung</p>
-          <h1>Nutzerbewertung des Circular Economy Analytics Hub.</h1>
+          <h1>Nutzerbewertung des Circular Economy Analytics Hub</h1>
           <p>
-            Der SUS-DE-Pos bewertet die allgemeine Benutzerfreundlichkeit. Vierzehn ergänzende Detailfragen folgen
-            dem vollständigen Ablauf von Daten und ETL über Benchmark und Veröffentlichung bis zur Anwendung neuer
-            Batches und den getrennten Exporten.
+            Für die allgemeine Benutzerfreundlichkeit ist der SUS-DE-Pos vorgesehen. 14 weitere Fragen behandeln
+            den Weg von Daten und ETL über Benchmark und Veröffentlichung bis zur Anwendung neuer Batches und den
+            getrennten Exporten.
           </p>
         </div>
         <dl class="evaluation-facts" aria-label="Rahmen der Evaluation">
@@ -52,7 +47,7 @@
           </div>
           <div>
             <dt>2 Instrumente</dt>
-            <dd>Gesamtbewertung und Detailfragen</dd>
+            <dd>SUS-DE-Pos und Projektfragen</dd>
           </div>
         </dl>
       </section>
@@ -62,24 +57,23 @@
           <div class="evaluation-section-head">
             <div>
               <p class="section-label">01 · Durchführung</p>
-              <h2>Erst Aufgaben bearbeiten, dann beide Fragebögen ausfüllen.</h2>
+              <h2>Zuerst 7 Aufgaben bearbeiten, danach 2 Fragebögen ausfüllen.</h2>
             </div>
             <p>
-              Die Bewertung wird unmittelbar nach der Nutzung und vor einer gemeinsamen Nachbesprechung erhoben.
-              Dadurch beziehen sich die Antworten auf denselben Aufgabenpfad und einen vergleichbaren Nutzungskontext.
-              Diese öffentliche Seite dient ausschließlich der Präsentation: Sie speichert, übermittelt oder aggregiert
-              keine Eingaben.
+              Die Testpersonen füllen die 2 Fragebögen direkt nach den Aufgaben und vor der gemeinsamen Nachbesprechung
+              aus. So beziehen sich alle Antworten auf denselben Ablauf. Diese Seite ist eine Vorschau; Eingaben werden
+              weder gespeichert noch gesendet.
             </p>
           </div>
 
           <ol class="task-lane" aria-label="Aufgabenpfad für Testpersonen">
-            <li><span>01</span><strong>Datensatz und Szenario</strong><small>Datenstatus und Szenariopassung prüfen</small></li>
+            <li><span>01</span><strong>Datensatz und Szenario</strong><small>Datenstatus und Eignung für das Szenario prüfen</small></li>
             <li><span>02</span><strong>ETL und Split</strong><small>Vorschau, Warnungen und 70/15/15 verstehen</small></li>
             <li><span>03</span><strong>Training und Monitoring</strong><small>Experiment und Benchmark bis zum Abschluss beobachten</small></li>
             <li><span>04</span><strong>Results</strong><small>Validation-Auswahl und getrennte Test-Evaluation erklären</small></li>
             <li><span>05</span><strong>Benchmark veröffentlichen</strong><small>Leitmodell oder Tier-Sieger veröffentlichen und Standardversion prüfen</small></li>
             <li><span>06</span><strong>Preflight</strong><small>Neuen Batch auswählen oder hochladen und Kompatibilität prüfen</small></li>
-            <li><span>07</span><strong>Anwendung und Exporte</strong><small>Neue Daten, Handlungsfenster und beide Exportarten erklären</small></li>
+            <li><span>07</span><strong>Anwendung und Exporte</strong><small>Neue Daten, Handlungsfenster und 2 Exportarten erklären</small></li>
           </ol>
 
           <fieldset class="metadata-fields">
@@ -120,9 +114,8 @@
               <h2>SUS-DE-Pos</h2>
             </div>
             <p>
-              Die zehn Aussagen stammen aus der positiv formulierten, psychometrisch validierten deutschen SUS-Version.
-              Bitte spontan antworten und jede Aussage bewerten. Die Projektdetails werden bewusst erst im zweiten
-              Instrument abgefragt.
+              Die 10 Aussagen stammen aus der positiv formulierten, psychometrisch validierten deutschen SUS-Version.
+              Bitte jede Aussage spontan bewerten. Fragen zum konkreten Projekt folgen im 2. Teil.
             </p>
           </div>
 
@@ -132,7 +125,7 @@
           </div>
           <div id="sus-questions" class="question-list"></div>
           <p class="method-note">
-            Auswertung: Alle zehn Items, einschließlich Aussage 8, fließen in den SUS-DE-Pos-Gesamtwert ein. Für jedes
+            Auswertung: Alle 10 Items, einschließlich Aussage 8, fließen in den SUS-DE-Pos-Gesamtwert ein. Für jedes
             Item wird 1 vom Antwortwert abgezogen; die Summe wird mit 2,5 multipliziert. Der resultierende Wert von 0
             bis 100 ist keine Prozentangabe.
           </p>
@@ -142,13 +135,12 @@
           <div class="evaluation-section-head">
             <div>
               <p class="section-label">03 · Projektspezifische Diagnose</p>
-              <h2>Detailfragen zum Analyseworkflow</h2>
+              <h2>Detailfragen zum Analyseablauf</h2>
             </div>
             <p>
-              Dieses Instrument ergänzt den SUS um konkrete Rückmeldungen zum vollständigen Plattformablauf. Sein
-              Mittelwert bleibt eine interne Orientierung und darf nicht als SUS-Score oder als extern validierter
-              Benchmark berichtet werden. Alle vierzehn Aussagen sind positiv formuliert und werden in derselben
-              Richtung ausgewertet.
+              Diese 14 Fragen ergänzen den SUS um Rückmeldungen zum Plattformablauf. Aus den Antworten entsteht
+              ein projektspezifischer Diagnosewert. Er ist kein SUS-Score und kein externer Benchmark. Alle Aussagen
+              sind positiv formuliert und werden in derselben Richtung ausgewertet.
             </p>
           </div>
 
@@ -159,8 +151,8 @@
           <div id="project-questions" class="question-list"></div>
 
           <p class="method-note">
-            Auswertung: Die Antwortwerte aller vierzehn Aussagen können direkt zu einem projektspezifischen Mittelwert von
-            1 bis 5 zusammengeführt werden. Dieser Diagnosewert ergänzt den SUS-DE-Pos, ist selbst aber kein SUS-Score.
+            Auswertung: Der Mittelwert aller 14 Antworten liegt zwischen 1 und 5. Er ergänzt den SUS-DE-Pos als
+            projektspezifischer Diagnosewert und wird getrennt vom SUS-Score berichtet.
           </p>
 
           <div class="free-text-grid">
@@ -197,8 +189,8 @@
             <a href="https://doi.org/10.1080/10447318.2024.2434720">DOI 10.1080/10447318.2024.2434720</a>
           </li>
           <li>
-            Brooke, J. (1996). SUS: A quick and dirty usability scale. Die Quelle begründet Durchführung und
-            Transformation auf den Gesamtwert von 0 bis 100.
+            Brooke, J. (1996). SUS: A quick and dirty usability scale. Die Quelle beschreibt Durchführung und
+            Berechnung des Gesamtwerts von 0 bis 100.
           </li>
           <li>
             Gao, M., Kortum, P. &amp; Oswald, F. L. (2020). Multi-Language Toolkit for the System Usability Scale.
@@ -212,12 +204,13 @@
         </ul>
       </section>
     </main>
+<nav class="page-sequence" aria-label="Weiter durch das Showcase"><a href="./architecture.html">← 04 Architektur</a><a href="./index.html">Zurück zur Plattform →</a></nav>
 
     <a class="back-to-top" href="#top" aria-label="Zum Seitenanfang zurück" title="Zum Seitenanfang">↑</a>
 
     <footer class="site-footer">
       <strong>Circular Economy Analytics Hub</strong>
-      <span>Usability-Evaluation · SUS-DE-Pos · Projektspezifische Detailanalyse</span>
+      <span>Usability-Evaluation · SUS-DE-Pos · Projektspezifische Fragen</span>
     </footer>
 
     <script src="./assets/evaluation.js"></script>

@@ -12,20 +12,20 @@ const susItems = [
 ];
 
 const projectItems = [
-  "Ich konnte den vollständigen Ablauf von der Datensatzauswahl bis zum getrennten Export ohne zusätzliche Codeeinsicht nachvollziehen.",
+  "Ich konnte den Ablauf von der Datensatzauswahl bis zu den getrennten Exporten verstehen.",
   "Die Begriffe in der Oberfläche, einschließlich Leitmodell, Tier und Anwendung, waren verständlich.",
   "Die ETL-Vorschau half mir, Datenqualität und den chronologischen 70/15/15-Split einzuschätzen.",
-  "Im Benchmark war nachvollziehbar, wie das Leitmodell über die Validation-Hauptmetrik bestimmt wird.",
-  "Die Trennung zwischen Results als Test-Holdout-Evaluation und Anwendung als Analyse eines neuen Batches war verständlich.",
-  "Ich konnte nachvollziehen, wie ein Leitmodell oder zugelassener Tier-Sieger ausdrücklich veröffentlicht wird.",
-  "Die aktuell als Standard aktivierte Modellversion war eindeutig erkennbar.",
-  "Der Preflight erklärte verständlich, ob ein neuer Batch mit dem gewählten Modell und Szenario kompatibel ist.",
-  "Die szenariospezifischen Diagramme der Anwendung unterstützten die Interpretation des neuen Batches.",
-  "Die Regeln und daraus abgeleiteten Handlungsfenster waren im Anwendungslauf nachvollziehbar.",
-  "Ich konnte ein Anwendungsergebnis auf Modellversion, Eingabedatensatz und Regelsnapshot zurückführen.",
-  "Die getrennten Exporte für Test-Evaluation und Anwendung waren klar benannt und für ihren jeweiligen Zweck verständlich.",
-  "Die Oberfläche machte deutlich, welcher Schritt als nächstes sinnvoll ist.",
-  "Die Fehlermeldungen halfen mir, unpassende Daten oder Einstellungen zu erkennen.",
+  "Im Benchmark konnte ich erkennen, dass die Validation-Hauptmetrik das Leitmodell bestimmt.",
+  "Ich konnte Results als Test-Holdout-Evaluation von der Auswertung eines neuen Batches in Anwendung unterscheiden.",
+  "Ich konnte ein Leitmodell oder einen zugelassenen Tier-Sieger veröffentlichen.",
+  "Die aktive Standardversion des Modells war leicht zu erkennen.",
+  "Der Preflight zeigte mir, ob der neue Batch zum gewählten Modell und Szenario passt.",
+  "Die szenariospezifischen Diagramme halfen mir, den neuen Batch zu interpretieren.",
+  "Ich konnte nachvollziehen, wie die Regeln im Anwendungslauf zu Handlungsfenstern führen.",
+  "Bei jedem Anwendungsergebnis konnte ich Modellversion, Eingabedatensatz und verwendete Regeln erkennen.",
+  "Die Exporte für Test-Evaluation und Anwendung waren klar benannt und ihrem jeweiligen Zweck leicht zuzuordnen.",
+  "Die Oberfläche zeigte mir, welcher Schritt als Nächstes sinnvoll ist.",
+  "Die Fehlermeldungen zeigten mir, welche Daten oder Einstellungen ungeeignet waren.",
 ];
 
 const progressBar = document.querySelector(".scroll-progress");

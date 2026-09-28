@@ -1,0 +1,46 @@
+.arch-width { width: min(1180px, calc(100% - 48px)); margin-inline: auto; }
+.arch-intro { padding-block: 76px 64px; }
+.arch-intro h1 { max-width: 24ch; }
+.arch-lead { max-width: 76ch; margin-block: 26px; color: var(--muted); font-size: 1.12rem; }
+.arch-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+.arch-tags span { padding: 7px 12px; background: #edf4fa; color: #244b70; border-radius: 4px; font-size: .82rem; }
+.arch-section { padding-block: 68px; border-top: 1px solid var(--line); }
+.arch-section h2 { max-width: 28ch; margin-bottom: 22px; }
+.arch-section .arch-width > p:not(.eyebrow) { max-width: 86ch; color: var(--muted); }
+.arch-soft { background: var(--mist); }
+.arch-diagram { margin: 32px 0 0; padding: 28px; background: #102538; color: #e8f0f6; border-radius: 8px; }
+.arch-layer { display: grid; grid-template-columns: 105px minmax(0, 1fr); gap: 22px; padding: 22px; background: #193950; border: 1px solid #476276; border-radius: 5px; }
+.arch-layer > span { color: #a2d5ff; font-size: .85rem; font-weight: 700; }
+.arch-layer p { margin: 8px 0 0; color: #d1dfeb; }
+.arch-layer-api { border-color: #76bba4; }
+.arch-connector { padding: 11px; text-align: center; color: #a2c8e2; font-size: .8rem; }
+.arch-storage { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 22px; }
+.arch-storage article { padding: 18px; border-top: 2px solid #76bba4; background: #193950; }
+.arch-storage h3 { font-size: 1rem; }
+.arch-storage p { font-size: .9rem; color: #d1dfeb; }
+.arch-diagram figcaption { margin-top: 20px; color: #bcd0df; font-size: .83rem; }
+.arch-flow { list-style: none; counter-reset: stage; display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; padding: 0; margin-block: 30px; }
+.arch-flow li, .arch-decisions article { padding: 24px; background: white; border: 1px solid var(--line); border-top: 3px solid var(--blue); border-radius: 5px; }
+.arch-flow li > span { display: block; margin-bottom: 18px; color: var(--blue); font-size: .8rem; font-weight: 700; }
+.arch-flow p, .arch-decisions p { font-size: .92rem; }
+.arch-gallery { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 24px; }
+.arch-gallery figure { min-width: 0; margin: 0; }
+.arch-gallery img { width: 100%; border: 1px solid var(--line); border-radius: 5px; }
+.arch-gallery figcaption { margin-top: 12px; color: var(--muted); font-size: .86rem; }
+.arch-defenses { margin-top: 28px; border-top: 1px solid var(--line); }
+.arch-defenses details { border-bottom: 1px solid var(--line); padding: 18px 20px; }
+.arch-defenses details[open] { background: #f7fafc; }
+.arch-defenses summary { cursor: pointer; font-weight: 700; }
+.arch-defenses summary:focus-visible { outline: 2px solid var(--blue); outline-offset: 5px; }
+.arch-limit { color: #714d27; border-left: 3px solid #c59c6a; padding-left: 12px; }
+.arch-source { color: var(--muted); font-size: .82rem; overflow-wrap: anywhere; }
+.arch-decisions { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 14px; margin-top: 30px; }
+.arch-history { padding: 0; list-style: none; margin-block: 32px; }
+.arch-history li { padding: 0 0 25px 28px; margin-left: 7px; border-left: 2px solid #abc4d9; position: relative; }
+.arch-history li::before { content: ""; position: absolute; left: -7px; top: 4px; width: 12px; height: 12px; border: 3px solid white; border-radius: 50%; background: var(--blue); }
+.arch-history span { display: block; margin-bottom: 10px; font-size: .82rem; color: #315677; }
+.arch-history p { max-width: 82ch; color: var(--muted); }
+.arch-reading { display: flex; flex-wrap: wrap; gap: 14px 28px; color: var(--blue); font-size: .9rem; }
+.architecture-page code { overflow-wrap: anywhere; font-size: .9em; }
+@media (max-width: 850px) { .arch-flow, .arch-decisions { grid-template-columns: repeat(2, minmax(0, 1fr)); } .arch-storage { grid-template-columns: 1fr; } }
+@media (max-width: 540px) { .arch-width { width: calc(100% - 32px); } .arch-intro { padding-block: 42px; } .arch-intro h1 { font-size: 2.4rem; } .arch-section { padding-block: 44px; } .arch-section h2 { font-size: 2rem; } .arch-flow, .arch-decisions, .arch-gallery { grid-template-columns: 1fr; } .arch-diagram { padding: 14px; } .arch-layer { grid-template-columns: 1fr; gap: 10px; padding: 16px; } .arch-defenses details { padding-inline: 12px; } }

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="de">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Vom Literaturbestand zum ausführbaren Modell: Auswahlprotokoll, interaktive Mapping-Karte und prüfbare Evidenztabelle des CEAH." />
+    <title>Literatur &amp; Mapping · CEAH</title>
+    <link rel="icon" href="data:," />
+    <link rel="stylesheet" href="./assets/site.css" />
+    <link rel="stylesheet" href="./assets/mapping.css" />
+  </head>
+  <body class="mapping-page">
+    <header class="site-nav" aria-label="Hauptnavigation">
+      <a class="brand" href="./index.html"><span class="brand-mark" aria-hidden="true">CEAH</span><span>Circular Economy Analytics Hub</span></a>
+      <nav class="nav-links" aria-label="Seitenfolge">
+        <a href="./index.html">01 Plattform</a><a href="./nebula.html">02 Literaturatlas</a><a href="./mapping.html" aria-current="page">03 Plattform-Mapping</a><a href="./architecture.html">04 Architektur</a><a href="./evaluation.html">05 Evaluation</a>
+      </nav>
+    </header>
+    <nav class="section-nav" aria-label="Auf dieser Seite"><span>03 / 05 · Plattform-Mapping</span><a href="#protocol">Auswahl</a><a href="#explorer">Beziehungen</a><a href="#records">Quellen</a><a href="#implementation">Anwendung</a><a href="#research-plan">Forschung</a></nav>
+    <main>
+      <section class="mapping-hero">
+        <p class="eyebrow">Forschung → Umsetzung</p>
+        <h1>Eine Quelle.<br>Eine begründete Verbindung.</h1>
+        <p class="mapping-lead">Wie werden aus Arbeiten über Machine Learning in der Kreislaufwirtschaft passende Analyseaufgaben und prüfbare Modellkandidaten? Hier lässt sich die Zuordnung bis zur einzelnen Quelle zurückverfolgen.</p>
+        <div class="mapping-hero-foot"><span>17 Quellen in der Bibliothek</span><span>4 Plattformaufgaben</span><span>2 getrennte Evidenzebenen</span></div>
+      </section>
+
+      <section class="chapter" id="protocol">
+        <div class="section-head"><div><p class="section-label">01 · Den Bestand eingrenzen</p><h2>Von der Quelle zur begründeten Auswahl.</h2></div><p>Die vier Plattformaufgaben bestehen als Prototypvertrag. Die neue Literatur wird danach an Datenform, Zielsemantik und technischer Übertragbarkeit geprüft. Die Zahlen beschreiben den gelieferten Bestand, keine systematische Datenbanksuche.</p></div>
+        <ol class="screening-lane">
+          <li><span>Übernommen</span><strong data-count="imported">85</strong><p>Datensätze aus dem bereitgestellten Research-Paket</p></li>
+          <li><span>Bereinigt</span><strong data-count="unique">85</strong><p>Eindeutige DOI-/Titelschlüssel; keine Dubletten</p></li>
+          <li><span>Quellenbezogen aufgenommen</span><strong data-count="admitted">8</strong><p>Geprüfte Abstracts oder Methodikabschnitte mit begrenzter Rolle</p></li>
+          <li><span>Im breiteren Forschungsraum</span><strong data-count="not_admitted">77</strong><p>Nicht in das Plattform-Mapping aufgenommen</p></li>
+          <li><span>Gemeinsame Bibliothek</span><strong data-count="library">17</strong><p>9 bestehende Quellen und 8 Ergänzungen ohne DOI-Dubletten</p></li>
+        </ol>
+        <p class="boundary-note">8 + 77 = 85. Acht Quellen sind mit begrenzter, quellengestützter Bedeutung in der Bibliothek. Alle 85 Hinweise sind im <a href="./nebula.html">Literaturatlas</a> nach ihrer jeweiligen Quellenebene beschrieben; die weiteren 77 sind damit nicht automatisch für das Plattform-Mapping übernommen. Ein gelesener Volltextabschnitt ist keine vollständige Studienbewertung.</p>
+        <div class="mapping-rule-grid">
+          <article><span>01 / Anwendung</span><h3>Asset und Betriebsfrage</h3><p>Lebensdauer, beobachteter Zustand, Abweichung oder Effizienz eines Betriebsprozesses. Stadtweite CO₂-Treiber oder Marktpreise erfüllen diese Bedingung nicht.</p></article>
+          <article><span>02 / Daten</span><h3>Numerische Messgrößen</h3><p>Sensor- und Prozessgrößen passen zum tabellarischen Datenpfad. Bild- und Spektralsortierung liegt außerhalb dieses Prototyps; relevante tiefe Sequenzmodelle bleiben Forschungsreferenzen.</p></article>
+          <article><span>03 / Bedeutung</span><h3>Das Ziel muss passen</h3><p>SOH ist nicht automatisch RUL. Energieverbrauch braucht eine Bezugsgröße für Effizienz. Eine Wasserqualitätsregression belegt noch keine Anomaliescoring-Methode.</p></article>
+          <article><span>04 / Nachweis</span><h3>Unbekannt bleibt sichtbar</h3><p>Reviews und übertragbare Ideen werden getrennt geführt. Bibliografische Leads ersetzen keine Originalpassage. Fehlende Verfahren oder Fundstellen werden nicht ergänzt.</p></article>
+        </div>
+      </section>
+
+      <section class="chapter chapter-soft" id="explorer">
+        <div class="section-head"><div><p class="section-label">02 · Die Beziehung untersuchen</p><h2>Literatur und Implementierung im Vergleich.</h2></div><p>Die erste Ansicht zeigt die gemeinsame Bibliothek und ihre begrenzten Beziehungen. Die zweite zeigt die tatsächlich registrierten Modelle. Eine Verbindung ist eine Zuordnung, keine Leistungs- oder Qualitätswertung.</p></div>
+        <div class="mapping-workbench">
+          <div class="mapping-mode" role="group" aria-label="Evidenzebene"><button type="button" data-mode="literature" aria-pressed="true">Literaturbeziehungen</button><button type="button" data-mode="platform" aria-pressed="false">Ausführbare Plattform</button></div>
+          <div class="mapping-filters">
+            <label>Szenario<select id="scenario-filter"><option value="">Alle Szenarien</option><option value="PM">PM · Restlebensdauer</option><option value="CM">CM · Maschinenzustand</option><option value="AD">AD · Anomaliescore</option><option value="EO">EO · Effizienzbewertung</option></select></label>
+            <label>Methodenfamilie<select id="family-filter"><option value="">Alle Familien</option></select></label>
+            <label>Quellenauswahl<select id="decision-filter"><option value="all">Gesamte Bibliothek</option><option value="existing">Bestehende Quellen</option><option value="supplemental">Ergänzte Quellen</option><option value="mapping_method">Methodik der Literaturanalyse</option></select></label>
+            <button type="button" id="mapping-reset">Filter zurücksetzen</button>
+          </div>
+          <div class="constellation-frame"><svg id="mapping-network" viewBox="0 0 960 570" role="group" aria-labelledby="network-title network-description"><title id="network-title">Methodenfamilien und vier Szenarien</title><desc id="network-description">Interaktive Beziehungen. Dieselben Angaben stehen in der Evidenztabelle darunter.</desc></svg></div>
+          <div class="graph-caption"><p id="graph-summary" role="status" aria-live="polite">Beziehungen werden geladen.</p><button type="button" id="download-network">SVG herunterladen</button></div>
+          <p class="graph-note">Knoten wählen, um die Tabelle zu filtern; erneut wählen, um den Filter aufzuheben. Anordnung und Abstände sind Layout, keine Embeddings. Jede Linie zählt Quellen bzw. registrierte Kandidaten — keine Effektstärke. Mehrfachzuordnungen sind möglich.</p>
+          <p class="mapping-gap" id="mapping-gap">Die Bibliothek begründet Aufgaben und Methodenfamilien. Lokale Modellleistung wird nur im Benchmark gemessen.</p>
+        </div>
+        <noscript><p class="boundary-note">Für die interaktive Karte wird JavaScript benötigt. Die vollständigen Daten sind auch als <a href="./assets/mapping-evidence.csv">CSV</a> und <a href="./assets/mapping-data.json">JSON</a> verfügbar.</p></noscript>
+
+        <div class="mapping-records" id="records">
+          <div class="records-heading"><div><p class="section-label">03 · Die Zuordnung prüfen</p><h3 id="records-title">Evidenztabelle</h3></div><label>In der Tabelle suchen<input id="mapping-search" type="search" placeholder="Titel, DOI, Algorithmus oder ID" /></label></div>
+          <p id="record-count" role="status" aria-live="polite"></p>
+          <div id="mapping-table"></div>
+          <p class="mapping-downloads"><a href="./assets/mapping-evidence.csv" download>17 Quellen · CSV ↓</a><a href="./assets/mapping-data.json" download>Bibliothek und Modellangebot · JSON ↓</a></p>
+          <p class="graph-note">Originaltitel und technische Begriffe werden aus den überprüften Quellen übernommen. Der <a href="./nebula.html">Literaturatlas mit 85 Hinweisen</a> zeigt den breiteren Forschungsraum einschließlich Bildverarbeitung und ungeklärter Methoden. Diese beschreibenden Beziehungen erzeugen keine zusätzliche Kante im Plattform-Mapping. Die <a href="./assets/mapping-leads.csv" download>vollständige bibliografische Liste</a> bleibt separat verfügbar.</p>
+        </div>
+      </section>
+
+      <section class="chapter" id="implementation">
+        <div class="section-head"><div><p class="section-label">04 · Vom Mapping zur Anwendung</p><h2>Mehrere Kriterien.<br>Klare Entscheidungen.</h2></div><p>Der Beitrag liegt in der Verbindung von Forschungseinordnung und ausführbarem Arbeitsablauf. Die neue Literaturtabelle dokumentiert diese Verbindung; sie erzeugt noch keine automatischen Modellempfehlungen.</p></div>
+        <ol class="selection-path">
+          <li><span>Begründen</span><h3>Quelle → Aufgabe</h3><p>Die Literatur informiert Szenario, Ziel und Methodenfamilie. Neue Beziehungen müssen fachlich geprüft werden, bevor sie das Modellangebot verändern.</p></li>
+          <li><span>Eingrenzen</span><h3>Daten → Kandidaten</h3><p>Aufgabentyp und Datenbedingungen begrenzen die Modellmenge. Tier, Aufwand und Erklärbarkeit machen Unterschiede sichtbar.</p></li>
+          <li><span>Vergleichen</span><h3>Validation → Auswahl</h3><p>RMSE, Macro-F1 oder Average Precision bestimmen den Leistungsgewinner. Der zusätzliche Adaptions-Score ersetzt diese Hauptmetrik nicht.</p></li>
+          <li><span>Prüfen</span><h3>Test → Nachweis</h3><p>Results dokumentiert die gesonderte Holdout-Leistung. Zeitgrenzen und Datenqualität bleiben als technische Voraussetzungen sichtbar.</p></li>
+          <li><span>Anwenden</span><h3>Version → neuer Batch</h3><p>Leitmodell oder Tier-Sieger explizit veröffentlichen, neu trainieren, neue Daten vorprüfen und mit der festen Version auswerten.</p></li>
+        </ol>
+        <p class="boundary-note">Eine vollständige Quellenbegründung jedes Modellkandidaten und ein empirischer Vorteil gegenüber anderen Auswahlwegen sind noch offen. Lokale Bereitstellung ist kein industrielles Deployment. Rechnerzeit und technische Profile sind keine vollständige Kosten- oder Energiebilanz.</p>
+        <details class="core-sources"><summary>Die zusammengeführte Quellenbasis der Plattform</summary><div id="core-sources"></div></details>
+      </section>
+
+      <section class="chapter chapter-soft" id="research-plan">
+        <div class="section-head"><div><p class="section-label">05 · Nächster methodischer Schritt</p><h2>Semantik untersuchen.<br>Zuordnungen prüfen.</h2></div><p>Ein möglicher Ausbau ist die semantische Analyse der aufgenommenen Literatur. Die aktuelle Karte bleibt explizit codiert. LIT-077 liefert einen überprüften Methodenhinweis für Entitätsextraktion und Community Discovery; CEAH hat dieses Clustering noch nicht ausgeführt.</p></div>
+        <div class="mapping-rule-grid">
+          <article><span>Geplant / 01</span><h3>Quellen sichern</h3><p>Abstracts und Originalpassagen mit Fundstellen und Nutzungsrechten erfassen. Anwendung, Modalität, Ziel, Algorithmus und Metrik nach einem Codebuch extrahieren.</p></article>
+          <article><span>Geplant / 02</span><h3>Codierung prüfen</h3><p>Synonyme vereinheitlichen, Unbekanntes erhalten und einen Teilbestand unabhängig doppelt codieren. Extraktionsfehler und Uneinigkeit berichten.</p></article>
+          <article><span>Geplant / 03</span><h3>Struktur entdecken</h3><p>Versionierte Textrepräsentationen explorativ clustern, ohne die vier Plattformlabels vorzugeben. Parameter, Seeds und Clusterstabilität prüfen.</p></article>
+          <article><span>Geplant / 04</span><h3>Ergebnis beurteilen</h3><p>Auch unpassende Cluster und Gegenbeispiele berichten. Fachleute prüfen Bedeutung und Übertragbarkeit, bevor eine neue Beziehung übernommen wird.</p></article>
+        </div>
+        <p class="boundary-note">Die prüfbare Forschungsfrage lautet: Verbessert die sichtbare Mapping-Kette gegenüber einer Modellliste die korrekte Auswahl, Erklärung und Rückverfolgung? Dafür fehlen noch vergleichende Nutzeraufgaben, Expertenurteile und reale Folgebatches.</p>
+        <a class="mapping-return" href="./index.html#status">← Zur Plattform</a>
+      </section>
+    </main>
+<nav class="page-sequence" aria-label="Weiter durch das Showcase"><a href="./nebula.html">← 02 Literaturatlas</a><a href="./architecture.html">Weiter: 04 Architektur →</a></nav>
+    <footer class="site-footer"><strong>CEAH · Literatur &amp; Mapping</strong><span>Retrospektives Scoping · transparente Auswahl · lokaler Prototyp</span></footer>
+    <script src="./assets/mapping-data.js"></script>
+    <script src="./assets/mapping.js"></script>
+  </body>
+</html>
