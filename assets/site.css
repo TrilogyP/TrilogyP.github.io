@@ -98,6 +98,12 @@ h3 { font-size: 1.22rem; }
 .mapping-layers { grid-template-columns: repeat(6, minmax(0, 1fr)); }
 .mapping-layers li { min-width: 0; min-height: 205px; padding: 21px; border-right: 1px solid var(--line); }
 .mapping-layers li:last-child { border-right: 0; background: #edf5ff; }
+.system-summary { width: min(100%, var(--container)); margin: 24px auto 0; color: var(--muted); font-size: .9rem; }
+.system-summary strong { color: var(--ink); }
+.system-summary a { color: var(--blue); }
+.mapping-criteria { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.mapping-criteria li { min-height: 0; }
+.mapping-criteria strong { margin-top: 12px; }
 .scenario-map { display: grid; grid-template-columns: repeat(4, minmax(0, 1fr)); gap: 12px; width: min(100%, var(--container)); margin: 18px auto 0; }
 .scenario-map article { min-width: 0; min-height: 188px; padding: 20px; border-left: 3px solid var(--green); background: var(--mist); }
 .scenario-map p { margin: 14px 0 0; color: var(--muted); font-size: .89rem; }

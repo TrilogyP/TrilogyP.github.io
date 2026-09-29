@@ -1,7 +1,7 @@
 {
-  "source_commit": "003ee7b4bbe1281b4200e28f6bdf29762f857180",
+  "source_commit": "40d6c47183997a8af8186f0a42bb5dbde8879ae6",
   "source_dirty": false,
-  "generated_at": "2026-09-29T11:40:42.276443+00:00",
+  "generated_at": "2026-09-29T11:44:33.128778+00:00",
   "pages": [
     "index.html",
     "nebula.html",
@@ -10,7 +10,7 @@
     "evaluation.html"
   ],
   "sha256": {
-    "index.html": "513ac0db23c6f439cd79329c16e759793e6f182b6bed0cbc022a1c12f3f027c6",
+    "index.html": "fa7c1c2fca7cd0974ec4beaa9b2fa1d57da14a4842ba5ba5ddc63300f41ac4ca",
     "nebula.html": "667bba29b89ac56b7c2baccb9bb236e57b69e2d8cf8796a36a033ba3370aec15",
     "mapping.html": "d432f7c5d4e82199f10629d2896b82a0e3fd3152c9cc638d0e54ed01fe71cba9",
     "architecture.html": "d969a3d363da1affeadfad179523db001f543aee01ac858cda16255ed4db22dc",
@@ -50,7 +50,7 @@
     "assets/showcase-results-hero.png": "b68c09e30ebb7b75616b7c603576b108f5c0da2e8d8b6664b263b7dde2c7cbea",
     "assets/showcase-results.png": "6234b4fc84fe8100a93424b574120af913031e2179f1434954207a18f8388c22",
     "assets/showcase-training.png": "f56d0a05ea0c7246ab22a41b9e23740369e7c52376acd564e22117a7e25a4221",
-    "assets/site.css": "b2ac5623e5a66ab91181ea7de0194b6535e1f31a35f81e1a69ff33728a2253b1",
+    "assets/site.css": "f70ec81873040555c624b6642e3472ee9fef55c6729f106c9ada9a2756e7023f",
     "assets/site.js": "a177a1fe5e5dfc3eb8c23e5a754084e3dd13b03e2bac34b3d0247da71cff9780"
   }
 }

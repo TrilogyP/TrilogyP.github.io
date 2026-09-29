@@ -74,13 +74,12 @@
       <section class="chapter chapter-soft" id="architecture">
         <div class="section-head">
           <div>
-            <p class="section-label">Systemdesign und Prozesslogik</p>
+            <p class="section-label">Arbeitsablauf und Ergebnisverträge</p>
             <h2>Modellbewertung und neue Daten sind 2 getrennte Schritte.</h2>
           </div>
           <p>
-            Die Oberfläche läuft in Vue. FastAPI verarbeitet Daten, ETL, Experimente, Modellversionen und neue Batches;
-            SQLite, CSV und joblib speichern die zugehörigen Daten lokal. Ereignisse und Handlungshinweise berechnet das
-            Backend. Die Grafiken zeigen diese Ergebnisse nur an.
+            Der Ablauf führt von der Datenvorbereitung über die Modellbewertung zur Veröffentlichung und Anwendung.
+            Test-Ergebnisse und Ergebnisse eines neuen Batches bleiben getrennt nachvollziehbar und exportierbar.
           </p>
         </div>
 
@@ -99,14 +98,6 @@
           </article>
         </div>
 
-        <div class="system-grid" aria-label="Systemarchitektur der Plattform">
-          <article><span>01</span><h3>Oberfläche</h3><p>Vue organisiert 11 deutschsprachige Arbeitsbereiche vom Datensatz bis zur Anwendung und Forschungseinordnung.</p></article>
-          <article><span>02</span><h3>FastAPI-Backend</h3><p>FastAPI prüft Sitzungen und Eingaben und stellt Daten-, Analyse- und Berichtsfunktionen bereit.</p></article>
-          <article><span>03</span><h3>Analyse im Backend</h3><p>Das Backend führt Fusion, Feature Engineering, Modellvergleich, Veröffentlichung und Batch-Analyse aus.</p></article>
-          <article><span>04</span><h3>Lokale Speicherung</h3><p>SQLite verwaltet Metadaten. CSV- und joblib-Dateien speichern Datensätze, Modellversionen und Analyseausgaben.</p></article>
-          <article><span>05</span><h3>Ergebnisse und Export</h3><p>Oberfläche, CSV und HTML-Berichte verwenden dieselben Ergebnisse für eine konsistente Darstellung.</p></article>
-        </div>
-
         <ol class="process-lane" aria-label="End-to-End-Analyseprozess">
           <li><span>01</span><strong>Daten und Fusion</strong><small>CSV, Presets oder Bundle</small></li>
           <li><span>02</span><strong>ETL</strong><small>Qualität, Features, 70/15/15</small></li>
@@ -116,6 +107,7 @@
           <li><span>06</span><strong>Preflight</strong><small>Neuen Batch prüfen</small></li>
           <li><span>07</span><strong>Anwendung</strong><small>Regeln, Ereignisse, Export</small></li>
         </ol>
+        <p class="system-summary"><strong>Technische Umsetzung.</strong> Vue führt durch 11 deutschsprachige Arbeitsbereiche einschließlich Forschungseinordnung. FastAPI prüft Sitzungen und Eingaben, stellt die Daten-, Analyse- und Berichtsfunktionen bereit und führt Fusion, Feature Engineering, Modellvergleich, Veröffentlichung und Batch-Analyse aus. Ereignisse und Handlungshinweise entstehen im Backend; Oberfläche, CSV und HTML-Berichte verwenden dieselben Ergebnisse. SQLite speichert Metadaten, CSV und joblib die Datensätze, Modellversionen und Analyseausgaben lokal. <a href="./architecture.html">Technische Architektur →</a></p>
       </section>
 
       <section class="chapter" id="mapping">
@@ -125,26 +117,22 @@
             <h2>So führt die Plattform vom praktischen Problem zum passenden ML-Verfahren.</h2>
           </div>
           <p>
-            Literatur erklärt den Hintergrund der Szenarien und Methodenfamilien. Die Matrix nennt die Modelle, die in
-            der Plattform verfügbar sind. Der Benchmark vergleicht sie für den gewählten Datensatz und Split. Jede Ebene
-            beantwortet eine andere Frage.
+            Mapping begründet die Kandidatenmenge für ein Problem. Literatur liefert den Kontext, die Matrix das
+            ausführbare Modellangebot und der Benchmark den Vergleich auf dem gewählten Datensatz und Split.
           </p>
         </div>
 
-        <ol class="mapping-layers" aria-label="6-stufige Algorithmus-Mapping-Kette">
-          <li><span>01</span><strong>Operatives Problem</strong><small>Lebensdauer, Zustandskenntnis, Abweichung oder Effizienzlücke</small></li>
-          <li><span>02</span><strong>Abstrakte Aufgabe</strong><small>RUL-Regression, Mehrklassen, One-Class oder Score-Regression</small></li>
-          <li><span>03</span><strong>Daten und Features</strong><small>Tabellarische CSV-Zeitreihen, Asset, numerische Sensorwerte, ETL-Features</small></li>
-          <li><span>04</span><strong>Kandidatenfamilien</strong><small>Linear, Ensemble, Kernel, Neighbourhood, statistisch oder One-Class</small></li>
-          <li><span>05</span><strong>Evaluation</strong><small>Validation/Test mit RMSE, Macro-F1 oder Average Precision</small></li>
-          <li><span>06</span><strong>Anwendung</strong><small>Batch-Kurven, Risikofenster, Ereignisse und getrennte Exporte</small></li>
+        <ol class="mapping-layers mapping-criteria" aria-label="Drei Bedingungen der Kandidatenauswahl">
+          <li><span>01 · Ziel</span><strong>Problem und ML-Aufgabe</strong><small>Lebensdauer, Zustandskenntnis, Abweichung oder Effizienzlücke bestimmen Zielgröße und Aufgabe. Die vier Szenarien darunter verbinden beides mit Metrik und Anwendungsausgabe.</small></li>
+          <li><span>02 · Dateneignung</span><strong>Daten und Merkmale</strong><small>Tabellarische CSV-Zeitreihen mit Asset-ID, numerischen Sensorwerten und ETL-Merkmalen begrenzen, welche Verfahren anwendbar sind.</small></li>
+          <li><span>03 · Modellangebot</span><strong>Zulässige Kandidaten</strong><small>Lineare Modelle, Ensembles, Kernel-, Nachbarschafts-, statistische und One-Class-Verfahren. Tier, Aufwand und Erklärbarkeit beschreiben die Einsatzbedingungen; die Validation-Hauptmetrik entscheidet den Leistungsgewinner.</small></li>
         </ol>
 
         <div class="scenario-map" aria-label="4 Szenarien entlang der Mapping-Kette">
           <article><h3>Vorausschauende Wartung</h3><p>Asset-Lebensdauer</p><strong>RUL-Regression · RMSE</strong><small>RUL-Kurve und Wartungsrisikofenster</small></article>
-          <article><h3>Zustandsüberwachung</h3><p>Inspektions- und Aufarbeitungspriorität</p><strong>Mehrklassen · Macro-F1</strong><small>Zustandsband, Segmente und Übergänge</small></article>
+          <article><h3>Zustandsüberwachung</h3><p>Inspektions- und Aufarbeitungspriorität</p><strong>Mehrklassenklassifikation · Macro-F1</strong><small>Zustandsband, Segmente und Übergänge</small></article>
           <article><h3>Anomalieerkennung</h3><p>Vermeidung von Fehlern und Ausschuss</p><strong>One-Class · Average Precision</strong><small>Score, feste Grenze und Ereigniscluster</small></article>
-          <article><h3>Effizienzoptimierung</h3><p>Operative Ressourceneffizienz</p><strong>Regression · RMSE</strong><small>Effizienzschätzung, Zielabstand und Trend</small></article>
+          <article><h3>Effizienzoptimierung</h3><p>Operative Ressourceneffizienz</p><strong>Score-Regression · RMSE</strong><small>Effizienzschätzung, Zielabstand und Trend</small></article>
         </div>
 
         <p class="boundary-note">
@@ -156,7 +144,6 @@
           <p class="step-label">Literaturbestand und Auswahlweg</p>
           <h3>85 Recherchehinweise. Ein Literaturatlas. Ein begründetes Plattform-Mapping.</h3>
           <p>Der interaktive Literaturatlas verbindet Algorithmen, ihre Familien und Anwendungsfelder. Bildbezug und Quellenbasis lassen sich filtern. Das engere Plattform-Mapping verwendet 17 Bibliotheksquellen: neun bestehende Arbeiten und acht begrenzt aufgenommene Ergänzungen.</p>
-          <p>Literatur informiert die Auswahl; Aufgaben- und Datenbedingungen begrenzen die verfügbaren Modelle. Tier und Aufwand ergänzen die Entscheidung, Validation bestimmt den Leistungsgewinner. Danach folgen Test, Veröffentlichung und neue Batch-Anwendung.</p>
           <a href="./nebula.html">02 · Literaturatlas mit 85 Hinweisen erkunden →</a>
           <a href="./mapping.html">03 · Plattform-Mapping und Evidenztabelle öffnen →</a>
         </div>
