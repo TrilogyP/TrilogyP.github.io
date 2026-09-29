@@ -335,7 +335,7 @@
       "url": "https://doi.org/10.1016/j.isatra.2023.03.045",
       "origin": "supplemental",
       "evidence_scope": "method_family",
-      "evidence_note": "SCADA-Anomalien werden mit einem durch Fehlerbeispiele unterstützten Autoencoder und metrischem Lernen untersucht. Diese Trainingsannahme unterscheidet sich vom CEAH-Anomalievertrag; Autoencoder und GAN sind nicht implementiert.",
+      "evidence_note": "SCADA-Anomalien werden mit einem durch Fehlerbeispiele unterstützten Autoencoder und metrischem Lernen untersucht. Diese Trainingsannahme unterscheidet sich vom unüberwachten One-Class-Anomalieszenario in CEAH; Autoencoder und GAN sind nicht implementiert.",
       "research_role": "research_direction",
       "verification_status": "publisher_abstract",
       "source_url": "https://www.sciencedirect.com/science/article/pii/S0019057823001635",

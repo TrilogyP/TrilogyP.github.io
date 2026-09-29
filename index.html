@@ -132,7 +132,7 @@
           <article><h3>Vorausschauende Wartung</h3><p>Asset-Lebensdauer</p><strong>RUL-Regression · RMSE</strong><small>RUL-Kurve und Wartungsrisikofenster</small></article>
           <article><h3>Zustandsüberwachung</h3><p>Inspektions- und Aufarbeitungspriorität</p><strong>Mehrklassenklassifikation · Macro-F1</strong><small>Zustandsband, Segmente und Übergänge</small></article>
           <article><h3>Anomalieerkennung</h3><p>Vermeidung von Fehlern und Ausschuss</p><strong>One-Class · Average Precision</strong><small>Score, feste Grenze und Ereigniscluster</small></article>
-          <article><h3>Effizienzoptimierung</h3><p>Operative Ressourceneffizienz</p><strong>Score-Regression · RMSE</strong><small>Effizienzschätzung, Zielabstand und Trend</small></article>
+          <article><h3>Effizienzbewertung</h3><p>Operative Ressourceneffizienz &amp; Priorisierung</p><strong>Score-Regression · RMSE</strong><small>Effizienzschätzung, Zielabstand und Trend</small></article>
         </div>
 
         <p class="boundary-note">
@@ -156,8 +156,8 @@
             <h2>11 Tabs führen durch 5 Arbeitsphasen.</h2>
           </div>
           <p>
-            Die Ansichten werden mit synthetischen Daten in einer getrennten lokalen Umgebung erfasst.
-            Sie zeigen die aktuelle Oberfläche; sie belegen keine Leistung im Industriebetrieb.
+            Die Bildschirmaufnahmen dokumentieren die Bedienoberfläche der aktuellen Version 2.0.0.
+            Sie wurden in einer isolierten lokalen Testumgebung mit Beispieldatensätzen erfasst.
           </p>
         </div>
 
@@ -220,7 +220,7 @@
           <div>
             <p class="step-label">Preflight vor Inferenz</p>
             <h3>Der Preflight zeigt, ob die Daten zum Modell passen.</h3>
-            <p>Fehlende Pflichtmerkmale, vollständig leere Spalten und Zeitangaben, die nicht an die Trainingshistorie anschließen, werden abgelehnt. Zusätzliche Spalten werden dokumentiert; die Zielspalte darf fehlen. Der aktuelle Prototyp verlangt außerdem dieselbe Szenariozuordnung für Datensatz und Modellversion; passende Spalten allein reichen bei abweichender Zuordnung noch nicht aus.</p>
+            <p>Fehlende Pflichtmerkmale, vollständig leere Spalten und Zeitangaben, die nicht an die Trainingshistorie anschließen, werden abgelehnt. Zusätzliche Spalten werden dokumentiert; die Zielspalte darf fehlen. Zur Vermeidung semantischer Fehlinterpretationen verlangt der Prototyp die Übereinstimmung der Szenariometadaten zwischen Datensatz und Anwendungsmodell; abweichende Szenarien werden vor dem Preflight abgewiesen.</p>
           </div>
         </div>
 
@@ -233,7 +233,7 @@
         <p class="boundary-note">Handlungsfenster entstehen aus konfigurierbaren, gespeicherten Regeln. Vor einer realen Nutzung müssen Fachleute diese Regeln festlegen und prüfen. Die Hinweise sind keine automatisch freigegebenen Handlungsanweisungen.</p>
         <div class="application-update-grid">
           <article><p class="step-label">Anwendung · Signale</p><h3>Modellausgabe und Eingangssignale getrennt untersuchen.</h3><p>Zuerst ein Asset wählen, dann zwischen Ergebnis und numerischen Sensorspuren wechseln. Zusätzliche Kontextsignale sind als vom Modell ungenutzt gekennzeichnet. Zeitliche Überlagerung zeigt keine Kausalität.</p><figure><img src="./assets/showcase-application-signals.png" alt="Aktuelle Anwendung: Asset-Auswahl und synchronisierte Eingangssignale" /></figure></article>
-          <article><p class="step-label">Anwendung · Qualitätsprüfung</p><h3>Vorhersagen mit beobachteten Werten vergleichen.</h3><p>Liegen für einen neuen PM-Batch tatsächliche Zielwerte vor, zeigt die Anwendung nachträglich RMSE, MAE und R². Das Beispiel vergleicht 240 RUL-Vorhersagen mit beobachteter Restlebensdauer. Die Zielwerte ändern weder Vorhersagen noch Ereignisse. Der Rückblick-Batch ist für diese Prüfung vorgesehen, nicht für Training; diese Nutzungsgrenze wird derzeit noch nicht an jedem Einstieg technisch erzwungen.</p><figure><img src="./assets/showcase-application-observed.png" alt="PM-Anwendung: RMSE, MAE und R² aus 240 Vorhersagen mit beobachteter Restlebensdauer" /></figure></article>
+          <article><p class="step-label">Anwendung · Qualitätsprüfung</p><h3>Vorhersagen mit beobachteten Werten vergleichen.</h3><p>Liegen für einen neuen PM-Batch tatsächliche Zielwerte vor, zeigt die Anwendung nachträglich RMSE, MAE und R². Das Beispiel vergleicht 240 RUL-Vorhersagen mit beobachteter Restlebensdauer. Die Zielwerte ändern weder Vorhersagen noch Ereignisse. Der Rückblick-Batch dient ausschließlich dieser nachträglichen Qualitätskontrolle und ist semantisch nicht für das Modelltraining vorgesehen.</p><figure><img src="./assets/showcase-application-observed.png" alt="PM-Anwendung: RMSE, MAE und R² aus 240 Vorhersagen mit beobachteter Restlebensdauer" /></figure></article>
         </div>
       </section>
 
@@ -278,7 +278,7 @@
         <p class="dsr-loop"><span>Evaluation</span><strong>Nutzerfeedback, Expertenwissen und reale Daten fließen in die Weiterentwicklung zurück.</strong><span>Iteration</span></p>
         <div class="status-grid">
           <article><h3>Umgesetzt</h3><ul><li>Datenverwaltung, Fusion, ETL und getrennte Validation-/Test-Evaluation.</li><li>4 Szenarien, Benchmark, Tier/Leitmodell und versionierte Veröffentlichung.</li><li>Schema- und Zeitpreflight, Cold Starts, Batch-Inferenz und getrennte Exporte.</li><li>Assetbezogene Modell-/Signalansichten und geschützte Modellverwaltung.</li></ul></article>
-          <article><h3>Noch offen</h3><ul><li>Eine systematische Literaturübersicht mit dokumentierter Suche und Auswahl.</li><li>Prüfung mit echten Folgebatches aus Industriebetrieben und veränderten Datenmustern.</li><li>Getrennte Durchführung von SUS, Projektfragebogen und Expertenreview.</li><li>Fachliche Prüfung der Regeln, Schwellenwerte und operativen Kennzahlen.</li></ul></article>
+          <article><h3>Noch offen</h3><ul><li>Eine systematische Literaturübersicht mit dokumentierter Suche und Auswahl.</li><li>Prüfung mit echten Folgebatches aus Industriebetrieben und veränderten Datenmustern.</li><li>Getrennte Durchführung von SUS, Projektfragebogen und Expertenreview.</li><li>Fachliche Prüfung der Regeln, Schwellenwerte und operativen Kennzahlen.</li><li>Entkopplung der Preflight-Prüfung von der strikten Vorabblockade abweichender Szenariometadaten sowie serverseitiger Rollenschutz für Inferenz-Presets.</li><li>Vollständige Absicherung zeitlicher Split-Grenzen bei degenerierten Zeitstempelreihen.</li></ul></article>
           <article><h3>Forschung und spätere Erweiterung</h3><ul><li>Volltextcodierung und explorative semantische Analyse der Literatur; noch kein durchgeführtes Clustering.</li><li>Transparente Filter anhand von Datenprofilen sowie Drift- und Unsicherheitsprüfung.</li><li>Agent-Unterstützung, native Sequenzmodelle, kontinuierliche Datenzufuhr und MLOps erst bei erweitertem Forschungsumfang.</li></ul></article>
         </div>
         <div class="evaluation-callout"><div><p class="step-label">Vorbereitete Evaluation</p><h3>SUS-DE-Pos und 14 projektspezifische Fragen werden getrennt ausgewertet.</h3><p>Die öffentliche Seite zeigt den 7-stufigen Aufgabenpfad und 2 Fragebögen. Antworten werden nicht gespeichert.</p></div><a class="primary-action" href="./evaluation.html">Zur Evaluation</a></div>
