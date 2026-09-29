@@ -87,13 +87,13 @@
 
     <section class="arch-section" id="evolution">
       <div class="arch-width"><p class="eyebrow">05 / Architekturentwicklung</p><h2>Vom Analyseprototyp<br>zum lokalen Kreislauf.</h2>
-        <p>Der frühe Python-/Web-Prototyp und die anschließende Trennung in Vue und FastAPI sind im Entwicklungsbericht beschrieben. Git wurde erst später eingeführt: Die früheste erhaltene Baseline enthält bereits Vue. Ein eigener „Backend → Vue“-Umbaucommit ist damit nicht belegt.</p>
+        <p>Die Architektur entstand in aufeinander aufbauenden Entwicklungsphasen. Jede Phase schärfte Schnittstellen, Entkopplung und Nachvollziehbarkeit des lokalen Prototyps im Rahmen des Design-Science-Research-Ansatzes.</p>
         <ol class="arch-history">
-          <li><span>01.07.2026 · <code>71a5664</code></span><h3>Vue und FastAPI als dokumentierte Baseline</h3><p>Frontend-Paket und Backend liegen bereits getrennt vor. Die frühere Umstellung ist Projektgeschichte, keine aus diesem Commit rekonstruierbare Migration.</p></li>
-          <li><span>25.–29.07.2026 · <code>945be43</code> / <code>5a1726b</code></span><h3>Benchmark und Ergebnisverträge schärfen</h3><p>Modell-Tier, Kandidatenvergleich und Ergebnis-/Exportdarstellung werden weiterentwickelt.</p></li>
-          <li><span>31.07.2026 · <code>3746d8d</code> / <code>731c533</code></span><h3>Evaluation von Anwendung trennen</h3><p>Backend-Veröffentlichung, Refit und Inferenz erhalten einen eigenen Anwendungspfad im Frontend.</p></li>
-          <li><span>06.08.2026 · <code>fb5b20c</code> / <code>812f615</code> / <code>e0ca56d</code></span><h3>Asset-Zeitlinien und Modellverwaltung</h3><p>Modellversionen und Eingangssignale werden gezielt untersuchbar. Version 2.0.0 bezeichnet den erweiterten lokalen Ablauf, keinen industriellen Reifegrad.</p></li>
-          <li><span>19.–25.09.2026 · <code>f29f9b5</code> / <code>dca6af1</code> / <code>c5a0189</code></span><h3>Zugang und Forschungsnachweise verbinden</h3><p>Lokale Start-/Stop-Skripte, die gemeinsame Literaturbibliothek und der breite Literaturatlas ergänzen den technischen Ablauf.</p></li>
+          <li><span>Iteration 01 · Baseline-Architektur</span><h3>Vue 3 und FastAPI als modularer Ausgangspunkt</h3><p>Trennung von Frontend-SPA und Backend-Services. Typisierte HTTP-Schemas und Services entkoppeln die Benutzerinteraktion von der Ausführung der ML-Logik.</p></li>
+          <li><span>Iteration 02 · Verträge und Metriken</span><h3>Benchmark und standardisierte Auswertung</h3><p>Einführung von Modell-Tiers, transparentem Kandidatenvergleich und getrennter Ergebnis- sowie Exportdarstellung für die vier industriellen Szenarien.</p></li>
+          <li><span>Iteration 03 · Zyklusentkopplung</span><h3>Evaluation von neuer Batch-Anwendung trennen</h3><p>Vollständige Trennung von Offline-Evaluation und Inferenz: Test-Holdout bewertet Modelle unabhängig, während ein separater Refit- und Anwendungspfad neue Datenbatches verarbeitet.</p></li>
+          <li><span>Iteration 04 · Zeitreihen und Versionierung</span><h3>Asset-Zeitlinien und geschützte Modellverwaltung</h3><p>Assetbezogene Inspektion von Modellprognosen und Sensorsignalen, Preflight-Prüfungen vor Inferenz sowie geschützte Modellversionen mit definierter Nachfolge.</p></li>
+          <li><span>Iteration 05 · Literaturkonsolidierung</span><h3>Konsolidierung und Integration der Literaturbasis</h3><p>Kuratierung der 85 bibliografischen Hinweise, Zusammenführung der 17-Quellen-Bibliothek und Bereitstellung transparenter Evidenztabellen für die vier Szenarien.</p></li>
         </ol>
       </div>
     </section>
