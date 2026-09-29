@@ -1,7 +1,7 @@
 {
-  "source_commit": "72625cff9acd3459dbdc194c4798140b5a438f41",
+  "source_commit": "248a6d3095b970fda8011790e003efd4b0b6d1c4",
   "source_dirty": false,
-  "generated_at": "2026-09-28T18:01:32.850217+00:00",
+  "generated_at": "2026-09-29T11:38:38.742969+00:00",
   "pages": [
     "index.html",
     "nebula.html",
@@ -10,7 +10,7 @@
     "evaluation.html"
   ],
   "sha256": {
-    "index.html": "f765e874f5a3502ec15f0d7b06422360e9ad4691574ba00e9ac918cab3ebb3b6",
+    "index.html": "513ac0db23c6f439cd79329c16e759793e6f182b6bed0cbc022a1c12f3f027c6",
     "nebula.html": "667bba29b89ac56b7c2baccb9bb236e57b69e2d8cf8796a36a033ba3370aec15",
     "mapping.html": "d432f7c5d4e82199f10629d2896b82a0e3fd3152c9cc638d0e54ed01fe71cba9",
     "architecture.html": "06c67590b78a718c2ef0b2b9ab2661d03e4a64ef8acbbade0d7c8c456f5349ec",
